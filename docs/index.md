@@ -1,19 +1,11 @@
-# Welcome to 33333333333333
+# SousaFX-rnbo Documentation
 
-3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+## Introduction
 
+SousaFX-rnbo is a multi-effects rig made with [Max/MSP/RNBO](https://cycling74.com/products/rnbo), which uses a game controller attached to the side of the tuba to control a number of audio effects, including:
 
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- A dubstep-style auto-wah with many facets tuned specifically for tuba.
+- Two one-button loopers, one for the bassline and one for the drum machine.
+- TimeLagAccumulator-style filter delays.
+- Reversible stutters with acceleration via a phase-locked loop.
+- DJ-style HP/LP filters.

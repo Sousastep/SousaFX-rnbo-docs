@@ -1,1 +1,73 @@
-site_name: My Docs
+site_name: sousafx-rnbo
+site_url: https://rnbo.sousastep.quest/
+nav:
+  - intro: index.md
+  - hardware: hardware.md
+  - setup: setup.md
+  - installation: installation.md
+  - soundcheck: soundcheck.md
+  - bindings: bindings.md
+  - purchase: purchase.md
+  - EULA: eula.md
+
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+
+  logo: img/logo.png
+  favicon: img/favicon.ico
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/linktree
+      link: https://www.sousastep.quest/links/
+    - icon: fontawesome/brands/github
+      link: https://github.com/jbaylies
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/JkSQzfZUdT
+
+plugins:
+  - search
+  - open-in-new-tab
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
