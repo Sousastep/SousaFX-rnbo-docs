@@ -8,8 +8,6 @@
 
 A list of all connections between the game controller and audio effect parameters.
 
-![https://prod.docsiteassets.roblox.com/assets/scripting/input/Gamepad-Inputs-Xbox.png](img/gamepadlayout.webp){ align=left }
-
 !!! note
 	
 	- Y, B, A, and X will be referred to as North, East, South, and West.
@@ -210,7 +208,7 @@ The left trigger, right trigger, and right bumper, are used to adjust the functi
 
 ### Left and Right
 
-- drum delay send, and bassline looper delay send:
+- Drum delay send, and bassline looper delay send:
 
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 

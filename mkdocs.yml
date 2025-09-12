@@ -5,9 +5,11 @@ nav:
   - hardware: hardware.md
   - setup: setup.md
   - installation: installation.md
-  - soundcheck: soundcheck.md
+  - overview: overview.md
   - bindings: bindings.md
+  - signal flow: signalflow.md
   - purchase: purchase.md
+  - prestige: prestige.md
   - EULA: eula.md
 
 theme:
@@ -59,6 +61,8 @@ extra:
 plugins:
   - search
   - open-in-new-tab
+  - autorefs
+  - glightbox
 
 markdown_extensions:
   - admonition
