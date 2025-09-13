@@ -23,8 +23,6 @@
 	
 	On the interface, ensure that direct monitoring is disabled. 
 
-	On the monitors, turn the volume all the way down. 
-
 	While playing tuba as loudly as possible, adjust the mic's input gain so that the mic peaks safely below clipping (around -10 dB).
 
 

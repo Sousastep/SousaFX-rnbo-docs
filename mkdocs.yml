@@ -1,16 +1,18 @@
 site_name: sousafx-rnbo
 site_url: https://rnbo.sousastep.quest/
 nav:
-  - intro: index.md
-  - hardware: hardware.md
-  - setup: setup.md
-  - installation: installation.md
-  - overview: overview.md
-  - bindings: bindings.md
-  - signal flow: signalflow.md
-  - purchase: purchase.md
-  - prestige: prestige.md
+  - Intro: index.md
+  - Hardware: hardware.md
+  - Setup: setup.md
+  - Installation: installation.md
+  - Overview: overview.md
+  - Loopers: loopers.md
+  - Bindings: bindings.md
+  - Purchase: purchase.md
+  - Prestige: prestige.md
   - EULA: eula.md
+  - Modding: modding.md
+  - Attributions: attributions.md
 
 theme:
   name: material

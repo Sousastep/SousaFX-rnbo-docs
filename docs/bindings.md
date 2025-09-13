@@ -59,6 +59,22 @@ Start and Select are used for changing the function of the North, East, South, a
 	| south 	| increment drum kit preset number |
 	| west 		|  |
 
+### Looper Operation
+
+While the looper is cleared, single tap to begin recording. The looper will auto-end recording after 8 or 16 bars has passed and the looper input is silent.
+
+While a looper is playing, single tap to begin stopping. the loop will stop and clear after the entire recording has played.
+
+Quickly double-tap to immediately stop recording or playing, and clear the loop.
+
+If pressed accidentally, hold for more than one second, and upon release nothing will happen.
+
+The bassline looper is set to 16 bars, and the drum looper is set to 8 bars. 
+
+While the bassline looper is looping, the tuba's effects chain switches from bassline to solo.
+
+While the drum looper is looping, the shoulder buttons will not trigger the drum samples.
+
 ## Shoulder Buttons
 
 While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the dpad.

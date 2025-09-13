@@ -2,6 +2,10 @@
 
 SousaFX’s prestige system has ten tiers, nine ranks, and three grades. For example, going through the rank of Bronze Knight involves working through Bronze Knight Grade 1, 2, and 3. Upon attaining the rank of “Tuba Warrior” Grade 3, the rank is reset back to Apprentice, and the tier increases from Iron to Bronze, Silver, etc., sequentially. After attaining the final rank of Immortal Tuba Warrior, the grade increases ad infinitum.
 
+
+![prestige](img/about-prestige.webp)
+
+
 !!! note
 
 	The prestige system only appears after importing a license key.

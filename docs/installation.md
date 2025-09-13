@@ -11,5 +11,5 @@
 
 	!!! note
 
-		SousaFX-rnbo remains fully functional after [SousaFX's 30-day trial ends](purchase.md). It uses a [Reaper](https://www.reaper.fm/)-style [EULA](eula.md).
+		SousaFX-rnbo remains fully functional after [SousaFX's 30-day trial ends](purchase.md).
 

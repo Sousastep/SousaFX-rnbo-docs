@@ -31,18 +31,6 @@ Below are the Looper Status displays for the tuba bassline looper, drum looper, 
 | green 	| playing 	|
 | orange 	| stopping 	|
 
-#### Looper Buttons:
-
-While the looper is cleared, single tap to begin recording. The looper will auto-end recording after 8 or 16 bars has passed and the looper input is silent.
-
-The tuba bassline looper is set to 16 bars, and the drum looper is set to 8 bars. 
-
-While the looper is playing, single tap to begin stopping. the loop will stop and clear after the entire recording has played.
-
-Quickly double-tap to immediately stop recording or playing, and clear the loop.
-
-If pressed accidentally, hold for more than one second, and upon release nothing will happen.
-
 ### Dials
 
 - Noise Gate Thresh
@@ -100,6 +88,60 @@ The following windows may be opened via the FX Parameters menu:
 
 ![wah](img/autowah_params.webp)
 
+### crossfade env sens
+
+This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfader starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound becomes.
+
+The crossfade's range is adjusted via the "envelope crossfade position" [binding](bindings.md#left-thumbstick).
+
+### LFO env sens
+
+This LFO modulates the lowpass filter frequency to create the dubstep wobble bass sound.
+
+The louder the tuba plays, the higher the LFO's ceiling and floor become.
+
+The "LFO env sens" dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
+
+In addition, two [bindings](bindings.md#left-thumbstick) adjust the ceiling and floor envelope sensitivities separately as well, with a slightly different taper than the "LFO env sens" parameter:
+
+- LFO floor envelope sensitivity
+
+- LFO ceiling envelope sensitivity
+
+The following dials curve the aformentioned bindings:
+
+- LFO ceiling env sens binding curve
+
+- LFO floor env sens binding curve
+
+The four dials below adjust the floor and ceiling's minimums and maximums:
+
+- Max LFO Floor
+
+- Min LFO Floor
+
+- Max LFO Ceiling
+
+- Min LFO Ceiling
+
+The "min dist btwn ceil and floor" dial sets a minimum distance between the ceiling and the floor so that they never overlap.
+
+### LPF menu
+
+There are five different lowpass filters to choose from:
+
+- Surreal Machine's ladder
+
+- Korg 35
+
+- Andrew Simper's SVF
+
+- Vadim Zavalishin's diode ladder
+
+- 4x oversampled moog ladder
+
+The toggle on the right allows the lowpass filter type to randomize whenever the bassline looper starts looping.
+
 ### Detune
 
 - mix
@@ -142,60 +184,6 @@ The following windows may be opened via the FX Parameters menu:
 
 - output volume
 
-### Crossfade env sens
-
-This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfader starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound becomes.
-
-This crossfade is simultaneously manually adjusted via the "envelope crossfade position" parameter that's bound to the [left thumbstick's vertical axis](bindings.md#left-thumbstick).
-
-### LFO env sens
-
-This LFO modulates the lowpass filter frequency.
-
-The louder the tuba plays, the higher the LFO's ceiling and floor become.
-
-The "LFO env sens" dial adjusts the envelope sensitivity for the LFO's ceiling and floor.
-
-Two bindings adjust the envelope sensitivities as well:
-
-- The Left thumbstick's vertical axis adjusts the envelope sensitivity for the LFO's floor.
-
-- The Left thumbstick's horizontal axis adjusts the envelope sensitivity for the LFO's ceiling.
-
-The following dials adjust the aformentioned bindings:
-
-- LFO ceiling env sens binding curve
-
-- LFO floor env sens binding curve
-
-The four dials below adjust the floor and ceiling's minimums and maximums:
-
-- Max LFO Floor
-
-- Min LFO Floor
-
-- Max LFO Ceiling
-
-- Min LFO Ceiling
-
-The "min dist btwn ceil and floor" dial sets a minimum distance between the ceiling and the floor so that they never overlap.
-
-### LPF menu
-
-There are five different lowpass filters to choose from:
-
-- Surreal Machine's ladder
-
-- Korg 35
-
-- Andrew Simper's SVF
-
-- Vadim Zavalishin's diode ladder
-
-- 4x oversampled moog ladder
-
-The toggle on the right allows the lowpass filter type to randomize whenever the bassline looper starts looping.
-
 ## Compressors and Limiters
 
 ![compress](img/compressor_params.webp)
@@ -216,7 +204,7 @@ This window displays two limiters and six compressors
 
 - pre-xfade-wet
 
-	This compressor is for the modulated lowpass filter sound.
+	This compressor is for the overdriven modulated lowpass filter sound.
 
 - pre-xfade-dry
 
