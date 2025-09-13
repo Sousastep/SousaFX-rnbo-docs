@@ -1,12 +1,5 @@
 # Attributions
 
-## Docs
-
-SousaFX-rnbo's documentation is made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
-
-The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/).
-
-
 ## Patchers
 
 The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor and limiter's sidechain.
@@ -107,7 +100,11 @@ A handful of gen abstractions are from [Graham Wakefield](https://github.com/grr
 
 	The LPF freq mod LFO is tapered to match the [Moog MF-101S](https://software.moogmusic.com/store/mf-101s)' filter freq parameter. 
 
+## Docs
 
+SousaFX's documentation is made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+
+The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/).
 
 ## Many thanks to
 
@@ -125,5 +122,4 @@ My friends and family
 
 Everyone in the Max discord channel
 
-Everyone who's tried SousaFX so far :)
-
+YOU for reading this far :)

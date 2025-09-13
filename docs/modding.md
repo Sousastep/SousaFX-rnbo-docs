@@ -1,6 +1,6 @@
 # Modding
 
-For release versions, the core of SousaFX-rnbo is compiled into a max external, and can not be opened.
+For release versions, the core of SousaFX is compiled into a max external, and can not be opened.
 
 To access the internals:
 
