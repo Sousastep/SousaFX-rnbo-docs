@@ -65,6 +65,8 @@ plugins:
   - open-in-new-tab
   - autorefs
   - glightbox
+  - offline:
+      enabled: !ENV [OFFLINE, false]
 
 markdown_extensions:
   - admonition
