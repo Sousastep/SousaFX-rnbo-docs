@@ -117,8 +117,9 @@ The left trigger is used for changing the function of the dpad and the left bump
 	| left		| 8th quintuplet |
 
 
+Holding the right trigger lets an ADSR modulate the overdriven lowpass filter.
 
-The left trigger, right trigger, and right bumper, are used to adjust the function of the thumbsticks.
+The left trigger, and right bumper, are used to adjust the function of the thumbsticks.
 
 ## Left Thumbstick
 
@@ -211,6 +212,8 @@ The left trigger, right trigger, and right bumper, are used to adjust the functi
 ### Left
 
 - Bassline delay send, and solo delay send.
+
+- Lowpass filter resonance boost.
 
 ### Right
 
