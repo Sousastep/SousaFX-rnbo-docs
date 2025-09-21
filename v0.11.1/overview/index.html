@@ -8,7 +8,7 @@
         <link rel="canonical" href="https://rnbo.sousastep.quest/v0.11.1/overview/">
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../documentation/">
       
       
         <link rel="next" href="../loopers/">
@@ -343,6 +343,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -465,13 +487,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bassline-effects" class="md-nav__link">
+  <a href="#bassline" class="md-nav__link">
     <span class="md-ellipsis">
-      Bassline Effects
+      Bassline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Bassline Effects">
+    <nav class="md-nav" aria-label="Bassline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -809,13 +831,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bassline-effects" class="md-nav__link">
+  <a href="#bassline" class="md-nav__link">
     <span class="md-ellipsis">
-      Bassline Effects
+      Bassline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Bassline Effects">
+    <nav class="md-nav" aria-label="Bassline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -914,6 +936,7 @@
 <h1 id="overview">Overview</h1>
 <h2 id="main-window">Main Window</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/main_window.webp" data-desc-position="bottom"><img alt="main" src="../img/main_window.webp"></a></p>
+<p>Closing this window quits SousaFX.</p>
 <h3 id="status-bar">Status Bar</h3>
 <p>The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, &lt; 128, &lt; 128, On, and On, respectively.</p>
 <p>The x toggle makes the white border flash in time with the metronome.</p>
@@ -923,7 +946,7 @@
 <h3 id="displays">Displays</h3>
 <p>To the top left of the white box, is the game controller input display.</p>
 <p>To the right are the input volume meters. </p>
-<p>Below are the Looper Status displays for the tuba bassline looper, drum looper, and synth looper. The synth is currently not connected, but will be in a later version.</p>
+<p>Below are the Looper Status displays for the tuba bassline looper, and drum looper.</p>
 <table>
 <thead>
 <tr>
@@ -961,10 +984,6 @@
 <p>Sets the main envelope sensitivity, which should generally be around 180%</p>
 </li>
 <li>
-<p>Synth Volume</p>
-<p>The synth is disconnected at the moment.</p>
-</li>
-<li>
 <p>Metro Volume</p>
 <p>Sets the volume of the metronome in the monitor outpts.</p>
 </li>
@@ -990,7 +1009,7 @@
 <p>The following windows may be opened via the FX Parameters menu:</p>
 <ul>
 <li>
-<p>Bassline Effects</p>
+<p>Bassline</p>
 </li>
 <li>
 <p>Compressors and Limiters</p>
@@ -1002,7 +1021,7 @@
 <p>Reverbs</p>
 </li>
 </ul>
-<h2 id="bassline-effects">Bassline Effects</h2>
+<h2 id="bassline">Bassline</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/autowah_params.webp" data-desc-position="bottom"><img alt="wah" src="../img/autowah_params.webp"></a></p>
 <h3 id="crossfade-env-sens">crossfade env sens</h3>
 <p>This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfader starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound becomes.</p>
@@ -1147,10 +1166,6 @@
 <p>This compressor is for the tuba solo, which only occurs while the bassline looper is looping.</p>
 </li>
 <li>
-<p>synth</p>
-<p>Currently disconnected.</p>
-</li>
-<li>
 <p>final</p>
 <p>This compressor is for the final mixdown.</p>
 </li>
@@ -1246,7 +1261,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
+          <a href="../documentation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Docs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -1256,7 +1271,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Installation
+                Docs
               </div>
             </div>
           </a>
