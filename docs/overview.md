@@ -1,5 +1,19 @@
 # Overview
 
+## Menubar
+
+![menubar](img/menubar.webp)
+
+The following windows may be opened via the FX Parameters menu:
+
+- [Bassline](overview.md#bassline)
+
+- [Compressors and Limiters](overview.md#compressors-and-limiters)
+
+- [Delays](overview.md#delays)
+
+- [Reverbs](overview.md#reverbs)
+
 ## Main Window
 
 ![main](img/main_window.webp)
@@ -66,21 +80,6 @@ Below the dials are the output meters, along with a save button, which saves Sou
 ### Layout
 
 On the bottom right is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
-
-## Menubar
-
-![menubar](img/menubar.webp)
-
-The following windows may be opened via the FX Parameters menu:
-
-- Bassline
-
-- Compressors and Limiters
-
-- Delays
-
-- Reverbs
-
 
 ## Bassline
 
