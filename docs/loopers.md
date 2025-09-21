@@ -13,3 +13,5 @@ The bassline looper is currently hardcoded to 16 bars, and the drum looper, 8 ba
 While the bassline looper is looping, the tuba's effects switch from "bassline" to "solo".
 
 While the drum looper is looping, the shoulder buttons will not trigger the drum samples.
+
+Whenever a looper starts recording or stopping, a sound alert plays in the monitor mix. The volume of this alert can be adjusted via the Alert Volume knob in the [main window](overview.md/#main-window).

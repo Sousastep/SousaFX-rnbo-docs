@@ -6,6 +6,11 @@ The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor 
 
 A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
 
+`deadzone scaled radial.maxpat` thanks [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html)
+
+`jb.autowah` utilizes work from [Emmanuel Jourdan and Oren Shoham](https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2
+) to emulate the `function` object at audio-rate in rnbo. It also uses [h1data](https://github.com/h1data/max-custom-adsr)'s custom gen~ adsr.
+
 ## Filters
 
 [Surreal Machines](https://www.surrealmachines.com/) - [smFIlterPack](https://cycling74.com/articles/an-interview-with-surreal-machines)
