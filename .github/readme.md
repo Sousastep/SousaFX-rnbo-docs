@@ -33,3 +33,8 @@ git push origin --all
 ```
 OFFLINE=true mkdocs build --clean --site-dir /Users/jbaylies/Documents/Max\ 8/Projects/SousaFX-rnbo/.docs 
 ```
+
+### convert
+```
+for f in *.png; do cwebp "$f" -o "${f%.png}.webp"; done
+```

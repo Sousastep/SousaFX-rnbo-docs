@@ -4,6 +4,8 @@
 
 ![main](img/main_window.webp)
 
+Closing this window quits SousaFX.
+
 ### Status Bar
 
 The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, < 128, < 128, On, and On, respectively.
@@ -22,7 +24,7 @@ To the top left of the white box, is the game controller input display.
 
 To the right are the input volume meters. 
 
-Below are the Looper Status displays for the tuba bassline looper, drum looper, and synth looper. The synth is currently not connected, but will be in a later version.
+Below are the Looper Status displays for the tuba bassline looper, and drum looper.
 
 | color     | status 	|
 |-----------|-----------|
@@ -40,10 +42,6 @@ Below are the Looper Status displays for the tuba bassline looper, drum looper, 
 - Env Sens
 
 	Sets the main envelope sensitivity, which should generally be around 180%
-
-- Synth Volume
-
-	The synth is disconnected at the moment.
 
 - Metro Volume
 
@@ -75,7 +73,7 @@ On the bottom right is a way to save window layouts. Click the number box and pr
 
 The following windows may be opened via the FX Parameters menu:
 
-- Bassline Effects
+- Bassline
 
 - Compressors and Limiters
 
@@ -84,7 +82,7 @@ The following windows may be opened via the FX Parameters menu:
 - Reverbs
 
 
-## Bassline Effects
+## Bassline
 
 ![wah](img/autowah_params.webp)
 
@@ -213,10 +211,6 @@ This window displays two limiters and six compressors
 - solo
 
 	This compressor is for the tuba solo, which only occurs while the bassline looper is looping.
-
-- synth
-
-	Currently disconnected.
 
 - final
 

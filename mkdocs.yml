@@ -5,6 +5,7 @@ nav:
   - Hardware: hardware.md
   - Setup: setup.md
   - Installation: installation.md
+  - Docs: documentation.md
   - Overview: overview.md
   - Loopers: loopers.md
   - Bindings: bindings.md
