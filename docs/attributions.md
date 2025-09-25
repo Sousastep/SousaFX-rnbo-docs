@@ -4,12 +4,16 @@
 
 The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor and limiter's sidechain.
 
-A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
+A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go).
 
-`deadzone scaled radial.maxpat` thanks [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html)
+The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html).
 
-`jb.autowah` utilizes work from [Emmanuel Jourdan and Oren Shoham](https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2
+`jb.autowah` uses work from [Emmanuel Jourdan and Oren Shoham](https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2
 ) to emulate the `function` object at audio-rate in rnbo. It also uses [h1data](https://github.com/h1data/max-custom-adsr)'s custom gen~ adsr.
+
+`jb.looper` uses Leigh Marble's [tap_processor](https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c).
+
+`gp.filterdelaywrap` uses Alex M's [springto](https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341)
 
 ## Filters
 
@@ -62,33 +66,6 @@ A handful of gen abstractions are from [Graham Wakefield](https://github.com/grr
 
 	```
 	Korg 35 lowpass
-	```
-
-[Joshua Clayton](https://www.youtube.com/watch?v=H06YfIkDOQQ) - [4x oversampled ladder](https://discord.com/channels/289378508247924738/289379241345155073/1403631842346799216)
-
-- halfband_ppiir.genexpr
-
-	```
-	Polyphase recursive filter for up/down sampling by 2.
-    This particular variant is extremely fast, but does not have linear phase.
-    Based on algorithms published by Fred Harris.
-    Copyright (c) 2025 Cycling '74
-    ```
-
-- moogladder_dv.genexpr
-
-    ```
-    This model is based on a reference implementation of an algorithm developed by
-	Stefano D'Angelo and Vesa Valimaki, presented in a paper published at ICASSP in 2013.
-	This improved model is based on a circuit analysis and compared against a reference
-	Ngspice simulation. In the paper, it is noted that this particular model is
-	more accurate in preserving the self-oscillating nature of the real filter.
-	
-	References: "An Improved Virtual Analog Model of the Moog Ladder Filter"
-	Original Implementation: D'Angelo, Valimaki
-	
-	Copyright 2012 Stefano D'Angelo <zanga.mail@gmail.com>
-	Conversion to RNBO Copyright 2025 Cycling '74 
 	```
 
 [Rusty Allred](https://web.archive.org/web/20071003115434/http://www.planetanalog.com/article/printableArticle.jhtml?articleID=12802683), [Trond Lossius](https://github.com/jamoma/JamomaCore/blob/master/DSP/extensions/FilterLib/source/TTLowpassLinkwitzRiley4.cpp), [Timothy Place](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial), [J Curtis](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial#reply-5e4377db8a6f416613deaf7c) -  4th-order Linkwitz Riley Crossover Filter

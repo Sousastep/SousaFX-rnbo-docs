@@ -75,7 +75,7 @@ Below are the Looper Status displays for the tuba bassline looper, and drum loop
 
 ### Output Meters
 
-Below the dials are the output meters, along with a save button, which saves SousaFX's current state.
+Below the dials are the output meters, along with a Save button that saves SousaFX's current state, and a Restore button that discards changes and restores the previous save.
 
 ### Layout
 
@@ -134,8 +134,6 @@ There are five different lowpass filters to choose from:
 - Andrew Simper's SVF
 
 - Vadim Zavalishin's diode ladder
-
-- 4x oversampled moog ladder
 
 The toggle on the right allows the lowpass filter type to randomize whenever the bassline looper starts looping.
 

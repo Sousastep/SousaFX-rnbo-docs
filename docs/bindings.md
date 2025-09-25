@@ -61,7 +61,7 @@ Start and Select are used for changing the function of the North, East, South, a
 
 ## Shoulder Buttons
 
-While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the dpad.
+While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
 
 | button 	| samples  |
 |-----------|----------|
@@ -72,16 +72,22 @@ While the tuba isn't playing, and the drum looper isn't looping, pressing the sh
 
 While the tuba is playing, or the drum looper is looping, the shoulder buttons operate as follows:
 
-The left bumper, and the dpad, are used for setting the subdivision of the auto-wah, delays, and stutters. If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+The left trigger, and right bumper, are used to adjust the function of the thumbsticks.
 
-The left trigger is used for changing the function of the dpad and the left bumper.
+Holding the right trigger lets an ADSR modulate the overdriven lowpass filter.
+
+### D-pad
+
+The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+
+The left trigger is used for changing the function of the d-pad and the left bumper.
 
 - Without the left trigger pressed:
 
-	| dpad	    | Function	  |
+	| d-pad	    | Function	  |
 	|-----------|-------------|
 	| L2 		| disable auto-wah LFO |
-	| dpad up 	| quarter |
+	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
 	| down right| 16th triplet |
@@ -92,18 +98,13 @@ The left trigger is used for changing the function of the dpad and the left bump
 
 - With the left trigger pressed:
 
-	| dpad	    | Function	  |
+	| d-pad	    | Function	  |
 	|-----------|-------------|
 	| L2 		| half |
-	| dpad up 	| quarter triplet |
+	| d-pad up 	| quarter triplet |
 	| right 	| 16th triplet |
 	| down		| quarter quintuplet |
 	| left		| 8th quintuplet |
-
-
-Holding the right trigger lets an ADSR modulate the overdriven lowpass filter.
-
-The left trigger, and right bumper, are used to adjust the function of the thumbsticks.
 
 ## Left Thumbstick
 
@@ -149,6 +150,13 @@ The left trigger, and right bumper, are used to adjust the function of the thumb
 
 	Denied when the bassline looper isn't looping, & the left thumbstick is within its deadzone.
 
+### Magnitude
+
+- Lowpass filter resonance boost.
+
+!!! note
+
+	The magnitude is the distance of the thumbstick from the center.
 
 
 ## Right Thumbstick
@@ -197,8 +205,6 @@ The left trigger, and right bumper, are used to adjust the function of the thumb
 
 - Bassline delay send, and solo delay send.
 
-- Lowpass filter resonance boost.
-
 ### Right
 
 - Main reverb send.
@@ -216,7 +222,6 @@ The left trigger, and right bumper, are used to adjust the function of the thumb
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
 	Disallowed when the tuba starts playing.
-
 
 
 
