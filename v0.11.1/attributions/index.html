@@ -694,9 +694,11 @@
 <h1 id="attributions">Attributions</h1>
 <h2 id="patchers">Patchers</h2>
 <p>The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor are from the <a href="https://cycling74.com/products/rnbo-guitar-pedals">RNBO Guitar Pedals Package</a>. <a href="https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf">K-weighting</a> has been added to the compressor and limiter's sidechain.</p>
-<p>A handful of gen abstractions are from <a href="https://github.com/grrrwaaa">Graham Wakefield</a> &amp; <a href="https://cycling74.com/articles/an-interview-with-gregory-taylor">Gregory Taylor</a> - <a href="https://cycling74.com/books/go">Generating Sound and Organizing Time</a></p>
-<p><code>deadzone scaled radial.maxpat</code> thanks <a href="https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2">TFL</a>, <a href="https://github.com/Minimuino/thumbstick-deadzones">Minimuino</a>, and <a href="https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html">Josh Sutphin</a></p>
-<p><code>jb.autowah</code> utilizes work from <a href="https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2">Emmanuel Jourdan and Oren Shoham</a> to emulate the <code>function</code> object at audio-rate in rnbo. It also uses <a href="https://github.com/h1data/max-custom-adsr">h1data</a>'s custom gen~ adsr.</p>
+<p>A handful of gen abstractions are from <a href="https://github.com/grrrwaaa">Graham Wakefield</a> &amp; <a href="https://cycling74.com/articles/an-interview-with-gregory-taylor">Gregory Taylor</a> - <a href="https://cycling74.com/books/go">Generating Sound and Organizing Time</a>.</p>
+<p>The thumbstick deadzones in <code>deadzone scaled radial.maxpat</code> are thanks to <a href="https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2">TFL</a>, <a href="https://github.com/Minimuino/thumbstick-deadzones">Minimuino</a>, and <a href="https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html">Josh Sutphin</a>.</p>
+<p><code>jb.autowah</code> uses work from <a href="https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2">Emmanuel Jourdan and Oren Shoham</a> to emulate the <code>function</code> object at audio-rate in rnbo. It also uses <a href="https://github.com/h1data/max-custom-adsr">h1data</a>'s custom gen~ adsr.</p>
+<p><code>jb.looper</code> uses Leigh Marble's <a href="https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c">tap_processor</a>.</p>
+<p><code>gp.filterdelaywrap</code> uses Alex M's <a href="https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341">springto</a></p>
 <h2 id="filters">Filters</h2>
 <p><a href="https://www.surrealmachines.com/">Surreal Machines</a> - <a href="https://cycling74.com/articles/an-interview-with-surreal-machines">smFIlterPack</a></p>
 <ul>
@@ -743,32 +745,6 @@ https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 <li>
 <p>fc.k35lp.gendsp</p>
 <div class="highlight"><pre><span></span><code>Korg 35 lowpass
-</code></pre></div>
-</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=H06YfIkDOQQ">Joshua Clayton</a> - <a href="https://discord.com/channels/289378508247924738/289379241345155073/1403631842346799216">4x oversampled ladder</a></p>
-<ul>
-<li>
-<p>halfband_ppiir.genexpr</p>
-<div class="highlight"><pre><span></span><code>Polyphase recursive filter for up/down sampling by 2.
-This particular variant is extremely fast, but does not have linear phase.
-Based on algorithms published by Fred Harris.
-Copyright (c) 2025 Cycling '74
-</code></pre></div>
-</li>
-<li>
-<p>moogladder_dv.genexpr</p>
-<div class="highlight"><pre><span></span><code>This model is based on a reference implementation of an algorithm developed by
-Stefano D'Angelo and Vesa Valimaki, presented in a paper published at ICASSP in 2013.
-This improved model is based on a circuit analysis and compared against a reference
-Ngspice simulation. In the paper, it is noted that this particular model is
-more accurate in preserving the self-oscillating nature of the real filter.
-
-References: "An Improved Virtual Analog Model of the Moog Ladder Filter"
-Original Implementation: D'Angelo, Valimaki
-
-Copyright 2012 Stefano D'Angelo &lt;zanga.mail@gmail.com&gt;
-Conversion to RNBO Copyright 2025 Cycling '74 
 </code></pre></div>
 </li>
 </ul>
