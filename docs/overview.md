@@ -73,13 +73,15 @@ Below are the Looper Status displays for the tuba bassline looper, and drum loop
 
 	Sets the volume of the kick samples.
 
-### Output Meters
+### Save Restore
 
-Below the dials are the output meters, along with a Save button that saves SousaFX's current state, and a Restore button that discards changes and restores the previous save.
+The Save button saves all the parameters in the main window (except for the window layout), and all the FX parameters windows.
+
+The Restore button discards all changes and restores the previous save.
 
 ### Layout
 
-On the bottom right is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
+On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
 
 ## Bassline
 

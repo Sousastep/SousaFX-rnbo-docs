@@ -8,16 +8,6 @@
 
 A list of all connections between the game controller and audio effect parameters.
 
-!!! note
-	
-	- Y, B, A, and X will be referred to as North, East, South, and West.
-
-	- The shoulder buttons, L1, R1, L2, and R2, will be referred to as Left Bumper, Right Bumper, Left Trigger, and Right Trigger
-	
-	- Thumbstick1 will be referred to as Left Thumbstick.
-	
-	- Thumbstick2 will be referred to as Right Thumbstick.
-
 ## Start, Select, Cardinal
 
 Start and Select are used for changing the function of the North, East, South, and West buttons.
@@ -122,6 +112,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	Allowed while the drum looper is looping, & the tuba isn't playing a bassline.
 
+- Drum stutter autopan amount.
+
 ### Horizontal
 
 - LFO ceiling envelope sensitivity.
@@ -150,6 +142,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	Denied when the bassline looper isn't looping, & the left thumbstick is within its deadzone.
 
+- Looper stutter autopan amount.
+
 ### Magnitude
 
 - Lowpass filter resonance boost.
@@ -164,6 +158,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 ### Up
 
 - Bassline delay feedback amount, & solo delay feedback amount.
+
+- Solo stutter autopan amount.
 
 - Drum delay feedback amount:
 
@@ -222,13 +218,4 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
 	Disallowed when the tuba starts playing.
-
-
-
-
-
-
-
-
-
 
