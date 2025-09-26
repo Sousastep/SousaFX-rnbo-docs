@@ -55,7 +55,7 @@ The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](
  	https://github.com/csound/csound/blob/master/Opcodes/wpfilters.c
  	```
 
-- fc.svf-as.gendsp
+- fc.svf-as.gendsp & fc.bell
 
 	```
 	SVF structure by Andrew Simper
