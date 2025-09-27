@@ -65,7 +65,6 @@ plugins:
   - search
   - open-in-new-tab
   - autorefs
-  - glightbox
   - offline:
       enabled: !ENV [OFFLINE, false]
 

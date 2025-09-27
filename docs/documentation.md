@@ -6,6 +6,6 @@ While mousing over the gamepad input display, looper statuses, layout saver, or 
 
 ![main](img/documentation_window.webp)
 
+!!! Bug 
 
-
-
+	After typing in the search bar, click the "Type to Start Searching" text to search.

@@ -126,9 +126,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 - LFO shape:
 
-	Allowed when the right bumper is pressed, & the left thumbstick is within its deadzone.
-
-	Denied when the right bumper is released, & the left thumbstick is within its deadzone.
+	Allowed while select is pressed.
 
 - Delay time adjustment for bassline, solo, drums, and loopers:
 
