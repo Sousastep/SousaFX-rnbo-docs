@@ -112,6 +112,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	Allowed while the drum looper is looping, & the tuba isn't playing a bassline.
 
+	Momentarily disallowed while RB is held down.
+
 - Drum stutter autopan amount.
 
 ### Horizontal
@@ -139,6 +141,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	Allowed when the bassline looper is looping, & the left thumbstick is within its deadzone.
 
 	Denied when the bassline looper isn't looping, & the left thumbstick is within its deadzone.
+
+	Momentarily disallowed while RB is held down.
 
 - Looper stutter autopan amount.
 

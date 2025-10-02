@@ -15,6 +15,8 @@ The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](
 
 `gp.filterdelaywrap` uses Alex M's [springto](https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341)
 
+The licence checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8). 
+
 ## Filters
 
 [Surreal Machines](https://www.surrealmachines.com/) - [smFIlterPack](https://cycling74.com/articles/an-interview-with-surreal-machines)
