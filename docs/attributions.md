@@ -4,18 +4,20 @@
 
 The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor and limiter's sidechain.
 
-A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go).
+A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
 
-The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html).
+The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html)
 
 `jb.autowah` uses work from [Emmanuel Jourdan and Oren Shoham](https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2
 ) to emulate the `function` object at audio-rate in rnbo. It also uses [h1data](https://github.com/h1data/max-custom-adsr)'s custom gen~ adsr.
 
-`jb.looper` uses Leigh Marble's [tap_processor](https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c).
+`jb.looper` uses Leigh Marble's [tap_processor](https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c)
 
 `gp.filterdelaywrap` uses Alex M's [springto](https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341)
 
-The licence checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8). 
+The licence checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8)
+
+The input display uses pngs from [Kenney's Input Prompts](https://kenney.nl/assets/input-prompts), and an svg from [joypixels' Emojione Mono Emojis](https://www.svgrepo.com/svg/404309/white-circle)
 
 ## Filters
 
@@ -86,9 +88,11 @@ The licence checker uses Floating Point's [Gregorian-Julian date converter](http
 
 ## Docs
 
-SousaFX's documentation is made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+SousaFX's documentation is made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
-The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/).
+The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/)
+
+The [gamepad image](bindings.md) is modified from [Stride's](https://doc.stride3d.net/4.0/en/manual/input/gamepads.html)
 
 ## Many thanks to
 
@@ -100,7 +104,7 @@ Cycling 74`
 
 Eventide Audio
 
-[Brian Wolff](https://www.youtube.com/watch?v=f7TNKVm4E20)
+Brian Wolff
 
 My friends and family
 

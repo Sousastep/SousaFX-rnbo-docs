@@ -6,9 +6,9 @@
 
 # Bindings
 
-A list of all connections between the game controller and audio effect parameters.
+![gamepad](img/gamepad.webp)
 
-## Start, Select, Cardinal
+## Start, Select, N E S W
 
 Start and Select are used for changing the function of the North, East, South, and West buttons.
 
@@ -36,7 +36,7 @@ Start and Select are used for changing the function of the North, East, South, a
 	| Direction | Function |
 	|-----------|----------|
 	| north 	| toggle metronome |
-	| east 		|  |
+	| east 		| increment drum kit preset number |
 	| south 	| toggle bumper drumming |
 	| west 		|  |
 
@@ -46,7 +46,7 @@ Start and Select are used for changing the function of the North, East, South, a
 	|-----------|----------|
 	| north 	| set time signature numerator via number of clicks (3 - 7)|
 	| east 		|  |
-	| south 	| increment drum kit preset number |
+	| south 	|  |
 	| west 		|  |
 
 ## Shoulder Buttons
@@ -64,11 +64,11 @@ While the tuba is playing, or the drum looper is looping, the shoulder buttons o
 
 The left trigger, and right bumper, are used to adjust the function of the thumbsticks.
 
-Holding the right trigger lets an ADSR modulate the overdriven lowpass filter.
+Holding the right trigger lets an ADSR modulate the overdriven lowpass filter whenever the tuba articulates.
 
 ### D-pad
 
-The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. 
 
 The left trigger is used for changing the function of the d-pad and the left bumper.
 
@@ -95,6 +95,10 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	| right 	| 16th triplet |
 	| down		| quarter quintuplet |
 	| left		| 8th quintuplet |
+
+If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+
+If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes.
 
 ## Left Thumbstick
 
@@ -129,10 +133,6 @@ The left trigger is used for changing the function of the d-pad and the left bum
 - LFO shape:
 
 	Allowed while select is pressed.
-
-- Delay time adjustment for bassline, solo, drums, and loopers:
-
-	Allowed while the left trigger is pressed.
 
 ### Left
 
@@ -187,7 +187,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 ### Horizontal
 
-- Delay filter frequency adjustment for bassline, solo, drums, and loopers.
+- Delay's feedback loop's lowpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, solo, drums, and loopers.
 
 - Stutter Acceleration for bassline, solo, drums, and loopers:
 

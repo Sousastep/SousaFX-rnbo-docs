@@ -25,14 +25,13 @@
 
 5. XLR microphone, or Yamaha SilentBrass:
 	
-	I use the [Audio-Technica Pro35](https://duckduckgo.com/?q=Audio-Technica+Pro35) clip-on mic, velcroed in the bell with [fastener strips](https://duckduckgo.com/?q=fastener+strips).
+	A clip-on mic such as the [Audio-Technica Pro35](https://duckduckgo.com/?q=Audio-Technica+Pro35), velcroed in the bell with [fastener strips](https://duckduckgo.com/?q=fastener+strips), works well.
 	
 	The [SilentBrass mute](https://usa.yamaha.com/products/musical_instruments/winds/silent_brass/silent_brass_sbj_series/index.html) requires an [eighth inch TRS to dual quarter inch TS cable](https://www.sweetwater.com/store/search?s=3.5mm+trs+to+dual+1%2F4+ts) to connect the PersonalStudio’s headphone output to the audio interface’s line inputs.
 
 
-
 6. Wireless game controller:
 	
-	Most controllers are supported (All are listed [here](https://github.com/libsdl-org/SDL/blob/SDL2/src/thumbstick/SDL_gamecontrollerdb.h)). 
+	Most controllers are supported (All are listed [here](https://github.com/libsdl-org/SDL/blob/main/src/joystick/SDL_gamepad_db.h)). 
 
 

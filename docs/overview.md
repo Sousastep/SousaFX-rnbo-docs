@@ -26,9 +26,9 @@ The menus on the top left adjust the audio engine's settings, including the samp
 
 The x toggle makes the white border flash in time with the metronome.
 
-To the right of the toggle is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-cardinal).
+To the right of the toggle is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-n-e-s-w).
 
-Next is the time signature numerator, which can be set by tapping [North](bindings.md#start-select-cardinal) while holding Start and Select. 
+Next is the time signature numerator, which can be set by tapping [North](bindings.md#start-select-n-e-s-w) while holding Start and Select. 
 
 Next is the audio engine power button, along with the CPU meter. The audio engine will auto-start when SousaFX is launched, and can be toggled off to mute SousaFX.
 
@@ -271,14 +271,14 @@ Separate delays for the main input, the bassline looper, the tuba solo, and the 
 
 Sets the reverb parameters for the bassline, for the tuba solo, and the snare clap & tom.
 
-- verbwrap/main
+- Main
 
 	Main reverb send for everything. Keep mix at 100%
 
-- tubasolo
+- Solo
 
-	Reverb for tuba solo, with separate dry and wet output volumes, as well as a delay volume. The smaller the venue, the lower the dry output volume should be.
+	Reverb for tuba solo, with separate dry and wet output volumes, as well as "dry" delay and "dry" stutter volumes.
 
-- jb_drums/perc
+- Drums
 
-	Reverb for the snare clap & tom.
+	Reverb for the snare, clap, & tom.
