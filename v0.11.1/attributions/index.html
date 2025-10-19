@@ -572,6 +572,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#filters" class="md-nav__link">
     <span class="md-ellipsis">
       Filters
@@ -642,6 +651,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#filters" class="md-nav__link">
     <span class="md-ellipsis">
       Filters
@@ -686,13 +704,18 @@
 
 <h1 id="attributions">Attributions</h1>
 <h2 id="patchers">Patchers</h2>
-<p>The pitch shifter, overdrive, noise gate, plate reverb, limiter, and compressor are from the <a href="https://cycling74.com/products/rnbo-guitar-pedals">RNBO Guitar Pedals Package</a>. <a href="https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf">K-weighting</a> has been added to the compressor and limiter's sidechain.</p>
-<p>A handful of gen abstractions are from <a href="https://github.com/grrrwaaa">Graham Wakefield</a> &amp; <a href="https://cycling74.com/articles/an-interview-with-gregory-taylor">Gregory Taylor</a> - <a href="https://cycling74.com/books/go">Generating Sound and Organizing Time</a>.</p>
-<p>The thumbstick deadzones in <code>deadzone scaled radial.maxpat</code> are thanks to <a href="https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2">TFL</a>, <a href="https://github.com/Minimuino/thumbstick-deadzones">Minimuino</a>, and <a href="https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html">Josh Sutphin</a>.</p>
-<p><code>jb.autowah</code> uses work from <a href="https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2">Emmanuel Jourdan and Oren Shoham</a> to emulate the <code>function</code> object at audio-rate in rnbo. It also uses <a href="https://github.com/h1data/max-custom-adsr">h1data</a>'s custom gen~ adsr.</p>
-<p><code>jb.looper</code> uses Leigh Marble's <a href="https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c">tap_processor</a>.</p>
-<p><code>gp.filterdelaywrap</code> uses Alex M's <a href="https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341">springto</a></p>
-<p>The licence checker uses Floating Point's <a href="https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8">Gregorian-Julian date converter</a>. </p>
+<p>The pitch shifter, overdrive, noise gates, plate reverbs, limiters, and compressors are from the <a href="https://cycling74.com/products/rnbo-guitar-pedals">RNBO Guitar Pedals Package</a>. <a href="https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf">K-weighting</a> has been added to the compressor and limiter's sidechain.</p>
+<p>A handful of gen abstractions are from <a href="https://github.com/grrrwaaa">Graham Wakefield</a> &amp; <a href="https://cycling74.com/articles/an-interview-with-gregory-taylor">Gregory Taylor</a> - <a href="https://cycling74.com/books/go">Generating Sound and Organizing Time</a></p>
+<p>The thumbstick deadzones in <code>deadzone scaled radial.maxpat</code> are thanks to <a href="https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2">TFL</a>, <a href="https://github.com/Minimuino/thumbstick-deadzones">Minimuino</a>, and <a href="https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html">Josh Sutphin</a></p>
+<p><code>jb.autowah</code> and <code>jb.kickduck</code> use Emmanuel Jourdan / Oren Shoham's <a href="https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2">function emulator</a> </p>
+<p><code>jb.autowah</code> uses h1data's <a href="https://github.com/h1data/max-custom-adsr">gen~ adsr</a></p>
+<p><code>jb.looper</code> uses Leigh Marble's <a href="https://cycling74.com/forums/how-to-make-a-double-tapclick-button-for-monome#reply-58ed2100b7244922ce26383c">tap_processor</a></p>
+<p><code>gp.filterdelaywrap</code> and <code>jb.autowah</code> use Alex M's <a href="https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341">springto</a></p>
+<p>The licence checker uses Floating Point's <a href="https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8">Gregorian-Julian date converter</a></p>
+<h2 id="media">Media</h2>
+<p>The drums are sampled from the infamous <a href="https://youtu.be/4k04fq91Rns">BKE Beat Thang</a></p>
+<p>The looper sound alerts are Mac OS 9's <a href="https://mac-classic.com/downloads/system-sounds">system sounds</a></p>
+<p>The input display uses pngs from <a href="https://kenney.nl/assets/input-prompts">Kenney's Input Prompts</a>, and an svg from <a href="https://www.svgrepo.com/svg/404309/white-circle">joypixels' Emojione Mono Emojis</a></p>
 <h2 id="filters">Filters</h2>
 <p><a href="https://www.surrealmachines.com/">Surreal Machines</a> - <a href="https://cycling74.com/articles/an-interview-with-surreal-machines">smFIlterPack</a></p>
 <ul>
@@ -755,14 +778,15 @@ https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 <p>The LPF freq mod LFO is tapered to match the <a href="https://software.moogmusic.com/store/mf-101s">Moog MF-101S</a>' filter freq parameter. </p>
 </div>
 <h2 id="docs">Docs</h2>
-<p>SousaFX's documentation is made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.</p>
-<p>The <a href="../eula/">EULA</a> is modified from <a href="https://www.reaper.fm/">Reaper's</a>.</p>
+<p>SousaFX's documentation is made with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<p>The <a href="../eula/">EULA</a> is modified from <a href="https://www.reaper.fm/">Reaper's</a></p>
+<p>The <a href="../bindings/">gamepad image</a> is modified from <a href="https://doc.stride3d.net/4.0/en/manual/input/gamepads.html">Stride's</a></p>
 <h2 id="many-thanks-to">Many thanks to</h2>
 <p>Brooklyn College's Sonic Arts program, and Performance and Interactive Media Arts Program</p>
 <p>The Jim and Jamie Self Creative Award</p>
 <p>Cycling 74`</p>
 <p>Eventide Audio</p>
-<p><a href="https://www.youtube.com/watch?v=f7TNKVm4E20">Brian Wolff</a></p>
+<p>Brian Wolff</p>
 <p>My friends and family</p>
 <p>Everyone in the Max discord channel</p>
 <p>YOU for reading this far :)</p>

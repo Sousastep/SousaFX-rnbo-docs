@@ -455,9 +455,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start-select-cardinal" class="md-nav__link">
+  <a href="#start-select-n-e-s-w" class="md-nav__link">
     <span class="md-ellipsis">
-      Start, Select, Cardinal
+      Start, Select, N E S W
     </span>
   </a>
   
@@ -597,15 +597,6 @@
   <a href="#right" class="md-nav__link">
     <span class="md-ellipsis">
       Right
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#left-and-right" class="md-nav__link">
-    <span class="md-ellipsis">
-      Left and Right
     </span>
   </a>
   
@@ -761,9 +752,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start-select-cardinal" class="md-nav__link">
+  <a href="#start-select-n-e-s-w" class="md-nav__link">
     <span class="md-ellipsis">
-      Start, Select, Cardinal
+      Start, Select, N E S W
     </span>
   </a>
   
@@ -908,15 +899,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#left-and-right" class="md-nav__link">
-    <span class="md-ellipsis">
-      Left and Right
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -945,8 +927,8 @@
 </style>
 
 <h1 id="bindings">Bindings</h1>
-<p>A list of all connections between the game controller and audio effect parameters.</p>
-<h2 id="start-select-cardinal">Start, Select, Cardinal</h2>
+<p><img alt="gamepad" src="../img/gamepad.webp" /></p>
+<h2 id="start-select-n-e-s-w">Start, Select, N E S W</h2>
 <p>Start and Select are used for changing the function of the North, East, South, and West buttons.</p>
 <ul>
 <li>
@@ -1023,7 +1005,7 @@
 </tr>
 <tr>
 <td>east</td>
-<td></td>
+<td>increment drum kit preset number</td>
 </tr>
 <tr>
 <td>south</td>
@@ -1056,7 +1038,7 @@
 </tr>
 <tr>
 <td>south</td>
-<td>increment drum kit preset number</td>
+<td></td>
 </tr>
 <tr>
 <td>west</td>
@@ -1096,9 +1078,9 @@
 </table>
 <p>While the tuba is playing, or the drum looper is looping, the shoulder buttons operate as follows:</p>
 <p>The left trigger, and right bumper, are used to adjust the function of the thumbsticks.</p>
-<p>Holding the right trigger lets an ADSR modulate the overdriven lowpass filter.</p>
+<p>Holding the right trigger lets an ADSR modulate the overdriven lowpass filter whenever the tuba articulates.</p>
 <h3 id="d-pad">D-pad</h3>
-<p>The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. </p>
+<p>The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. </p>
 <p>The left trigger is used for changing the function of the d-pad and the left bumper.</p>
 <ul>
 <li>
@@ -1184,6 +1166,8 @@
 </table>
 </li>
 </ul>
+<p>If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. </p>
+<p>If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes.</p>
 <h2 id="left-thumbstick">Left Thumbstick</h2>
 <h3 id="vertical">Vertical</h3>
 <ul>
@@ -1221,10 +1205,6 @@
 <li>
 <p>LFO shape:</p>
 <p>Allowed while select is pressed.</p>
-</li>
-<li>
-<p>Delay time adjustment for bassline, solo, drums, and loopers:</p>
-<p>Allowed while the left trigger is pressed.</p>
 </li>
 </ul>
 <h3 id="left">Left</h3>
@@ -1281,7 +1261,7 @@
 <h3 id="horizontal_1">Horizontal</h3>
 <ul>
 <li>
-<p>Delay filter frequency adjustment for bassline, solo, drums, and loopers.</p>
+<p>Delay's feedback loop's lowpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, solo, drums, and loopers.</p>
 </li>
 <li>
 <p>Stutter Acceleration for bassline, solo, drums, and loopers:</p>
@@ -1295,7 +1275,14 @@
 </ul>
 <h3 id="left_1">Left</h3>
 <ul>
-<li>Bassline delay send, and solo delay send.</li>
+<li>
+<p>Bassline delay send, and solo delay send.</p>
+</li>
+<li>
+<p>Drum delay send, and bassline looper delay send:</p>
+<p>Allowed when the tuba's silent, &amp; the right thumbstick is within its deadzone.</p>
+<p>Disallowed when the tuba starts playing.</p>
+</li>
 </ul>
 <h3 id="right">Right</h3>
 <ul>
@@ -1306,14 +1293,6 @@
 <p>Bassline looper reverb send, and Drum reverb send:</p>
 <p>Allowed when the tuba's silent, &amp; the right thumbstick is within its deadzone.</p>
 <p>Denied when the tuba's playing, &amp; the right thumbstick is within its deadzone.</p>
-</li>
-</ul>
-<h3 id="left-and-right">Left and Right</h3>
-<ul>
-<li>
-<p>Drum delay send, and bassline looper delay send:</p>
-<p>Allowed when the tuba's silent, &amp; the right thumbstick is within its deadzone.</p>
-<p>Disallowed when the tuba starts playing.</p>
 </li>
 </ul>
 
