@@ -203,6 +203,12 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Bassline delay send, and solo delay send.
 
+- Drum delay send, and bassline looper delay send:
+
+	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
+
+	Disallowed when the tuba starts playing.
+
 ### Right
 
 - Main reverb send.
@@ -212,12 +218,4 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
 	Denied when the tuba's playing, & the right thumbstick is within its deadzone.
-
-### Left and Right
-
-- Drum delay send, and bassline looper delay send:
-
-	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
-
-	Disallowed when the tuba starts playing.
 
