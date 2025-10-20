@@ -100,8 +100,6 @@ SousaFX's documentation is made with [Material for MkDocs](https://squidfunk.git
 
 The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/)
 
-The [gamepad image](bindings.md) is modified from [Stride's](https://doc.stride3d.net/4.0/en/manual/input/gamepads.html)
-
 ## Many thanks to
 
 Brooklyn College's Sonic Arts program, and Performance and Interactive Media Arts Program

@@ -36,7 +36,7 @@ Start and Select are used for changing the function of the North, East, South, a
 	| Direction | Function |
 	|-----------|----------|
 	| north 	| toggle metronome |
-	| east 		| increment drum kit preset number |
+	| east 		| randomize drum samples |
 	| south 	| toggle bumper drumming |
 	| west 		|  |
 
@@ -106,7 +106,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LFO floor envelope sensitivity.
 
-- Envelope crossfade position.
+- Crossfade position.
 
 - Bassline looper filtersweep.
 
