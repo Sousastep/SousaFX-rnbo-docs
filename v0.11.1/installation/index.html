@@ -393,12 +393,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../loopers/" class="md-nav__link">
+      <a href="../bindings/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Loopers
+    Bindings
     
   </span>
   
@@ -415,12 +415,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../bindings/" class="md-nav__link">
+      <a href="../loopers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Bindings
+    Loopers
     
   </span>
   
@@ -588,14 +588,22 @@
 <p>Click on "menubar &gt; Max &gt; Preferences..."</p>
 <p><img alt="main" src="../img/max_prefs.webp" /></p>
 <ul>
-<li>Set the Audio Input Device and Output Device to the connected audio interface.</li>
+<li>Set the Audio Input Device and Output Device to the connected audio interface</li>
 <li>Set the Sampling Rate to 48000</li>
-<li>Set the two Vector Sizes to 64.</li>
-<li>Enable Overdrive and Scheduler in Audio Interrupt.</li>
-<li>Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button.</li>
-<li>Set Input Mapping 1 to the tuba's mic.</li>
 <li>
-<p>Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs.</p>
+<p>Set the two Vector Sizes to 128 or less</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lower vector sizes result in lower latency, and better timing, but a higher possibility of CPU-overload-induced crackles in the audio.</p>
+</div>
+</li>
+<li>
+<p>Enable Overdrive (but not Scheduler in Audio Interrupt)</p>
+</li>
+<li>Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button</li>
+<li>Set Input Mapping 1 to the tuba's mic</li>
+<li>
+<p>Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs</p>
 <p><img alt="main" src="../img/max_iomap.webp" /></p>
 </li>
 </ul>
