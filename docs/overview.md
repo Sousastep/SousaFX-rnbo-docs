@@ -282,3 +282,17 @@ Sets the reverb parameters for the bassline, for the tuba solo, and the snare cl
 - Drums
 
 	Reverb for the snare, clap, & tom.
+
+
+
+## EQs
+
+![eq](img/eq_params.webp)
+
+Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs tame those frequencies.
+
+The tuba's sub frequencies drop precipitously below 80 Hz. The low boost can compensate for that to an extent.
+
+The highpass and lowpass cut extraneous frequencies from the mic's input signal.
+
+

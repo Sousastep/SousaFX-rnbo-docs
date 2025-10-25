@@ -110,6 +110,11 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Bassline looper filtersweep.
 
+- LFO Pow:
+
+	Allowed while select is pressed.
+
+
 ### Up 
 
 - Drum stutter enable:
