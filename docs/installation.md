@@ -11,21 +11,17 @@
 
 	![main](img/max_prefs.webp)
 
-	- Set the Audio Input Device and Output Device to the connected audio interface
-	- Set the Sampling Rate to 48000
-	- Set the two Vector Sizes to 128 or less
+	- Set the Audio Input Device and Output Device to the connected audio interface.
+	- Set the Sampling Rate to 48000.
+	- Set the two Vector Sizes to 128 or less. Lower vector sizes result in lower latency, and better timing, but a higher possibility of CPU-overload-induced crackles in the audio.
+	- Enable Overdrive (but not Scheduler in Audio Interrupt).
+	- Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button. These mapping will likely be correct by default, but it's good to check.
 
-		!!! note
+	![main](img/max_iomap.webp)
 
-			Lower vector sizes result in lower latency, and better timing, but a higher possibility of CPU-overload-induced crackles in the audio.
-
-	- Enable Overdrive (but not Scheduler in Audio Interrupt)
-	- Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button
-	- Set Input Mapping 1 to the tuba's mic
-	- Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs
-
-		![main](img/max_iomap.webp)
-
+	- Set Input Mapping 1 to the tuba's mic. (For my interface that's "Mic/Line 1")
+	- Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs. (For my interface that's "Analog 1" for the left speaker output, "Analog 2" for the right speaker output, "Phones 3" for the left headphone output, and "Phones 4" for the right headphone output)
+	- The rest of the IO mappings can be Off.
 
 3. Download [SousaFX](https://github.com/Sousastep/SousaFX-rnbo/releases) to your `~/Documents/​Max 9/​Projects/` folder, then double-click `SousaFX-rnbo.maxproj` to launch the rig.
 

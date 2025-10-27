@@ -2,7 +2,7 @@
 
 ## Patchers
 
-The pitch shifter, overdrive, noise gates, plate reverbs, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor and limiter's sidechain.
+The pitch shifter, overdrive, noise gates, plate reverbs, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor sidechain.
 
 A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
 

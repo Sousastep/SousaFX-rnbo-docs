@@ -1,5 +1,11 @@
 # Modding
 
+## Drums
+
+The drum samples can be changed by replacing the files in the kick, snare, clap, and tom folders in `/SousaFX-rnbo/media/`
+
+## Code
+
 To access the internals (on mac):
 
 Clone this repository: [https://github.com/Sousastep/SousaFX-rnbo](https://github.com/Sousastep/SousaFX-rnbo) (or click the green "Code" button, then click "Download ZIP")

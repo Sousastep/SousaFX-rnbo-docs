@@ -14,6 +14,8 @@ The following windows may be opened via the FX Parameters menu:
 
 - [Reverbs](overview.md#reverbs)
 
+- [EQs](overview.md#eqs)
+
 ## Main Window
 
 ![main](img/main_window.webp)
