@@ -588,24 +588,17 @@
 <p>Click on "menubar &gt; Max &gt; Preferences..."</p>
 <p><img alt="main" src="../img/max_prefs.webp" /></p>
 <ul>
-<li>Set the Audio Input Device and Output Device to the connected audio interface</li>
-<li>Set the Sampling Rate to 48000</li>
-<li>
-<p>Set the two Vector Sizes to 128 or less</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Lower vector sizes result in lower latency, and better timing, but a higher possibility of CPU-overload-induced crackles in the audio.</p>
-</div>
-</li>
-<li>
-<p>Enable Overdrive (but not Scheduler in Audio Interrupt)</p>
-</li>
-<li>Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button</li>
-<li>Set Input Mapping 1 to the tuba's mic</li>
-<li>
-<p>Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs</p>
+<li>Set the Audio Input Device and Output Device to the connected audio interface.</li>
+<li>Set the Sampling Rate to 48000.</li>
+<li>Set the two Vector Sizes to 128 or less. Lower vector sizes result in lower latency, and better timing, but a higher possibility of CPU-overload-induced crackles in the audio.</li>
+<li>Enable Overdrive (but not Scheduler in Audio Interrupt).</li>
+<li>Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button. These mapping will likely be correct by default, but it's good to check.</li>
+</ul>
 <p><img alt="main" src="../img/max_iomap.webp" /></p>
-</li>
+<ul>
+<li>Set Input Mapping 1 to the tuba's mic. (For my interface that's "Mic/Line 1")</li>
+<li>Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs. (For my interface that's "Analog 1" for the left speaker output, "Analog 2" for the right speaker output, "Phones 3" for the left headphone output, and "Phones 4" for the right headphone output)</li>
+<li>The rest of the IO mappings can be Off.</li>
 </ul>
 </li>
 <li>
