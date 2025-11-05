@@ -28,7 +28,7 @@ Start and Select are used for changing the function of the North, East, South, a
 	|-----------|----------|
 	| north 	| toggle kick-ducker |
 	| east 		| toggle kick-ducker |
-	| south 	| toggle kick-ducker |
+	| south 	| toggle scatter fx for bassline looper stutter |
 	| west 		| toggle kick-ducker |
 
 - With select pressed:
@@ -44,10 +44,10 @@ Start and Select are used for changing the function of the North, East, South, a
 
 	| Direction | Function |
 	|-----------|----------|
-	| north 	| set time signature numerator via number of clicks (3 - 7)|
-	| east 		|  |
+	| north 	| set time signature numerator via number of clicks (3 - 7). Hold to set to 4. |
+	| east 		| set drum looper length in bars via number of clicks (4 - 16). Hold to set to 8. |
 	| south 	|  |
-	| west 		|  |
+	| west 		| set bassline looper length in bars via number of clicks (4 - 16). Hold to set to 16. |
 
 ## Shoulder Buttons
 
@@ -68,7 +68,7 @@ Holding the right trigger lets an ADSR modulate the overdriven lowpass filter wh
 
 ### D-pad
 
-The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. 
+The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters.
 
 The left trigger is used for changing the function of the d-pad and the left bumper.
 
@@ -98,7 +98,8 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
 
-If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes.
+If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
+
 
 ## Left Thumbstick
 
@@ -141,7 +142,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Left
 
-- looper stutter enable:
+- Bassline looper stutter enable:
 
 	Allowed when the bassline looper is looping, & the left thumbstick is within its deadzone.
 
@@ -172,7 +173,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
-	Disallowed when tuba starts playing.
+	Denied when tuba starts playing.
 
 - LFO acceleration:
 
@@ -188,7 +189,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
-	Disallowed when tuba starts playing.
+	Denied when tuba starts playing.
 
 ### Horizontal
 
@@ -206,7 +207,11 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Left
 
-- Bassline delay send, and solo delay send.
+- Bassline delay send & solo delay send:
+
+	Denied when the left trigger is pressed.
+
+	Allowed when the left trigger is released, & the right thumbstick is within its deadzone.
 
 - Drum delay send, and bassline looper delay send:
 

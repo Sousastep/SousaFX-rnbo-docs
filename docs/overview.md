@@ -26,9 +26,11 @@ Closing this window quits SousaFX.
 
 The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, < 128, < 128, On, and On, respectively.
 
-The x toggle makes the white border flash in time with the metronome.
+The top x toggle rounds the tempo to an integer.
 
-To the right of the toggle is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-n-e-s-w).
+The bottom x toggle makes the white border flash in time with the metronome.
+
+To the right of the toggles is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-n-e-s-w).
 
 Next is the time signature numerator, which can be set by tapping [North](bindings.md#start-select-n-e-s-w) while holding Start and Select. 
 
@@ -291,10 +293,10 @@ Sets the reverb parameters for the bassline, for the tuba solo, and the snare cl
 
 ![eq](img/eq_params.webp)
 
-Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs tame those frequencies.
+Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs can tame those frequencies.
 
-The tuba's sub frequencies drop precipitously below 80 Hz. The low boost can compensate for that to an extent.
+The tuba's sub frequencies drop precipitously below 60 Hz. The low boost can compensate for that to an extent. This can, however, exacerbate feedback.
 
-The highpass and lowpass cut extraneous frequencies from the mic's input signal.
+The mic's lowpass cuts extraneous high frequencies from the mic's input signal.
 
 
