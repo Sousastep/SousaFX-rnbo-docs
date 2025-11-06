@@ -79,3 +79,4 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - def_list
+
