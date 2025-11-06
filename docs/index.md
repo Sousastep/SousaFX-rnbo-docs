@@ -2,7 +2,7 @@
 
 SousaFX is a multi-effects rig made with [Max/RNBO](https://cycling74.com/products/rnbo) with the goal of bringing [dubstep](https://www.youtube.com/watch?v=E7fakBm0H_Q) into the repertoire of genres that tubists can play. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
 
-- Dub-style filter delays with separate parameters for input volume and feedback amount.
+- Dub-style delays with separate parameters for feedback amount and input volume.
 - Reversible stutters with acceleration via phase-locked loops.
 - 64 drums samples, playable with the bumpers and triggers.
 - Two one-button loopers, one for the bassline and one for the drums.

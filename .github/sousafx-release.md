@@ -15,6 +15,11 @@ git push origin --all
 OFFLINE=true mkdocs build --clean --site-dir /Users/jbaylies/Documents/Max\ 8/Projects/SousaFX-rnbo/.docs
 ```
 
+!!! note
+
+	github seems to autodeploy the ghpages branch only once per day, so don't assume it works every push.
+
+
 ## sousaFX-rnbo
 ```
 cd ~/Documents/Max\ 8/Projects/SousaFX-rnbo && git status
@@ -42,3 +47,8 @@ file edits
 zip, named sousaFX-v#.#.#.zip
 
 attach zip to github release as a binary.
+
+download zip to blank test user profile on macbook
+
+give it a whirl
+
