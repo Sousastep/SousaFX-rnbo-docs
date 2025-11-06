@@ -26,7 +26,7 @@ To the top left of the white box, is the game controller input display. The two 
 
 To the right are the input volume meters. 
 
-Below are the Looper Status displays for the tuba bassline looper, and drum looper. The number displays the loop length in bars.
+Below are the status displays for the [tuba bassline looper, and drum looper](loopers.md). The number displays the loop length in bars.
 
 | color     | status 	|
 |-----------|-----------|

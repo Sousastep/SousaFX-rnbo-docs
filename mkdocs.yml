@@ -1,11 +1,11 @@
 site_name: sousafx
 site_url: https://rnbo.sousastep.quest/
 nav:
-  - Intro: index.md
+  - Introduction: index.md
   - Hardware: hardware.md
   - Setup: setup.md
   - Installation: installation.md
-  - Docs: documentation.md
+  - Documentation: documentation.md
   - Overview: overview.md
   - Bindings: bindings.md
   - Loopers: loopers.md
