@@ -1,10 +1,12 @@
 # SousaFX Documentation
 
-SousaFX is a multi-effects rig made with [Max/RNBO](https://cycling74.com/products/rnbo), which uses a game controller attached to the side of the tuba to control a number of audio effects, including:
+SousaFX is a multi-effects rig made with [Max/RNBO](https://cycling74.com/products/rnbo) with the goal of bringing [dubstep](https://www.youtube.com/watch?v=E7fakBm0H_Q) into the repertoire of genres that tubists can play. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
 
-- A dubstep-style auto-wah with many facets tuned specifically for tuba basslines.
-- Drums samples, playable with the bumpers and triggers.
-- Two one-button loopers, one for the bassline and one for the drums.
-- Dub-style filter delays with separate input volume, and feedback amount parameters.
+- Dub-style filter delays with separate parameters for input volume and feedback amount.
 - Reversible stutters with acceleration via phase-locked loops.
+- 64 drums samples, playable with the bumpers and triggers.
+- Two one-button loopers, one for the bassline and one for the drums.
 - DJ-style HP/LP filters.
+- An auto-wah carefully tuned for playing dubstep with a game controller attached to a tuba. 
+
+![sousa gamepad](img/sousa_gamepad.webp)

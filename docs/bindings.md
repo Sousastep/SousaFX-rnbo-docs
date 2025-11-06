@@ -76,7 +76,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| L2 		| disable auto-wah LFO |
+	| L2 		| enable manual filter frequency control |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -98,7 +98,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
 
-If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
+If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held briefly, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
 
 
 ## Left Thumbstick
@@ -156,6 +156,10 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Lowpass filter resonance boost.
 
+- Manual filter frequency control.
+
+	Allowed only while the left bumper is held.
+
 !!! note
 
 	The magnitude is the distance of the thumbstick from the center.
@@ -201,9 +205,9 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Denied when the right bumper is pressed, & the right thumbstick is within its deadzone.
 
-- Drum retrigger rate adjustment:
+- Drum retrigger rate acceleration:
 
-	While the drum samples are being retriggered, this adjusts the retrigger rate.
+	While the drum samples are being retriggered, this changes the speed.
 
 ### Left
 

@@ -1,21 +1,5 @@
 # Overview
 
-## Menubar
-
-![menubar](img/menubar.webp)
-
-The following windows may be opened via the FX Parameters menu:
-
-- [Bassline](overview.md#bassline)
-
-- [Compressors and Limiters](overview.md#compressors-and-limiters)
-
-- [Delays](overview.md#delays)
-
-- [Reverbs](overview.md#reverbs)
-
-- [EQs](overview.md#eqs)
-
 ## Main Window
 
 ![main](img/main_window.webp)
@@ -24,11 +8,11 @@ Closing this window quits SousaFX.
 
 ### Status Bar
 
-The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, < 128, < 128, On, and On, respectively.
+The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, On, and Off, respectively.
 
-The top x toggle rounds the tempo to an integer.
+The top "X" toggle rounds the tempo to an integer.
 
-The bottom x toggle makes the white border flash in time with the metronome.
+The bottom "X" toggle makes the white border flash in time with the metronome.
 
 To the right of the toggles is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-n-e-s-w).
 
@@ -38,11 +22,11 @@ Next is the audio engine power button, along with the CPU meter. The audio engin
 
 ### Displays
 
-To the top left of the white box, is the game controller input display.
+To the top left of the white box, is the game controller input display. The two percentages set the size of the respective thumbstick's [deadzone](https://minimuino.github.io/thumbstick-deadzones/).
 
 To the right are the input volume meters. 
 
-Below are the Looper Status displays for the tuba bassline looper, and drum looper.
+Below are the Looper Status displays for the tuba bassline looper, and drum looper. The number displays the loop length in bars.
 
 | color     | status 	|
 |-----------|-----------|
@@ -87,15 +71,33 @@ The Restore button discards all changes and restores the previous save.
 
 On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
 
+## Menubar
+
+![menubar](img/menubar.webp)
+
+The following windows may be opened via the FX Parameters menu:
+
+- [Bassline](overview.md#bassline)
+
+- [Compressors and Limiters](overview.md#compressors-and-limiters)
+
+- [Delays](overview.md#delays)
+
+- [Reverbs](overview.md#reverbs)
+
+- [EQs](overview.md#eqs)
+
 ## Bassline
 
 ![wah](img/autowah_params.webp)
 
+This is the heart of SousaFX, and sets the tone of the bassline. We'll start with the topmost dial:
+
 ### crossfade env sens
 
-This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfader starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound becomes.
+This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
 
-The crossfade's range is adjusted via the "envelope crossfade position" [binding](bindings.md#left-thumbstick).
+The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick).
 
 ### LFO env sens
 
@@ -105,13 +107,13 @@ The louder the tuba plays, the higher the LFO's ceiling and floor become.
 
 The "LFO env sens" dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
 
-In addition, two [bindings](bindings.md#left-thumbstick) adjust the ceiling and floor envelope sensitivities separately as well, with a slightly different taper than the "LFO env sens" parameter:
+In addition, two [bindings](bindings.md#left-thumbstick) adjust the ceiling and floor envelope sensitivities separately as well:
 
 - LFO floor envelope sensitivity
 
 - LFO ceiling envelope sensitivity
 
-The following dials curve the aformentioned bindings:
+The following dials positioned below "LFO env sens" curve the aformentioned bindings:
 
 - LFO ceiling env sens binding curve
 
@@ -145,6 +147,8 @@ The toggle on the right allows the lowpass filter type to randomize whenever the
 
 ### Detune
 
+These parameters set the tone of the dryer detuned sound on the louder end of the crossfade. This signal is compressed by the pre-xfade-dry compressor.
+
 - mix
 
 	wet / dry mixer, 100% is all wet signal
@@ -163,6 +167,8 @@ The toggle on the right allows the lowpass filter type to randomize whenever the
 
 ### Overdrive
 
+These parameters set the tone of the overdriven lowpass filtered sound on the quieter end of the crossfade. This signal is compressed by the pre-xfade-wet conpressor.
+
 - mix
 
 	wet / dry mixer, 100% is all wet signal
@@ -179,6 +185,8 @@ The toggle on the right allows the lowpass filter type to randomize whenever the
 
 - mid
 
+	This mid boost is tamed by the pre-xfade-wet conpressor's sidechain eq's "hi mid gain".
+
 - midfreq
 
 - bass
@@ -191,9 +199,9 @@ The toggle on the right allows the lowpass filter type to randomize whenever the
 
 This window displays two limiters and six compressors
 
-- init
+- Initial Limiter
 
-	This limiter is immediately after the mic input and cuts the top off of all the attacks.
+	This limiter is immediately after the mic input and cuts the top off of all the attacks so that the compressors further down the chain don't have to work as hard.
 
 !!! note
 
@@ -219,7 +227,7 @@ This window displays two limiters and six compressors
 
 	This compressor is for the final mixdown.
 
-- last
+- Last Limiter
 
 	This limiter is after the final compressor.
 
@@ -229,7 +237,7 @@ This window displays two limiters and six compressors
 
 ![delay](img/delay_params.webp)
 
-Separate delays for the main input, the bassline looper, the tuba solo, and the drums.
+Separate delays for the main input, the bassline looper, the tuba solo, and the drums. The [d-pad](bindings.md/#d-pad) controls the delays' subdivisions.
 
 - output volume
 

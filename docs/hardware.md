@@ -2,7 +2,7 @@
 
 1. Computer:
 
-	Any m-series mac is recommended, but an equivalent windows PC can work, too. To optimize your computer for audio performance, [check out Ableton's articles](https://help.ableton.com/hc/en-us/search?utf8=%E2%9C%93&query=optimize). SousaFX is tested on a minimum-specification m1 macbook pro.
+	Any m-series mac is recommended, and an equivalent windows PC can work, too. To optimize your computer for audio performance, [check out Ableton's articles](https://help.ableton.com/hc/en-us/search?utf8=%E2%9C%93&query=optimize). SousaFX is tested on a minimum-specification m1 macbook pro.
 
 2. Audio interface:
 
