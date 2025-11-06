@@ -76,7 +76,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| L2 		| enable manual filter frequency control |
+	| LB 		| enable manual filter frequency control |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -90,7 +90,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| L2 		| half |
+	| LB 		| half |
 	| d-pad up 	| quarter triplet |
 	| right 	| 16th triplet |
 	| down		| quarter quintuplet |
