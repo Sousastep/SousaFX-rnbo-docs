@@ -980,7 +980,7 @@
 </tr>
 <tr>
 <td>south</td>
-<td>toggle kick-ducker</td>
+<td>toggle scatter fx for bassline looper stutter</td>
 </tr>
 <tr>
 <td>west</td>
@@ -1030,11 +1030,11 @@
 <tbody>
 <tr>
 <td>north</td>
-<td>set time signature numerator via number of clicks (3 - 7)</td>
+<td>set time signature numerator via number of clicks (3 - 7). Hold to set to 4.</td>
 </tr>
 <tr>
 <td>east</td>
-<td></td>
+<td>set drum looper length in bars via number of clicks (4 - 16). Hold to set to 8.</td>
 </tr>
 <tr>
 <td>south</td>
@@ -1042,7 +1042,7 @@
 </tr>
 <tr>
 <td>west</td>
-<td></td>
+<td>set bassline looper length in bars via number of clicks (4 - 16). Hold to set to 16.</td>
 </tr>
 </tbody>
 </table>
@@ -1080,7 +1080,7 @@
 <p>The left trigger, and right bumper, are used to adjust the function of the thumbsticks.</p>
 <p>Holding the right trigger lets an ADSR modulate the overdriven lowpass filter whenever the tuba articulates.</p>
 <h3 id="d-pad">D-pad</h3>
-<p>The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters. </p>
+<p>The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters.</p>
 <p>The left trigger is used for changing the function of the d-pad and the left bumper.</p>
 <ul>
 <li>
@@ -1095,7 +1095,7 @@
 <tbody>
 <tr>
 <td>L2</td>
-<td>disable auto-wah LFO</td>
+<td>enable manual filter frequency control</td>
 </tr>
 <tr>
 <td>d-pad up</td>
@@ -1167,7 +1167,7 @@
 </li>
 </ul>
 <p>If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. </p>
-<p>If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held for a second, then released, the delays will pitch shift while the delay time changes.</p>
+<p>If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held briefly, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.</p>
 <h2 id="left-thumbstick">Left Thumbstick</h2>
 <h3 id="vertical">Vertical</h3>
 <ul>
@@ -1214,7 +1214,7 @@
 <h3 id="left">Left</h3>
 <ul>
 <li>
-<p>looper stutter enable:</p>
+<p>Bassline looper stutter enable:</p>
 <p>Allowed when the bassline looper is looping, &amp; the left thumbstick is within its deadzone.</p>
 <p>Denied when the bassline looper isn't looping, &amp; the left thumbstick is within its deadzone.</p>
 <p>Momentarily disallowed while RB is held down.</p>
@@ -1225,7 +1225,13 @@
 </ul>
 <h3 id="magnitude">Magnitude</h3>
 <ul>
-<li>Lowpass filter resonance boost.</li>
+<li>
+<p>Lowpass filter resonance boost.</p>
+</li>
+<li>
+<p>Manual filter frequency control.</p>
+<p>Allowed only while the left bumper is held.</p>
+</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1243,7 +1249,7 @@
 <li>
 <p>Drum delay feedback amount:</p>
 <p>Allowed when the tuba's silent, &amp; the right thumbstick is within its deadzone.</p>
-<p>Disallowed when tuba starts playing.</p>
+<p>Denied when tuba starts playing.</p>
 </li>
 <li>
 <p>LFO acceleration:</p>
@@ -1259,7 +1265,7 @@
 <li>
 <p>Bassline looper delay feedback amount:</p>
 <p>Allowed when the tuba's silent, &amp; the right thumbstick is within its deadzone.</p>
-<p>Disallowed when tuba starts playing.</p>
+<p>Denied when tuba starts playing.</p>
 </li>
 </ul>
 <h3 id="horizontal_1">Horizontal</h3>
@@ -1273,14 +1279,16 @@
 <p>Denied when the right bumper is pressed, &amp; the right thumbstick is within its deadzone.</p>
 </li>
 <li>
-<p>Drum retrigger rate adjustment:</p>
-<p>While the drum samples are being retriggered, this adjusts the retrigger rate.</p>
+<p>Drum retrigger rate acceleration:</p>
+<p>While the drum samples are being retriggered, this changes the speed.</p>
 </li>
 </ul>
 <h3 id="left_1">Left</h3>
 <ul>
 <li>
-<p>Bassline delay send, and solo delay send.</p>
+<p>Bassline delay send &amp; solo delay send:</p>
+<p>Denied when the left trigger is pressed.</p>
+<p>Allowed when the left trigger is released, &amp; the right thumbstick is within its deadzone.</p>
 </li>
 <li>
 <p>Drum delay send, and bassline looper delay send:</p>

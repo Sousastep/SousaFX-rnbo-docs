@@ -411,15 +411,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#menubar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Menubar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#main-window" class="md-nav__link">
     <span class="md-ellipsis">
       Main Window
@@ -476,6 +467,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menubar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menubar
+    </span>
+  </a>
   
 </li>
       
@@ -764,15 +764,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#menubar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Menubar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#main-window" class="md-nav__link">
     <span class="md-ellipsis">
       Main Window
@@ -829,6 +820,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menubar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menubar
+    </span>
+  </a>
   
 </li>
       
@@ -945,39 +945,20 @@
 
 
 <h1 id="overview">Overview</h1>
-<h2 id="menubar">Menubar</h2>
-<p><img alt="menubar" src="../img/menubar.webp" /></p>
-<p>The following windows may be opened via the FX Parameters menu:</p>
-<ul>
-<li>
-<p><a href="./#bassline">Bassline</a></p>
-</li>
-<li>
-<p><a href="./#compressors-and-limiters">Compressors and Limiters</a></p>
-</li>
-<li>
-<p><a href="./#delays">Delays</a></p>
-</li>
-<li>
-<p><a href="./#reverbs">Reverbs</a></p>
-</li>
-<li>
-<p><a href="./#eqs">EQs</a></p>
-</li>
-</ul>
 <h2 id="main-window">Main Window</h2>
 <p><img alt="main" src="../img/main_window.webp" /></p>
 <p>Closing this window quits SousaFX.</p>
 <h3 id="status-bar">Status Bar</h3>
-<p>The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, &lt; 128, &lt; 128, On, and On, respectively.</p>
-<p>The x toggle makes the white border flash in time with the metronome.</p>
-<p>To the right of the toggle is the tempo in beats per minute, which can be set by tapping <a href="../bindings/#start-select-n-e-s-w">North</a>.</p>
+<p>The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, &lt;= 128, &lt;= 128, On, and Off, respectively.</p>
+<p>The top "X" toggle rounds the tempo to an integer.</p>
+<p>The bottom "X" toggle makes the white border flash in time with the metronome.</p>
+<p>To the right of the toggles is the tempo in beats per minute, which can be set by tapping <a href="../bindings/#start-select-n-e-s-w">North</a>.</p>
 <p>Next is the time signature numerator, which can be set by tapping <a href="../bindings/#start-select-n-e-s-w">North</a> while holding Start and Select. </p>
 <p>Next is the audio engine power button, along with the CPU meter. The audio engine will auto-start when SousaFX is launched, and can be toggled off to mute SousaFX.</p>
 <h3 id="displays">Displays</h3>
-<p>To the top left of the white box, is the game controller input display.</p>
+<p>To the top left of the white box, is the game controller input display. The two percentages set the size of the respective thumbstick's <a href="https://minimuino.github.io/thumbstick-deadzones/">deadzone</a>.</p>
 <p>To the right are the input volume meters. </p>
-<p>Below are the Looper Status displays for the tuba bassline looper, and drum looper.</p>
+<p>Below are the Looper Status displays for the tuba bassline looper, and drum looper. The number displays the loop length in bars.</p>
 <table>
 <thead>
 <tr>
@@ -1036,16 +1017,37 @@
 <p>The Restore button discards all changes and restores the previous save.</p>
 <h3 id="layout">Layout</h3>
 <p>On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.</p>
+<h2 id="menubar">Menubar</h2>
+<p><img alt="menubar" src="../img/menubar.webp" /></p>
+<p>The following windows may be opened via the FX Parameters menu:</p>
+<ul>
+<li>
+<p><a href="./#bassline">Bassline</a></p>
+</li>
+<li>
+<p><a href="./#compressors-and-limiters">Compressors and Limiters</a></p>
+</li>
+<li>
+<p><a href="./#delays">Delays</a></p>
+</li>
+<li>
+<p><a href="./#reverbs">Reverbs</a></p>
+</li>
+<li>
+<p><a href="./#eqs">EQs</a></p>
+</li>
+</ul>
 <h2 id="bassline">Bassline</h2>
 <p><img alt="wah" src="../img/autowah_params.webp" /></p>
+<p>This is the heart of SousaFX, and sets the tone of the bassline. We'll start with the topmost dial:</p>
 <h3 id="crossfade-env-sens">crossfade env sens</h3>
-<p>This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfader starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound becomes.</p>
-<p>The crossfade's range is adjusted via the "envelope crossfade position" <a href="../bindings/#left-thumbstick">binding</a>.</p>
+<p>This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.</p>
+<p>The crossfade's range is actively adjusted via the "Crossfade Position" <a href="../bindings/#left-thumbstick">binding</a>.</p>
 <h3 id="lfo-env-sens">LFO env sens</h3>
 <p>This LFO modulates the lowpass filter frequency to create the dubstep wobble bass sound.</p>
 <p>The louder the tuba plays, the higher the LFO's ceiling and floor become.</p>
 <p>The "LFO env sens" dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.</p>
-<p>In addition, two <a href="../bindings/#left-thumbstick">bindings</a> adjust the ceiling and floor envelope sensitivities separately as well, with a slightly different taper than the "LFO env sens" parameter:</p>
+<p>In addition, two <a href="../bindings/#left-thumbstick">bindings</a> adjust the ceiling and floor envelope sensitivities separately as well:</p>
 <ul>
 <li>
 <p>LFO floor envelope sensitivity</p>
@@ -1054,7 +1056,7 @@
 <p>LFO ceiling envelope sensitivity</p>
 </li>
 </ul>
-<p>The following dials curve the aformentioned bindings:</p>
+<p>The following dials positioned below "LFO env sens" curve the aformentioned bindings:</p>
 <ul>
 <li>
 <p>LFO ceiling env sens binding curve</p>
@@ -1097,6 +1099,7 @@
 </ul>
 <p>The toggle on the right allows the lowpass filter type to randomize whenever the bassline looper starts looping.</p>
 <h3 id="detune">Detune</h3>
+<p>These parameters set the tone of the dryer detuned sound on the louder end of the crossfade. This signal is compressed by the pre-xfade-dry compressor.</p>
 <ul>
 <li>
 <p>mix</p>
@@ -1116,6 +1119,7 @@
 </li>
 </ul>
 <h3 id="overdrive">Overdrive</h3>
+<p>These parameters set the tone of the overdriven lowpass filtered sound on the quieter end of the crossfade. This signal is compressed by the pre-xfade-wet conpressor.</p>
 <ul>
 <li>
 <p>mix</p>
@@ -1136,6 +1140,7 @@
 </li>
 <li>
 <p>mid</p>
+<p>This mid boost is tamed by the pre-xfade-wet conpressor's sidechain eq's "hi mid gain".</p>
 </li>
 <li>
 <p>midfreq</p>
@@ -1152,8 +1157,8 @@
 <p>This window displays two limiters and six compressors</p>
 <ul>
 <li>
-<p>init</p>
-<p>This limiter is immediately after the mic input and cuts the top off of all the attacks.</p>
+<p>Initial Limiter</p>
+<p>This limiter is immediately after the mic input and cuts the top off of all the attacks so that the compressors further down the chain don't have to work as hard.</p>
 </li>
 </ul>
 <div class="admonition note">
@@ -1182,13 +1187,13 @@
 <p>This compressor is for the final mixdown.</p>
 </li>
 <li>
-<p>last</p>
+<p>Last Limiter</p>
 <p>This limiter is after the final compressor.</p>
 </li>
 </ul>
 <h2 id="delays">Delays</h2>
 <p><img alt="delay" src="../img/delay_params.webp" /></p>
-<p>Separate delays for the main input, the bassline looper, the tuba solo, and the drums.</p>
+<p>Separate delays for the main input, the bassline looper, the tuba solo, and the drums. The <a href="../bindings/#d-pad">d-pad</a> controls the delays' subdivisions.</p>
 <ul>
 <li>
 <p>output volume</p>
@@ -1246,9 +1251,9 @@
 </ul>
 <h2 id="eqs">EQs</h2>
 <p><img alt="eq" src="../img/eq_params.webp" /></p>
-<p>Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs tame those frequencies.</p>
-<p>The tuba's sub frequencies drop precipitously below 80 Hz. The low boost can compensate for that to an extent.</p>
-<p>The highpass and lowpass cut extraneous frequencies from the mic's input signal.</p>
+<p>Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs can tame those frequencies.</p>
+<p>The tuba's sub frequencies drop precipitously below 60 Hz. The low boost can compensate for that to an extent. This can, however, exacerbate feedback.</p>
+<p>The mic's lowpass cuts extraneous high frequencies from the mic's input signal.</p>
 
 
 
