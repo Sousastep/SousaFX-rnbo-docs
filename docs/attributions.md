@@ -102,7 +102,7 @@ The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/)
 
 ## Many thanks to
 
-Brooklyn College's Sonic Arts program, and Performance and Interactive Media Arts Program
+Brooklyn College's Sonic Arts program, and Performance & Interactive Media Arts Program
 
 The Jim and Jamie Self Creative Award
 
