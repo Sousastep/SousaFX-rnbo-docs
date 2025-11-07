@@ -23,7 +23,7 @@
 	- Set Output Mapping 1-2 to the speaker outputs, and 3-4 to the monitor/headphone outputs. (For my interface that's "Analog 1" for the left speaker output, "Analog 2" for the right speaker output, "Phones 3" for the left headphone output, and "Phones 4" for the right headphone output)
 	- The rest of the IO mappings can be Off.
 
-3. Download [SousaFX](https://github.com/Sousastep/SousaFX-rnbo/releases) to your `~/Documents/​Max 9/​Projects/` folder, then double-click `SousaFX-rnbo.maxproj` to launch the rig.
+3. Download [SousaFX-v0.11.1](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.1/SousaFX-v0.11.1.zip) to your `~/Documents/​Max 9/​Projects/` folder (create the Projects folder if it doesn't exist), then double-click `SousaFX-v0.11.1.maxproj` to launch the rig.
 
 	!!! note
 
