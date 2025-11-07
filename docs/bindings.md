@@ -177,7 +177,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
 
-	Denied when tuba starts playing.
+	Denied when tuba starts playing, & the right thumbstick is within its deadzone.
 
 - LFO acceleration:
 
