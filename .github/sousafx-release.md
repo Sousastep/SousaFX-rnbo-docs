@@ -28,7 +28,7 @@ git push origin --tags
 click the "0" above the `list.lookup external rnbopat` object to load the external.
 
 File > Save As Project...
-name sousaFX-v#.#.#
+name SousaFX-v#.#.#
 
 open project inspector
 	don't keep project folder organized
@@ -56,11 +56,17 @@ add files from /sousaFX-rnbo/ to /sousaFX-v#.#.#/:
 		/externals/externals/sousafx~.mxe64
 		/externals/externals/sousafx~.mxo
 		/externals/init/
-	/.docs/.
+	/.docs/. ---> see OFFLINE in sousaFX-rnbo-docs below
 
-zip, named sousaFX-v#.#.#.zip
+zip, named SousaFX-v#.#.#.zip
 
 download zip to blank user profile on macbook to test
+
+https://github.com/Sousastep/SousaFX-rnbo/releases
+
+Draft a new release
+
+Release Title:	SousaFX v#.#.#
 
 attach zip to github release as a binary.
 
