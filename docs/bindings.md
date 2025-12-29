@@ -16,49 +16,49 @@ Start and Select are used for changing the function of the North, East, South, a
 
 	| Direction | Function |
 	|-----------|----------|
-	| north 	| tap tempo |
-	| east 		| drum [looper](loopers.md) start / stop / clear |
-	| south 	| main stutter enable |
-	| west 		| bassline [looper](loopers.md) start / stop / clear |
+	| North 	| Tap tempo. |
+	| East 		| Drum [looper](loopers.md) start / stop / clear. |
+	| South 	| Momentarily enable main stutter. <br> To perma-enable: Press start/select before releasing South. |
+	| West 		| Bassline [looper](loopers.md) start / stop / clear. |
 
 
 - With start pressed:
 
 	| Direction | Function |
 	|-----------|----------|
-	| north 	| toggle kick-ducker |
-	| east 		| toggle kick-ducker |
-	| south 	| toggle scatter fx for bassline looper stutter |
-	| west 		| toggle kick-ducker |
+	| North 	| Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
+	| East 		| Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
+	| South 	| Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
+	| West 		| |
 
 - With select pressed:
 
 	| Direction | Function |
 	|-----------|----------|
-	| north 	| toggle metronome |
-	| east 		| randomize drum samples |
-	| south 	| toggle bumper drumming |
-	| west 		|  |
+	| North 	| Toggle metronome. |
+	| East 		| Randomize drum samples. |
+	| South 	| Toggle bumper drumming. |
+	| West 		|  |
 
 - With start and select pressed:
 
 	| Direction | Function |
 	|-----------|----------|
-	| north 	| set time signature numerator via number of clicks (3 - 7). Hold to set to 4. |
-	| east 		| set drum looper length in bars via number of clicks (4 - 16). Hold to set to 8. |
-	| south 	|  |
-	| west 		| set bassline looper length in bars via number of clicks (4 - 16). Hold to set to 16. |
+	| North 	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
+	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
+	| South 	|  |
+	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
 
 ## Shoulder Buttons
 
 While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
 
-| button 	| samples  |
+| Button 	| Samples  |
 |-----------|----------|
-| Left Trigger 		| clap     |
-| Left Bumper 		| snare    |
-| Right Trigger 		| tom      |
-| Right Bumper 		| kick     |
+| Left Trigger 		| Clap     |
+| Left Bumper 		| Snare    |
+| Right Trigger 	| Tom      |
+| Right Bumper 		| Kick     |
 
 While the tuba is playing, or the drum looper is looping, the shoulder buttons operate as follows:
 

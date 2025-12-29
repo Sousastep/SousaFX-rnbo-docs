@@ -1,8 +1,8 @@
 # Modding
 
-## Drums
+## Samples
 
-The drum samples can be changed by replacing the files in the kick, snare, clap, and tom folders in `/SousaFX-rnbo/media/`
+The drum samples, looper alerts, and metronome click can be changed by replacing the files in `/SousaFX-rnbo/media/`
 
 ## Code
 

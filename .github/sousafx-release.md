@@ -3,11 +3,12 @@
 test rnbo~ obj. once decently happy, cont.
 
 export to external
-	platform: all
-	external name: sousafx
-	author name: sousastep
-	description: dubstep tuba
-	popup: overwrite? yes
+	Output Directory:	~/Documents/Max 8/Projects/SousaFX-rnbo/externals
+	External Platform:	all
+	external name: 		sousafx
+	author name: 		sousastep
+	description: 		dubstep tuba
+	Overwrite? 			OK
 
 Open about_SousaFX.maxpat without the project.
 Open license bpatcher using the super secret method, save to trigger savebang clears.
@@ -24,7 +25,7 @@ git push
 git push origin --tags
 ```
 
-click the "0" next to the "external / rnbopat" switch to load the external.
+click the "0" above the `list.lookup external rnbopat` object to load the external.
 
 File > Save As Project...
 name sousaFX-v#.#.#

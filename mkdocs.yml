@@ -10,9 +10,8 @@ nav:
   - Bindings: bindings.md
   - Loopers: loopers.md
   - Purchase: purchase.md
-  - Prestige: prestige.md
-  - EULA: eula.md
   - Modding: modding.md
+  - Release Notes: releasenotes.md
   - Attributions: attributions.md
 
 theme:

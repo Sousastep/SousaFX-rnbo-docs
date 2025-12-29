@@ -12,6 +12,8 @@ You may use the discounted license if:
 	
 - You are an educational or non-profit organization.
 
+Please read the [End User License Agreement](eula.md) before purchasing.
+
 Payment may be sent via any of the following platforms. Please be sure to include the email address that you would like the license key sent to.
 
 [venmo](https://venmo.com/sousastep){ .md-button } [ko-fi](https://ko-fi.com/sousafx/shop){ .md-button } [github](https://github.com/sponsors/jbaylies?frequency=one-time){ .md-button }

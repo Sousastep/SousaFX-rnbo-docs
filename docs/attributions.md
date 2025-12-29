@@ -29,26 +29,6 @@ The input display uses pngs from [Kenney's Input Prompts](https://kenney.nl/asse
 
 ## Filters
 
-[Surreal Machines](https://www.surrealmachines.com/) - [smFIlterPack](https://cycling74.com/articles/an-interview-with-surreal-machines)
-
-- ladder
-
-	```
-	Zero Delay Feedback 24dB Lowpass Ladder filter, Newton-Raphson model
-	based on: "Computational optimization of nonlinear zero-delay feedback by second-order piecewise approximation"
-	and: “Preserving the LTI system topology in s- to z-plane transforms”
-	theory by Vadim Zavalishin, Native Instruments GmbH
-	gen~ realisation by Pete Dowling & Matt Jackson @Surreal Machines, thanks to Graham Wakefield
-	```
-
-- sallenkey
-
-	```
-	12/24dB multimode Sallen & Key filter
-	by Pete Dowling & Matt Jackson @Surreal Machines, thanks to Alex Harker
-	based on "Linear trapezoidal integrated filters" by Andy Simper
-	```
-
 [Ess Mattisson](https://fors.fm/) - [gen filters](https://github.com/ess-m/gen-filters)
 
 - fc.diode

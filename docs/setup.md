@@ -1,6 +1,12 @@
 # Setup
 
-1. Pair the game controller with the computer via bluetooth or cable. 
+1. Connect your computer, interface, mic, and monitors. 
+	
+	- On the interface, ensure that direct monitoring is disabled. 
+
+	- While playing tuba as loudly as possible, adjust the mic's input gain so that the mic peaks safely below clipping.
+
+2. Pair the game controller with the computer via bluetooth, and attach the controller to the tuba using velcro, cable ties, or rubber bands.
 
 	!!! note
 	
@@ -14,17 +20,3 @@
 			- Scroll up to your controller and select it
 			- Set “Use Profile” to the new profile
 			- Click “Done”
-	<br>
-
-2. Attach the controller to the tuba using velcro, cable ties, or rubber bands.
-	<br><br>
-
-3. Connect your computer, interface, mic, and monitors. 
-	
-	On the interface, ensure that direct monitoring is disabled. 
-
-	While playing tuba as loudly as possible, adjust the mic's input gain so that the mic peaks safely below clipping (around -10 dB).
-
-
-
-

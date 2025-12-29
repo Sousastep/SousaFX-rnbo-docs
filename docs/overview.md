@@ -45,21 +45,17 @@ Below are the status displays for the [tuba bassline looper, and drum looper](lo
 
 	Sets the main envelope sensitivity, which should generally be around 180%
 
-- Metro Volume
+- Metronome
 
 	Sets the volume of the metronome in the monitor outpts.
 
-- Alert Volume
+- Loop Alert
 
 	Sets the volume of the looper status alerts in the monitor outputs.
 
-- Drum Volume
+- Kick, Snare, Tom, Clap
 
-	Sets the volume of the snare, clap, and tom samples.
-
-- Kick Volume
-
-	Sets the volume of the kick samples.
+	Sets the volume of the kick, snare, tom, and clap samples.
 
 ### Save Restore
 
@@ -160,10 +156,6 @@ These parameters set the tone of the dryer detuned sound on the louder end of th
 - window
 
 	longer window = higher quality, but higher latency
-
-- transpose
-
-	overall transposition in steps
 
 ### Overdrive
 
@@ -290,10 +282,6 @@ Sets the reverb parameters for the bassline, for the tuba solo, and the snare cl
 - Solo
 
 	Reverb for tuba solo, with separate dry and wet output volumes, as well as "dry" delay and "dry" stutter volumes.
-
-- Drums
-
-	Reverb for the snare, clap, & tom.
 
 
 
