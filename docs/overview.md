@@ -1,5 +1,7 @@
 # Overview
 
+This overview describes all the parameters in SousaFX's interface. These parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates effects.
+
 ## Main Window
 
 ![main](img/main_window.webp)
@@ -8,7 +10,7 @@ Closing this window quits SousaFX.
 
 ### Status Bar
 
-The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, On, and Off, respectively.
+The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, Off, and Off, respectively.
 
 The top "X" toggle rounds the tempo to an integer.
 
@@ -45,18 +47,6 @@ Below are the status displays for the [tuba bassline looper, and drum looper](lo
 
 	Sets the main envelope sensitivity, which should generally be around 180%
 
-- Metronome
-
-	Sets the volume of the metronome in the monitor outpts.
-
-- Loop Alert
-
-	Sets the volume of the looper status alerts in the monitor outputs.
-
-- Kick, Snare, Tom, Clap
-
-	Sets the volume of the kick, snare, tom, and clap samples.
-
 ### Save Restore
 
 The Save button saves all the parameters in the main window (except for the window layout), and all the FX parameters windows.
@@ -79,7 +69,7 @@ The following windows may be opened via the FX Parameters menu:
 
 - [Delays](overview.md#delays)
 
-- [Reverbs](overview.md#reverbs)
+- [Mixbus](overview.md#mixbus)
 
 - [EQs](overview.md#eqs)
 
@@ -91,9 +81,9 @@ This is the heart of SousaFX, and sets the tone of the bassline. We'll start wit
 
 ### crossfade env sens
 
-This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dryer detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
+This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dry detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
 
-The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick).
+The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick). The crosfade's behavior can be modified with the left joystick's [button](bindings.md#l3-button).
 
 ### LFO env sens
 
@@ -103,7 +93,7 @@ The louder the tuba plays, the higher the LFO's ceiling and floor become.
 
 The "LFO env sens" dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
 
-In addition, two [bindings](bindings.md#left-thumbstick) adjust the ceiling and floor envelope sensitivities separately as well:
+In addition, two [bindings](bindings.md#diagonal) adjust the ceiling and floor envelope sensitivities separately as well:
 
 - LFO floor envelope sensitivity
 
@@ -129,9 +119,7 @@ The "min dist btwn ceil and floor" dial sets a minimum distance between the ceil
 
 ### LPF menu
 
-There are five different lowpass filters to choose from:
-
-- Surreal Machine's ladder
+There are three different lowpass filters to choose from:
 
 - Korg 35
 
@@ -139,7 +127,9 @@ There are five different lowpass filters to choose from:
 
 - Vadim Zavalishin's diode ladder
 
-The toggle on the right allows the lowpass filter type to randomize whenever the bassline looper starts looping.
+The toggle on the left allows the lowpass filter type to randomize whenever the bassline looper starts looping.
+
+The minimum and maximum resonance for each filter can be set via the six number boxes.
 
 ### Detune
 
@@ -229,19 +219,8 @@ This window displays two limiters and six compressors
 
 ![delay](img/delay_params.webp)
 
-Separate delays for the main input, the bassline looper, the tuba solo, and the drums. The [d-pad](bindings.md/#d-pad) controls the delays' subdivisions.
+This window displays four delays for the bassline input, the bassline looper, the tuba solo, and the drums. The [d-pad](bindings.md/#d-pad) controls the delays' subdivisions, and the thumbsticks control the delays' send amount, feedback amount, and highpass filter frequency.
 
-- output volume
-
-	The delay's output volume.
-
-- filter toggle
-
-	Toggle the lowpass filter in the delay's feedback loop.
-
-- spread
-
-	Adjust the difference in delay time between the left and right channels.
 
 - input gain
 
@@ -265,24 +244,90 @@ Separate delays for the main input, the bassline looper, the tuba solo, and the 
 
 - reduction amount
 
-	Displays the amount of gain reduction.
+	Displays the limiter's gain reduction amount.
+
+- output volume
+
+	The delay's output volume.
+
+- spread
+
+	Adjust the difference in delay time between the left and right channels.
+
+- filter toggle
+
+	Toggle the lowpass filter in the delay's feedback loop.
 
 
+## Mixbus
 
-## Reverbs
+![mixbus](img/mixbus_params.webp)
 
-![reverb](img/reverb_params.webp)
+### Reverb
 
-Sets the reverb parameters for the bassline, for the tuba solo, and the snare clap & tom.
+The drums, bassline, and solo are sent to this reverb.
 
-- Main
+- mix
 
-	Main reverb send for everything. Keep mix at 100%
+	wet / dry mixer, keep at 100%.
 
-- Solo
+- size
 
-	Reverb for tuba solo, with separate dry and wet output volumes, as well as "dry" delay and "dry" stutter volumes.
+	The size of the room.
 
+- diff
+
+	The amount of diffusion.
+
+- damp
+
+	The amount of damping.
+
+- decay
+
+	The length of the decay.
+
+- Jitter
+
+	The amount of jitter.
+
+### Monitors
+
+- Loop Alert
+
+	Sets the volume of the looper status alerts in the monitor output.
+
+- Metronome
+
+	Sets the volume of the metronome in the monitor output.
+
+### Tuba Solo
+
+- dry vol
+
+	The volume of the tuba solo's "dry" signal, which includes the mic eq, pitch shifter, and solo compressor, and does not include the delay or stutter. This parameter can be quite low if you're playing in a small room.
+
+- delay vol
+
+	The volume of the tuba solo's delay effect.
+
+- stutter vol
+
+	The volume of the tuba solo's stutter effect.
+
+- minimum solo reverb volume
+
+	The minimum volume of the tuba solo's reverb effect.
+
+### Drums
+
+- Kick, Snare, Tom, Clap
+
+	Sets the volume of the kick, snare, tom, and clap samples.
+
+- minimum drum reverb volume
+
+	The minimum volume of the drum's reverb effect.
 
 
 ## EQs

@@ -6,7 +6,7 @@
 
 2. Audio interface:
 
-	Any interface with one mic input, and separate monitor and headphone outputs, will do.
+	Any interface with one mic input, and two (ideally stereo) outputs (one for the [FoH](https://www.sweetwater.com/insync/foh/) mix, and one for the monitor mix) will do.
 
 3. Headphones, in-ear monitors, or loudspeakers:
 	

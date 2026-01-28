@@ -6,48 +6,55 @@
 
 # Bindings
 
+This page describes how the gamepad controls SousaFX. Admittedly, SousaFX's interface does not yet display the values of many of these bindings. For example, the delays' send and feedback parameters are not shown in the [Delay window](overview.md#delays), and there is no Stutter window at all. SousaFX is intended to not have to be looked at during live performance, which requires these bindings to be slowly but surely committed to muscle memory.
+
 ![gamepad](img/gamepad.webp)
 
 ## Start, Select, N E S W
 
-Start and Select are used for changing the function of the North, East, South, and West buttons.
+Start and Select are used for modifying the functions of the North, East, South, and West buttons, as well as modifying the functions of the thumbsticks.
 
 - Without start or select pressed:
 
-	| Direction | Function |
-	|-----------|----------|
-	| North 	| Tap tempo. |
-	| East 		| Drum [looper](loopers.md) start / stop / clear. |
-	| South 	| Momentarily enable main stutter. <br> To perma-enable: Press start/select before releasing South. |
-	| West 		| Bassline [looper](loopers.md) start / stop / clear. |
-
+	| Input       | Function |
+	|-------------|----------|
+	| North 	  | Tap tempo. |
+	| East 		  | Drum [looper](loopers.md) start / stop / clear. |
+	| South 	  | Momentarily enable main stutter. <br> To perma-enable: Press start/select before releasing South. |
+	| West 		  | Bassline [looper](loopers.md) start / stop / clear. |
+	| Thumbsticks | Described [below](bindings.md#left-thumbstick). |
 
 - With start pressed:
 
-	| Direction | Function |
-	|-----------|----------|
-	| North 	| Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
-	| East 		| Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
-	| South 	| Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
-	| West 		| |
+	| Input            | Function |
+	|------------------|----------|
+	| North 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
+	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
+	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
+	| West 		       | |
+	| Right Thumbstick | While using the right thumbstick to modulate any delay's feedback amount, pressing Start will place a hold on said feedback amount until the thumbstick is moved outside of its deadzone after either 8 bars have passed, or R3 (the right thumbstick button) is pressed. |
 
 - With select pressed:
 
-	| Direction | Function |
-	|-----------|----------|
-	| North 	| Toggle metronome. |
-	| East 		| Randomize drum samples. |
-	| South 	| Toggle bumper drumming. |
-	| West 		|  |
+	| Input            | Function |
+	|------------------|----------|
+	| North 	       | Toggle metronome. |
+	| East 		       | Randomize drum samples. |
+	| South 	       | Toggle bumper drumming. |
+	| West 		       |  |
+	| Left Thumbstick  | While holding Select, the left thumbstick can be used to set the lowpass filter LFO's shape (from falling saw, to triangle, to rising saw) and the lowpass filter LFO's curvature (from squished, to fattened). |
+
 
 - With start and select pressed:
 
-	| Direction | Function |
+	| Input     | Function |
 	|-----------|----------|
 	| North 	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
 	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
-	| South 	|  |
+	| South 	| |
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
+
+
 
 ## Shoulder Buttons
 
@@ -105,15 +112,13 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Vertical
 
-- LFO floor envelope sensitivity.
-
 - Crossfade position.
 
 - Bassline looper filtersweep.
 
-- LFO Pow:
+- LFO curvature (from squished, to fattened):
 
-	Allowed while select is pressed.
+	Allowed while Select is held.
 
 
 ### Up 
@@ -122,47 +127,61 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Allowed while the drum looper is looping, & the tuba isn't playing a bassline.
 
-	Momentarily disallowed while RB is held down.
+	Momentarily disallowed while Right Bumper is held.
 
 - Drum stutter autopan amount.
 
+
 ### Horizontal
 
-- LFO ceiling envelope sensitivity.
+- Manual lowpass filter frequency control.
+
+	Allowed while the Left Bumper is held.
 
 - Drum filter sweep:
 
-	Allowed when the tuba's silent, & the left thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone.
 
-	Denied when the tuba's playing, & the left thumbstick is within its deadzone.
+	Denied after the tuba *starts* playing, & the left thumbstick is within its deadzone.
 
-- LFO shape:
+- LFO shape (from falling saw, to triangle, to rising saw):
 
-	Allowed while select is pressed.
+	Allowed while Select is pressed.
+
 
 ### Left
 
 - Bassline looper stutter enable:
 
-	Allowed when the bassline looper is looping, & the left thumbstick is within its deadzone.
+	Allowed after the bassline looper *starts* looping, & the left thumbstick is within its deadzone.
 
-	Denied when the bassline looper isn't looping, & the left thumbstick is within its deadzone.
+	Denied after the bassline looper *stops* looping, & the left thumbstick is within its deadzone.
 
 	Momentarily disallowed while RB is held down.
 
 - Looper stutter autopan amount.
 
+
+### Diagonal
+
+- LFO ceiling envelope sensitivity (SW to NE).
+
+- LFO floor envelope sensitivity (NW to SE).
+
+
+### L3 Button
+
+- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Once to enable the transient helper, twice to disable the transient helper, and thrice to disable the crossfade entirely. 
+
+
 ### Magnitude
 
-- Lowpass filter resonance boost.
+- LPF resonance boost.
 
-- Manual filter frequency control.
-
-	Allowed only while the left bumper is held.
 
 !!! note
 
-	The magnitude is the distance of the thumbstick from the center.
+	The magnitude is the distance of a thumbstick from its center.
 
 
 ## Right Thumbstick
@@ -175,53 +194,55 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Drum delay feedback amount:
 
-	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Denied when tuba starts playing, & the right thumbstick is within its deadzone.
+	Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
 
-- LFO acceleration:
+- LPF LFO acceleration:
 
-	Allowed when the right bumper is released, & the right thumbstick is within its deadzone.
+	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
 
-	Denied when the right bumper is pressed, & the right thumbstick is within its deadzone.
+	Denied after the right bumper is *pressed*, & the right thumbstick is within its deadzone.
 
 ### Down
 
-- Either LFO decceleration, or swing amount, depending on subdivision.
+- Either LPF LFO decceleration, or swing amount, depending on subdivision.
 
 - Bassline looper delay feedback amount:
 
-	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Denied when tuba starts playing.
+	Denied after the tuba *starts* playing.
 
 ### Horizontal
 
-- Delay's feedback loop's lowpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, solo, drums, and loopers.
+- Delays' feedback loops' highpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, bassline looper, tuba solo, and drums.
 
-- Stutter Acceleration for bassline, solo, drums, and loopers:
+- Stutter Acceleration for bassline, bassline looper, tuba solo, and drums:
 
-	Allowed when the right bumper is released, & the right thumbstick is within its deadzone.
+	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
 
-	Denied when the right bumper is pressed, & the right thumbstick is within its deadzone.
+	Denied after the right bumper is *pressed*, & the right thumbstick is within its deadzone.
 
 - Drum retrigger rate acceleration:
 
-	While the drum samples are being retriggered, this changes the speed.
+	Allowed while the drum samples are being retriggered by holding down the bumpers.
 
 ### Left
 
-- Bassline delay send & solo delay send:
+- Main delay send & solo delay send:
 
-	Denied when the left trigger is pressed.
+	Denied after the left trigger is *pressed*.
 
-	Allowed when the left trigger is released, & the right thumbstick is within its deadzone.
+	Allowed after the left trigger is *released*, & the right thumbstick is within its deadzone.
 
 - Drum delay send, and bassline looper delay send:
 
-	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Disallowed when the tuba starts playing.
+	Disallowed after the tuba *starts* playing, & the right thumbstick is within its deadzone. 
+
+	Momentarily disallowed while the left trigger is held.
 
 ### Right
 
@@ -229,7 +250,11 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Bassline looper reverb send, and Drum reverb send:
 
-	Allowed when the tuba's silent, & the right thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Denied when the tuba's playing, & the right thumbstick is within its deadzone.
+	Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
+
+### R3 Button
+
+- After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 8 bars regardless.
 

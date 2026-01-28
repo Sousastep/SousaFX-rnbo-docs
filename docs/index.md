@@ -4,7 +4,7 @@ SousaFX is a multi-effects rig made with [Max/RNBO](https://cycling74.com/produc
 
 - Dub-style delays with separate parameters for feedback amount and input volume.
 - Reversible stutters with acceleration via phase-locked loops.
-- 64 drums samples, playable with the bumpers and triggers.
+- 64 drum samples, playable with the bumpers and triggers.
 - Two one-button loopers, one for the bassline and one for the drums.
 - DJ-style HP/LP filters.
 - An auto-wah carefully tuned to be as musical as possible.
