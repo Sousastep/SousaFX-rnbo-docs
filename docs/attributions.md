@@ -18,6 +18,8 @@ The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](
 
 The licence checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8)
 
+`av.clipper` by [Stevon_AV](https://www.youtube.com/watch?v=Hu2LaIqiyNE)
+
 ## Media
 
 The drums are sampled from the infamous [BKE Beat Thang](https://youtu.be/4k04fq91Rns)

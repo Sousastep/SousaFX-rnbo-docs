@@ -6,7 +6,9 @@
 
 # Bindings
 
-This page describes how the gamepad controls SousaFX. Admittedly, SousaFX's interface does not yet display the values of many of these bindings. For example, the delays' send and feedback parameters are not shown in the [Delay window](overview.md#delays), and there is no Stutter window at all. SousaFX is intended to not have to be looked at during live performance, which requires these bindings to be slowly but surely committed to muscle memory.
+This page describes how the gamepad controls SousaFX. <br> 
+All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, <br> 
+but they may not yet be shown in their respective FX parameters windows.
 
 ![gamepad](img/gamepad.webp)
 

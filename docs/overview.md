@@ -1,6 +1,6 @@
 # Overview
 
-This overview describes all the parameters in SousaFX's interface. These parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates effects.
+This overview describes all the parameters in SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the FX.
 
 ## Main Window
 
@@ -63,6 +63,8 @@ On the bottom left is a way to save window layouts. Click the number box and pre
 
 The following windows may be opened via the FX Parameters menu:
 
+- [Active Bindings](overview.md#active-bindings)
+
 - [Bassline](overview.md#bassline)
 
 - [Compressors and Limiters](overview.md#compressors-and-limiters)
@@ -72,6 +74,12 @@ The following windows may be opened via the FX Parameters menu:
 - [Mixbus](overview.md#mixbus)
 
 - [EQs](overview.md#eqs)
+
+## Active Bindings
+
+![bind](img/active_bindings.webp)
+
+This window displays any FX parameters that are currently being adjusted by the [gamepad](bindings.md). It is the only window that can be resized by dragging the border.
 
 ## Bassline
 
