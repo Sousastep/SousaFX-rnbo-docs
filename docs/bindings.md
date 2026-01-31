@@ -202,9 +202,9 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LPF LFO acceleration:
 
-	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
+	Allowed after the left bumper is *released*, & the right thumbstick is within its deadzone.
 
-	Denied after the right bumper is *pressed*, & the right thumbstick is within its deadzone.
+	Denied after the left bumper is *pressed*.
 
 ### Down
 
@@ -222,9 +222,9 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Stutter Acceleration for bassline, bassline looper, tuba solo, and drums:
 
-	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
+	Allowed after the right bumper is *released*, the respective stutter is *enabled*, & the right thumbstick is within its deadzone.
 
-	Denied after the right bumper is *pressed*, & the right thumbstick is within its deadzone.
+	Denied after the right bumper is *pressed*, or the respective stutter is *disabled*.
 
 - Drum retrigger rate acceleration:
 
