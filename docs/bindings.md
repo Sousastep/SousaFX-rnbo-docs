@@ -234,17 +234,17 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Main delay send & solo delay send:
 
-	Denied after the left trigger is *pressed*.
+	Denied after the right bumper is *pressed*.
 
-	Allowed after the left trigger is *released*, & the right thumbstick is within its deadzone.
+	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
 
 - Drum delay send, and bassline looper delay send:
 
-	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
+	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone, & the right bumper is *released*.
 
 	Disallowed after the tuba *starts* playing, & the right thumbstick is within its deadzone. 
 
-	Momentarily disallowed while the left trigger is held.
+	Also disallowed after the right bumper is *pressed*.
 
 ### Right
 
