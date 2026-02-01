@@ -60,7 +60,6 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
 
 
-
 ## Shoulder Buttons
 
 While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
@@ -88,7 +87,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| LB 		| enable manual filter frequency control |
+	| left bumper| enable manual lowpass filter frequency [control](bindings.md#horizontal) |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -102,7 +101,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| LB 		| half |
+	| left bumper| half |
 	| d-pad up 	| quarter triplet |
 	| right 	| 16th triplet |
 	| down		| quarter quintuplet |
@@ -119,13 +118,27 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ![left vertical](img/Lvert.webp)
 
-- [Crossfade](overview.md#crossfade-env-sens) position.
+- [Crossfade](overview.md#crossfade-env-sens) position. 
+
+	> Up crossfades towards the overdriven modulated lowpass filter sound.
+
+	> Down crossfades towards detuned dry sound. 
 
 - Bassline looper filtersweep.
 
-- LFO curvature (from squished, to fattened):
+	> Up sweeps a highpass filter upwards.
 
-	Allowed while Select is held.
+	> Center bypasses these filters.
+
+	> Down sweeps a lowpass filter downwards.
+
+- LFO curvature:
+
+	> Allowed only while Select is pressed. Value held when Select released.
+
+	> > Up to squish.
+
+	> > Down to fatten.
 
 
 ### Up 
@@ -134,30 +147,48 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Drum stutter enable:
 
-	Allowed while the drum looper is looping, & the tuba isn't playing a bassline.
+	> Allowed while the drum looper is looping, & the tuba isn't playing a bassline.
 
-	Momentarily disallowed while Right Bumper is held.
+	> Momentarily disallowed while Right Bumper is held.
 
-- Drum stutter autopan amount.
+- Drum stutter autopan amount:
+
+	> Allowed while drum stutter enabled.
 
 
 ### Horizontal
 
 ![left horizontal](img/Lhoriz.webp)
 
-- Manual lowpass filter frequency control.
+- Manual lowpass filter frequency control:
 
-	Allowed while the Left Bumper is held.
+	> Allowed while the Left Bumper is [held](bindings.md#d-pad).
 
-- Drum filter sweep:
+	> > Left sweeps the lowpass filter upwards. 
 
-	Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone.
+	> > Right sweeps the lowpass filter downwards.
 
-	Denied after the tuba *starts* playing, & the left thumbstick is within its deadzone.
+- Drum filtersweep:
 
-- LFO shape (from falling saw, to triangle, to rising saw):
+	> Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone.
 
-	Allowed while Select is pressed.
+	> Denied after the tuba *starts* playing, & the left thumbstick is within its deadzone.
+
+	> > Left sweeps a highpass filter upwards. 
+
+	> > Center bypasses these filters.
+
+	> > Right sweeps a lowpass filter downwards.
+
+- LFO shape:
+
+	> Allowed while Select is pressed.
+
+	> > Left for rising saw.
+
+	> > Center for triangle.
+
+	> > Right for falling saw.
 
 
 ### Left
@@ -166,29 +197,39 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Bassline looper stutter enable:
 
-	Allowed after the bassline looper *starts* looping, & the left thumbstick is within its deadzone.
+	> Allowed after the bassline looper *starts* looping, & the left thumbstick is within its deadzone.
 
-	Denied after the bassline looper *stops* looping, & the left thumbstick is within its deadzone.
+	> Denied after the bassline looper *stops* looping, & the left thumbstick is within its deadzone.
 
-	Momentarily disallowed while RB is held down.
+	> Momentarily disallowed while RB is held down.
 
 - Bassline looper stutter autopan amount.
+
+	> Allowed while bassline looper enabled.
 
 
 ### Diagonal
 
 ![left diagonal](img/Ldiag.webp)
 
-- LFO ceiling envelope sensitivity (SW to NE).
+- LFO ceiling envelope sensitivity:
 
-- LFO floor envelope sensitivity (NW to SE).
+	> down-left increases the sensitivity.
+
+	> up-right decreases the sensitivity.
+
+- LFO floor envelope sensitivity:
+
+	> up-left increases the sensitivity.
+
+	> down-right decreases the sensitivity.
 
 
 ### L3 Button
 
 ![l3](img/L3.webp)
 
-- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Once to enable the transient helper, twice to disable the transient helper, and thrice to disable the crossfade entirely. 
+Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Once to enable the transient helper, twice to disable the transient helper, and thrice to disable the crossfade entirely. 
 
 
 ### Magnitude
@@ -213,15 +254,15 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Drum delay feedback amount:
 
-	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
+	> Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
+	> Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
 
 - LPF LFO acceleration:
 
-	Allowed after the left bumper is *released*, & the right thumbstick is within its deadzone.
+	> Allowed after the left bumper is *released*, & the right thumbstick is within its deadzone.
 
-	Denied after the left bumper is *pressed*.
+	> Denied after the left bumper is *pressed*.
 
 ### Down
 
@@ -236,18 +277,35 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ![right horizontal](img/Rhoriz.webp)
 
-- Delays' feedback loops' highpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, bassline looper, tuba solo, and drums.
+- Delays' feedback loops' highpass filter frequency adjustment for bassline, bassline looper, tuba solo, and drums.
+
+	> Left towards 60 Hz.
+
+	> Centered on 400 Hz.
+
+	> Right towards 2100 Hz.
 
 - Stutter Acceleration for bassline, bassline looper, tuba solo, and drums:
 
-	Allowed after the right bumper is *released*, the respective stutter is *enabled*, & the right thumbstick is within its deadzone.
+	> Allowed after the right bumper is *released*, the respective stutter is *enabled*, & the right thumbstick is within its deadzone.
 
-	Denied after the right bumper is *pressed*, or the respective stutter is *disabled*.
+	> Denied after the right bumper is *pressed*, or the respective stutter is *disabled*.
+
+	> > Left increases the speed.
+
+	> > Center returns to the original speed and phase.
+
+	> > Right decreases the speed.
 
 - Drum retrigger rate acceleration:
 
-	Allowed while the drum samples are being retriggered by holding down the bumpers.
+	> Allowed while the drum samples are being retriggered by holding down the bumpers.
 
+	> > Left increases the speed.
+
+	> > Center returns to the original speed and phase.
+
+	> > Right decreases the speed.
 
 ### Left
 
@@ -255,17 +313,17 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Main delay send & solo delay send:
 
-	Denied after the right bumper is *pressed*.
+	> Denied after the right bumper is *pressed*.
 
-	Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
+	> Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
 
 - Drum delay send, and bassline looper delay send:
 
-	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone, & the right bumper is *released*.
+	> Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone, & the right bumper is *released*.
 
-	Disallowed after the tuba *starts* playing, & the right thumbstick is within its deadzone. 
+	> Disallowed after the tuba *starts* playing, & the right thumbstick is within its deadzone. 
 
-	Also disallowed after the right bumper is *pressed*.
+	> Also disallowed after the right bumper is *pressed*.
 
 
 ### Right
@@ -276,13 +334,13 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Bassline looper reverb send, and Drum reverb send:
 
-	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
+	> Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
 
-	Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
+	> Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
 
 ### R3 Button
 
 ![r3](img/R3.webp)
 
-- After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 16 bars regardless.
+After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 16 bars regardless.
 
