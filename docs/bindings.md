@@ -26,15 +26,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| West 		  | Bassline [looper](loopers.md) start / stop / clear. |
 	| Thumbsticks | Described [below](bindings.md#left-thumbstick). |
 
-- With start pressed:
-
-	| Input            | Function |
-	|------------------|----------|
-	| North 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
-	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
-	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
-	| West 		       | |
-	| Right Thumbstick | While using the right thumbstick to modulate any delay's feedback amount, pressing Start will place a hold on said feedback amount until the thumbstick is moved outside of its deadzone after either 8 bars have passed, or R3 (the right thumbstick button) is pressed. |
+![select](img/select.webp)
 
 - With select pressed:
 
@@ -46,6 +38,17 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| West 		       |  |
 	| Left Thumbstick  | While holding Select, the left thumbstick can be used to set the lowpass filter LFO's shape (from falling saw, to triangle, to rising saw) and the lowpass filter LFO's curvature (from squished, to fattened). |
 
+![start](img/start.webp)
+
+- With start pressed:
+
+	| Input            | Function |
+	|------------------|----------|
+	| North 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
+	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
+	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
+	| West 		       | |
+	| Right Thumbstick | While using the right thumbstick to modulate any delay's feedback amount, pressing Start will place a hold on said feedback amount until the thumbstick is moved outside of its deadzone after either 16 bars have passed, or R3 (the right thumbstick button) is pressed. |
 
 - With start and select pressed:
 
@@ -114,7 +117,9 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Vertical
 
-- Crossfade position.
+![left vertical](img/Lvert.webp)
+
+- [Crossfade](overview.md#crossfade-env-sens) position.
 
 - Bassline looper filtersweep.
 
@@ -124,6 +129,8 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 
 ### Up 
+
+![left up](img/Lup.webp)
 
 - Drum stutter enable:
 
@@ -135,6 +142,8 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 
 ### Horizontal
+
+![left horizontal](img/Lhoriz.webp)
 
 - Manual lowpass filter frequency control.
 
@@ -153,6 +162,8 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Left
 
+![left left](img/Lleft.webp)
+
 - Bassline looper stutter enable:
 
 	Allowed after the bassline looper *starts* looping, & the left thumbstick is within its deadzone.
@@ -161,10 +172,12 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Momentarily disallowed while RB is held down.
 
-- Looper stutter autopan amount.
+- Bassline looper stutter autopan amount.
 
 
 ### Diagonal
+
+![left diagonal](img/Ldiag.webp)
 
 - LFO ceiling envelope sensitivity (SW to NE).
 
@@ -172,6 +185,8 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 
 ### L3 Button
+
+![l3](img/L3.webp)
 
 - Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Once to enable the transient helper, twice to disable the transient helper, and thrice to disable the crossfade entirely. 
 
@@ -189,6 +204,8 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 ## Right Thumbstick
 
 ### Up
+
+![right up](img/Rup.webp)
 
 - Bassline delay feedback amount, & solo delay feedback amount.
 
@@ -208,15 +225,16 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### Down
 
+![right down](img/Rdown.webp)
+
 - Either LPF LFO decceleration, or swing amount, depending on subdivision.
 
-- Bassline looper delay feedback amount:
+- Bassline looper delay feedback amount.
 
-	Allowed after the tuba *stops* playing, & the right thumbstick is within its deadzone.
-
-	Denied after the tuba *starts* playing.
 
 ### Horizontal
+
+![right horizontal](img/Rhoriz.webp)
 
 - Delays' feedback loops' highpass filter frequency adjustment (200 Hz - 5.8 kHz) for bassline, bassline looper, tuba solo, and drums.
 
@@ -230,7 +248,10 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Allowed while the drum samples are being retriggered by holding down the bumpers.
 
+
 ### Left
+
+![right left](img/Rleft.webp)
 
 - Main delay send & solo delay send:
 
@@ -246,7 +267,10 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	Also disallowed after the right bumper is *pressed*.
 
+
 ### Right
+
+![right right](img/Rright.webp)
 
 - Main reverb send.
 
@@ -258,5 +282,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ### R3 Button
 
-- After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 8 bars regardless.
+![r3](img/R3.webp)
+
+- After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 16 bars regardless.
 

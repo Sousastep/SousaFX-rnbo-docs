@@ -95,11 +95,11 @@ The crossfade's range is actively adjusted via the "Crossfade Position" [binding
 
 ### LFO env sens
 
-This LFO modulates the lowpass filter frequency to create the dubstep wobble bass sound.
+This dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
+
+This LFO modulates the lowpass filter frequency to create the dubstep wobble sound.
 
 The louder the tuba plays, the higher the LFO's ceiling and floor become.
-
-The "LFO env sens" dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
 
 In addition, two [bindings](bindings.md#diagonal) adjust the ceiling and floor envelope sensitivities separately as well:
 
@@ -107,7 +107,7 @@ In addition, two [bindings](bindings.md#diagonal) adjust the ceiling and floor e
 
 - LFO ceiling envelope sensitivity
 
-The following dials positioned below "LFO env sens" curve the aformentioned bindings:
+The following dials curve the aformentioned bindings:
 
 - LFO ceiling env sens binding curve
 
@@ -115,15 +115,13 @@ The following dials positioned below "LFO env sens" curve the aformentioned bind
 
 The four dials below adjust the floor and ceiling's minimums and maximums:
 
-- Max LFO Floor
+- Max Dist Over Floor
 
-- Min LFO Floor
+- Min Dist Over Floor
 
-- Max LFO Ceiling
+- Max Floor
 
-- Min LFO Ceiling
-
-The "min dist btwn ceil and floor" dial sets a minimum distance between the ceiling and the floor so that they never overlap.
+- Min Floor
 
 ### LPF menu
 
@@ -195,7 +193,7 @@ This window displays two limiters and six compressors
 
 !!! note
 
-	There's a 100 Hz crossover filter that separates the tuba's highs and lows pre-overdrive, to keep the lows clean.
+	There's a 90 Hz crossover filter that separates the tuba's highs and lows pre-overdrive, to keep the lows clean.
 
 - post-xover-lows
 

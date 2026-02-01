@@ -24,4 +24,6 @@ Find the `rnbo~ @patchername gamepad_input @parameter_enable 0 @autosave 0 @auto
 
 Press `option command m`, or click the pencil icon in the bottom left, to modify read-only.
 
+Keep Overdrive off in Max's preferences or else replaceable arguments in rnbo won't propagate properly after compilation.
+
 Feel free to ask questions in the discord, linked below.
