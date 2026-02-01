@@ -25,13 +25,13 @@
 
 	<br>
 
-3. Download SousaFX-v0.11.2.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.2/SousaFX-v0.11.2.zip) 
+3. Download SousaFX-v0.11.3.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.3/SousaFX-v0.11.3.zip) 
 
-	- Unzip `SousaFX-v0.11.2.zip`, and move the `SousaFX-v0.11.2` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
+	- Unzip `SousaFX-v0.11.3.zip`, and move the `SousaFX-v0.11.3` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
 
 	- If you have previously installed SousaFX, then replace the `data` folder in the current version of SousaFX with the `data` folder from the old version of SousaFX.
 
-	- Double-click `SousaFX-v0.11.2.maxproj` to launch the rig.
+	- Double-click `SousaFX-v0.11.3.maxproj` to launch the rig.
 
 	!!! note
 
