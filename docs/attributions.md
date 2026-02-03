@@ -82,6 +82,8 @@ SousaFX's documentation is made with [Material for MkDocs](https://squidfunk.git
 
 The [EULA](eula.md) is modified from [Reaper's](https://www.reaper.fm/)
 
+Computer requirements from Cycling74.
+
 ## Many thanks to
 
 Brooklyn College's Sonic Arts program, and Performance & Interactive Media Arts Program

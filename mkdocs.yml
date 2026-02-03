@@ -9,9 +9,9 @@ nav:
   - Overview: overview.md
   - Bindings: bindings.md
   - Loopers: loopers.md
-  - Purchase: purchase.md
   - Modding: modding.md
   - Release Notes: releasenotes.md
+  - Purchase: purchase.md
   - Attributions: attributions.md
 
 theme:

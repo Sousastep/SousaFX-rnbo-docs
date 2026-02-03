@@ -260,9 +260,9 @@ Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.
 
 - LPF LFO acceleration:
 
-	> Allowed after the left bumper is *released*, & the right thumbstick is within its deadzone.
+	> Allowed after the left trigger is *released*, & the right thumbstick is within its deadzone.
 
-	> Denied after the left bumper is *pressed*.
+	> Denied after the left trigger is *pressed*.
 
 ### Down
 
