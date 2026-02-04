@@ -35,7 +35,9 @@ click the "0" above the `list.lookup external rnbopat` object to load the extern
 
 File > Save As Project...
 
-name `SousaFX-v#.#.#`
+Save As: `SousaFX-v#.#.#`
+
+In: `Documents/Max 9/Projects`
 
 open project inspector
 - don't keep project folder organized
@@ -45,7 +47,7 @@ remove files from `/sousaFX-v#.#.#/` if present:
 
 ```
 	/data/license.sousafx
-	/other/license.sousafx
+	/other/license.sousafx (remove folder too)
 	/externals/js.xmo
 	/code/interfacecolor.js
 	/media/.
@@ -73,7 +75,7 @@ add files from `/sousaFX-rnbo/` to `/sousaFX-v#.#.#/`:
 
 zip, named `SousaFX-v#.#.#.zip`
 
-download zip to blank user profile on macbook to test
+download zip to blank user profile on macbook to test (drag zip to `Network/macbook/testing’s Public Folder/Drop Box`)
 
 https://github.com/Sousastep/SousaFX-rnbo/releases
 
