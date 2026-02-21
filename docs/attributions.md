@@ -88,7 +88,7 @@ Computer requirements from Cycling74.
 
 Brooklyn College's Sonic Arts program, and Performance & Interactive Media Arts Program
 
-The Jim and Jamie Self Creative Award
+The International Tuba-Euphonium Association's Jim and Jamie Self Creative Award
 
 Cycling 74`
 
@@ -98,6 +98,6 @@ Brian Wolff
 
 My friends and family
 
-Everyone in the Max discord channel
+Everyone in the Max community
 
 YOU for reading this far :)

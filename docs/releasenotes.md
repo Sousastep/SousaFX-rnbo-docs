@@ -1,5 +1,16 @@
 # Release Notes
 
+## 0.11.4
+
+- Make delay feedback binding taper linear.
+
+- Don't sent drum delay into drum looper.
+
+- Add talkback mic binding with auto-mute logic.
+
+- Improve default preset.
+
+
 ## 0.11.3
 
 - Add Active Bindings window.

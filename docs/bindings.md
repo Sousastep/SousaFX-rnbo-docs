@@ -47,7 +47,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| North 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
 	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
 	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
-	| West 		       | |
+	| West 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 	| Right Thumbstick | While using the right thumbstick to modulate any delay's feedback amount, pressing Start will place a hold on said feedback amount until the thumbstick is moved outside of its deadzone after either 16 bars have passed, or R3 (the right thumbstick button) is pressed. |
 
 - With start and select pressed:

@@ -8,7 +8,7 @@
 
 2. Audio interface:
 
-	Any USB interface with one mic input, and two (ideally stereo) outputs (one for the ["front of house" mix](https://www.sweetwater.com/insync/foh/), and one for the monitor mix) will do.
+	Any USB interface with one mic input, and two (ideally stereo) outputs (one for the [FoH](https://www.sweetwater.com/insync/foh/) mix, and one for the monitor mix) will do.
 
 3. Headphones, in-ear monitors, or loudspeakers:
 	
@@ -24,4 +24,4 @@
 
 6. Tuba or didgeridoo:
 
-	Any will do.
+	Any will do!
