@@ -17,28 +17,8 @@ nav:
 theme:
   name: material
   palette:
-
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: blue grey
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+    scheme: slate
+    primary: black
 
   features:
     - search.suggest
@@ -71,11 +51,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.blocks.caption
   - attr_list
   - md_in_html
-  - pymdownx.blocks.caption
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
   - def_list
 
