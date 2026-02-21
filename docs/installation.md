@@ -25,77 +25,16 @@
 
 	<br>
 
-3. Download SousaFX-v0.11.3.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.3/SousaFX-v0.11.3.zip) 
+3. Download SousaFX-v0.11.4.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.4/SousaFX-v0.11.4.zip) 
 
-	- Unzip `SousaFX-v0.11.3.zip`, and move the `SousaFX-v0.11.3` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
+	- Unzip `SousaFX-v0.11.4.zip`, and move the `SousaFX-v0.11.4` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
 
 	- If you have previously installed SousaFX, then replace the `data` folder in the current version of SousaFX with the `data` folder from the old version of SousaFX.
 
-	- Double-click `SousaFX-v0.11.3.maxproj` to launch the rig.
+	- Double-click `SousaFX-v0.11.4.maxproj` to launch the rig.
 
 	!!! note
 
 		SousaFX remains fully functional after [SousaFX's 30-day trial ends](purchase.md).
 	<br>
 
-4. Optional: Sign up for the mailing list to be informed about new releases.
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .listmonk-form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-
-        input[type="email"],
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%; /* Make the button full-width */
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-
-<form method="post" action="https://sousastep.pikapod.net/subscription/form" class="listmonk-form">
-    <div>
-        <input type="hidden" name="nonce" />
-        <p><input type="email" name="email" required placeholder="E-mail" /></p>
-        <p><input type="text" name="name" placeholder="Name (optional)" /></p>
-        <p>
-            <input id="94875" type="checkbox" name="l" checked value="94875614-88f9-49e2-8f9a-78e5e6e1aac3" />
-            <label for="94875">Stay informed about new releases.</label>
-        </p>
-        <p><input type="submit" value="Subscribe" /></p>
-    </div>
-</form>
-
-</body>
-</html>

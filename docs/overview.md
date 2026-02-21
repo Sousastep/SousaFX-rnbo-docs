@@ -1,6 +1,6 @@
 # Overview
 
-This overview describes all the parameters in SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the FX.
+This overview describes all of the parameters that are adjustable via SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the audio effects.
 
 ## Main Window
 

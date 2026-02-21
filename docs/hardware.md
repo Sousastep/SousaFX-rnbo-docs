@@ -1,4 +1,4 @@
-# Hardware Requirements
+# Requirements
 
 1. Computer:
 
