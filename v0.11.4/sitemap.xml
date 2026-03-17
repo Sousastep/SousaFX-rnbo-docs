@@ -2,58 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/attributions/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/bindings/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/documentation/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/eula/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/hardware/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/installation/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/loopers/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/modding/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/overview/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/prestige/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/purchase/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
+    </url>
+    <url>
+         <loc>https://rnbo.sousastep.quest/v0.11.4/recommended_listening/</loc>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/releasenotes/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
     <url>
          <loc>https://rnbo.sousastep.quest/v0.11.4/setup/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-03-17</lastmod>
     </url>
 </urlset>
