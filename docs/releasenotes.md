@@ -1,5 +1,7 @@
 # Release Notes
 
+All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/releases](https://github.com/Sousastep/SousaFX-rnbo/releases)
+
 ## 0.11.4
 
 - Make delay feedback binding taper linear.

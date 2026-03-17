@@ -6,9 +6,7 @@
 
 # Bindings
 
-This page describes how the gamepad controls SousaFX. <br> 
-All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, <br> 
-but they may not yet be shown in their respective FX parameters windows.
+This page describes how the gamepad controls SousaFX. All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, but they may not yet be shown in their respective FX parameters windows.
 
 ![gamepad](img/gamepad.webp)
 
