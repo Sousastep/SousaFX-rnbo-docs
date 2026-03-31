@@ -138,7 +138,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LFO shape:
 
-	> Allowed only while Select is pressed. Value held when Select released.
+	> Can only be set while Start is pressed. The set value is held after Start is released.
 
 	> > Down to squish the triangle.
 
@@ -180,7 +180,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LFO shape:
 
-	> Allowed only while Select is pressed. Value held when Select released.
+	> Can only be set while Start is pressed. The set value is held after Start is released.
 
 	> > Left for rising saw.
 

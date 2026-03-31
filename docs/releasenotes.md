@@ -30,6 +30,8 @@ All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/rele
 
 - Add free-rate wah, enabled via R3.
 
+- Start button lets Left thumbstick set LFO shape.
+
 
 ## 0.11.4
 
