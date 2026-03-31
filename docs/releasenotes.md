@@ -2,6 +2,35 @@
 
 All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/releases](https://github.com/Sousastep/SousaFX-rnbo/releases)
 
+## 0.11.5
+
+- Refine delay feedback mechanism for hold and release:
+
+	- Adjust bindings: Select places hold, and Select + West releases hold.
+
+	- Slower fadeout of filter delay feedback amount after hold is released. 
+
+	- Auto-release if delay goes silent.
+
+- Remove all main LPFs except Simper's. 
+
+- To main LPF, Add resonance gain compensation, and add resonance limiter below 400 Hz.
+
+- Add binding to crossfade main LFO between triangle and square, as well as rising saw and falling saw. Improve phase of all shapes.
+
+- The Left and Right Thumbsticks' button press actions are now determined by whether or not Start and/or Select are held.
+
+- The main LPF's envelope modulation can be toggled on/off by pushing L3 while holding Start.
+
+- Lengthen looper's mechanism for auto-switching from recording to playing.
+
+- Remove crossover filter modulation, Hardcode to 80 Hz.
+
+- Increase pitchshifter mix when powerchord enabled.
+
+- Add free-rate wah, enabled via R3.
+
+
 ## 0.11.4
 
 - Make delay feedback binding taper linear.

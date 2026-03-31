@@ -33,7 +33,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| North 	       | Toggle metronome. |
 	| East 		       | Randomize drum samples. |
 	| South 	       | Toggle bumper drumming. |
-	| West 		       |  |
+	| West 		       | After pressing Select to place a hold on a delay feedback amount, press West while holding Select to release the hold. |
 	| Left Thumbstick  | While holding Select, the left thumbstick can be used to set the lowpass filter LFO's shape (from falling saw, to triangle, to rising saw) and the lowpass filter LFO's curvature (from squished, to fattened). |
 
 ![start](img/start.webp)
@@ -85,7 +85,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| left bumper| enable manual lowpass filter frequency [control](bindings.md#horizontal) |
+	| left bumper| enable manual wah |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -122,6 +122,12 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	> Down crossfades towards detuned dry sound. 
 
+- LFO floor envelope sensitivity:
+
+	> Up increases the sensitivity.
+
+	> Down decreases the sensitivity.
+
 - Bassline looper filtersweep.
 
 	> Up sweeps a highpass filter upwards.
@@ -130,13 +136,15 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	> Down sweeps a lowpass filter downwards.
 
-- LFO curvature:
+- LFO shape:
 
 	> Allowed only while Select is pressed. Value held when Select released.
 
-	> > Up to squish.
+	> > Down to squish the triangle.
 
-	> > Down to fatten.
+	> > Center for triangle.
+
+	> > Up to morph to square.
 
 
 ### Up 
@@ -158,14 +166,6 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 ![left horizontal](img/Lhoriz.webp)
 
-- Manual lowpass filter frequency control:
-
-	> Allowed while the Left Bumper is [held](bindings.md#d-pad).
-
-	> > Left sweeps the lowpass filter upwards. 
-
-	> > Right sweeps the lowpass filter downwards.
-
 - Drum filtersweep:
 
 	> Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone.
@@ -180,13 +180,19 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LFO shape:
 
-	> Allowed while Select is pressed.
+	> Allowed only while Select is pressed. Value held when Select released.
 
 	> > Left for rising saw.
 
 	> > Center for triangle.
 
 	> > Right for falling saw.
+
+- LFO ceiling envelope sensitivity:
+
+	> Left increases the sensitivity.
+
+	> Right decreases the sensitivity.
 
 
 ### Left
@@ -212,22 +218,24 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - LFO ceiling envelope sensitivity:
 
-	> down-left increases the sensitivity.
+	> Up-left increases the sensitivity.
 
-	> up-right decreases the sensitivity.
-
-- LFO floor envelope sensitivity:
-
-	> up-left increases the sensitivity.
-
-	> down-right decreases the sensitivity.
+	> Down-right decreases the sensitivity.
 
 
 ### L3 Button
 
 ![l3](img/L3.webp)
 
-Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Once to enable the transient helper, twice to disable the transient helper, and thrice to disable the crossfade entirely. 
+- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. 
+	
+	1. Once to enable the transient helper. 
+	
+	2. Twice to disable the transient helper. 
+	
+	3. Thrice to disable the crossfade entirely. 
+
+- Push Start & L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor.
 
 
 ### Magnitude
@@ -266,7 +274,7 @@ Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.
 
 ![right down](img/Rdown.webp)
 
-- Either LPF LFO decceleration, or swing amount, depending on subdivision.
+- Either LPF LFO decceleration, or swing amount, depending on [R3](bindings.md#r3-button).
 
 - Bassline looper delay feedback amount.
 
@@ -305,6 +313,14 @@ Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.
 
 	> > Right decreases the speed.
 
+- Free LFO speed:
+
+	> Allowed when [R3](bindings.md#r3-button) pressed thrice.
+
+	> > Left increases the speed.
+
+	> > Right decreases the speed.
+
 ### Left
 
 ![right left](img/Rleft.webp)
@@ -340,5 +356,14 @@ Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.
 
 ![r3](img/R3.webp)
 
-After pressing Start to place a hold on a delay feedback amount, pressing R3 will remove the hold. The hold is auto-removed after 16 bars regardless.
+Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO.
+
+1. Once for the vertical axis to control the acceleration (up accelerates, down deccelerates).
+
+2. Twice for the up axis to control the acceleration, and the down axis to control the swing amount.
+
+3. Thrice for the up axis to control the sync-free crossfade, the horizontal axis to control the free rate (left for faster, right for slower), and the down axis to control the swing amount.
+
+
+
 
