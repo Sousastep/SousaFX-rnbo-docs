@@ -32,6 +32,10 @@ All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/rele
 
 - Start button lets Left thumbstick set LFO shape.
 
+- Declick drum samples during fast retrigger.
+
+- Remove drum sample pitch shifting, and retrigger acceleration.
+
 
 ## 0.11.4
 

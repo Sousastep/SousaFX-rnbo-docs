@@ -303,16 +303,6 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	> > Right decreases the speed.
 
-- Drum retrigger rate acceleration:
-
-	> Allowed while the drum samples are being retriggered by holding down the bumpers.
-
-	> > Left increases the speed.
-
-	> > Center returns to the original speed and phase.
-
-	> > Right decreases the speed.
-
 - Free LFO speed:
 
 	> Allowed when [R3](bindings.md#r3-button) pressed thrice.
