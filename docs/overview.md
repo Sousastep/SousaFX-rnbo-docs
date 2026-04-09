@@ -1,12 +1,12 @@
 # Overview
 
-This overview describes all of the parameters that are adjustable via SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the audio effects.
+This overview describes all of the parameters that are adjustable via SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the audio effects. 
 
 ## Main Window
 
 ![main](img/main_window.webp)
 
-Closing this window quits SousaFX.
+Closing this window quits SousaFX. All parameter changes are auto-saved when SousaFX is closed.
 
 ### Status Bar
 
@@ -47,12 +47,6 @@ Below are the status displays for the [tuba bassline looper, and drum looper](lo
 
 	Sets the main envelope sensitivity, which should generally be around 180%
 
-### Save Restore
-
-The Save button saves all the parameters in the main window (except for the window layout), and all the FX parameters windows.
-
-The Restore button discards all changes and restores the previous save.
-
 ### Layout
 
 On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
@@ -73,8 +67,6 @@ The following windows may be opened via the FX Parameters menu:
 
 - [Mixbus](overview.md#mixbus)
 
-- [EQs](overview.md#eqs)
-
 ## Active Bindings
 
 ![bind](img/active_bindings.webp)
@@ -92,6 +84,90 @@ This is the heart of SousaFX, and sets the tone of the bassline. We'll start wit
 This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dry detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
 
 The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick). The crosfade's behavior can be modified with the left thumbstick's [button](bindings.md#l3-button).
+
+### Overdrive
+
+These parameters set the tone of the overdriven lowpass filtered sound on the quieter end of the crossfade. This signal is compressed by the pre-xfade-wet conpressor.
+
+- mix
+
+	wet / dry mixer, 100% is all wet signal
+
+- drive
+
+	overdrive amount
+
+- high boost
+
+	Increase the volume of the high frequencies for a brighter sound. (pre-drive)
+
+- high freq
+
+	Set the center frequency of the high filter.
+
+- high Q
+
+	Set the width of the high filter. 0% is broad, 100% is narrow.
+
+- mid trim
+
+	Decrease the volume of the mid frequencies for a less muddier sound. (post-drive)
+
+- mid freq
+
+	Set the center frequency of the mid filter.
+
+- mid Q
+
+	Set the width of the mid filter. 0% is broad, 100% is narrow.
+
+
+### Detune
+
+These parameters set the tone of the dryer detuned sound on the louder end of the crossfade. This signal is compressed by the pre-xfade-dry compressor.
+
+- mix
+
+	Wet / dry mixer, 100% is all wet signal.
+
+- spread
+
+	The amount of detune between the left and right channels in cents.
+
+- window
+
+	Longer window = higher quality, but higher latency. (there is no latency compensation on the dry signal)
+
+- high boost
+
+	Increase the volume of the high frequencies for a brighter sound.
+
+- high freq
+
+	Set the center frequency of the high filter.
+
+- high Q
+
+	Set the width of the high filter. 0% is broad, 100% is narrow.
+
+- mid trim
+
+	Decrease the volume of the mid frequencies for a less muddy sound.
+
+- mid freq
+
+	Set the center frequency of the mid filter.
+
+- mid Q
+
+	Set the width of the mid filter. 0% is broad, 100% is narrow.
+
+### Bassline EQs
+
+Low-mid frequencies tend to build up for various reasons. The "mid trim" can tame those frequencies.
+
+The tuba's sub frequencies can drop precipitously below 60 Hz. The low boost can compensate for that to an extent.
+
 
 ### LFO env sens
 
@@ -123,63 +199,8 @@ The four dials below adjust the floor and ceiling's minimums and maximums:
 
 - Min Floor
 
-### LPF menu
+The two number boxes at the bottom set the minimum and maximum resonance for the modulated lowpass filter. The resonance is modulated by the tuba's loudness.
 
-There are three different lowpass filters to choose from:
-
-- Korg 35
-
-- Andrew Simper's SVF
-
-- Vadim Zavalishin's diode ladder
-
-The toggle on the left allows the lowpass filter type to randomize whenever the bassline looper starts looping.
-
-The minimum and maximum resonance for each filter can be set via the six number boxes.
-
-### Detune
-
-These parameters set the tone of the dryer detuned sound on the louder end of the crossfade. This signal is compressed by the pre-xfade-dry compressor.
-
-- mix
-
-	wet / dry mixer, 100% is all wet signal
-
-- spread
-
-	the amount of detune between the left and right channels in cents
-
-- window
-
-	longer window = higher quality, but higher latency
-
-### Overdrive
-
-These parameters set the tone of the overdriven lowpass filtered sound on the quieter end of the crossfade. This signal is compressed by the pre-xfade-wet conpressor.
-
-- mix
-
-	wet / dry mixer, 100% is all wet signal
-
-- drive
-
-	overdrive amount
-
-- high cut
-
-- low cut
-
-- treble
-
-- mid
-
-	This mid boost is tamed by the pre-xfade-wet conpressor's sidechain eq's "hi mid gain".
-
-- midfreq
-
-- bass
-
-- output volume
 
 ## Compressors and Limiters
 
@@ -193,7 +214,7 @@ This window displays two limiters and six compressors
 
 !!! note
 
-	There's a 90 Hz crossover filter that separates the tuba's highs and lows pre-overdrive, to keep the lows clean.
+	There is an 80 Hz crossover filter that separates the tuba's highs and lows pre-overdrive, to keep the lows clean, and allow the lows to be compressed separately from the highs.
 
 - post-xover-lows
 
@@ -269,6 +290,10 @@ This window displays four delays for the bassline input, the bassline looper, th
 
 ![mixbus](img/mixbus_params.webp)
 
+- Mic EQ
+
+	This lowpass filter cuts extraneous high frequencies from the mic's input signal.
+
 ### Reverb
 
 The drums, bassline, and solo are sent to this reverb.
@@ -311,7 +336,7 @@ The drums, bassline, and solo are sent to this reverb.
 
 - dry vol
 
-	The volume of the tuba solo's "dry" signal, which includes the mic eq, pitch shifter, and solo compressor, and does not include the delay or stutter. This parameter can be quite low if you're playing in a small room.
+	The volume of the tuba solo's "dry" signal, which is post mic eq, pitch shifter, and solo compressor. This does not include the delay or stutter. This parameter can be turned down quite a bit if you're performing in a small room.
 
 - delay vol
 
@@ -334,16 +359,3 @@ The drums, bassline, and solo are sent to this reverb.
 - minimum drum reverb volume
 
 	The minimum volume of the drum's reverb effect.
-
-
-## EQs
-
-![eq](img/eq_params.webp)
-
-Low-mid frequencies tend to build up for various reasons. The mic and bassline's mid-EQs can tame those frequencies.
-
-The tuba's sub frequencies drop precipitously below 60 Hz. The low boost can compensate for that to an extent. This can, however, exacerbate feedback.
-
-The mic's lowpass cuts extraneous high frequencies from the mic's input signal.
-
-

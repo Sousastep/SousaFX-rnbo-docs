@@ -212,17 +212,6 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 	> Allowed while bassline looper enabled.
 
 
-### Diagonal
-
-![left diagonal](img/Ldiag.webp)
-
-- LFO ceiling envelope sensitivity:
-
-	> Up-left increases the sensitivity.
-
-	> Down-right decreases the sensitivity.
-
-
 ### L3 Button
 
 ![l3](img/L3.webp)
