@@ -18,11 +18,10 @@ Start and Select are used for modifying the functions of the North, East, South,
 
 	| Input       | Function |
 	|-------------|----------|
-	| North 	  | Tap tempo. |
+	| North 	  | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping.|
 	| East 		  | Drum [looper](loopers.md) start / stop / clear. |
-	| South 	  | Momentarily enable main stutter. <br> To perma-enable: Press start/select before releasing South. |
+	| South 	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
 	| West 		  | Bassline [looper](loopers.md) start / stop / clear. |
-	| Thumbsticks | Described [below](bindings.md#left-thumbstick). |
 
 ![select](img/select.webp)
 
@@ -33,8 +32,8 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| North 	       | Toggle metronome. |
 	| East 		       | Randomize drum samples. |
 	| South 	       | Toggle bumper drumming. |
-	| West 		       | After pressing Select to place a hold on a delay feedback amount, press West while holding Select to release the hold. |
-	| Left Thumbstick  | While holding Select, the left thumbstick can be used to set the lowpass filter LFO's shape (from falling saw, to triangle, to rising saw) and the lowpass filter LFO's curvature (from squished, to fattened). |
+	| West 		       | Releases any holds on all delay feedback amounts. |
+	| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
 
 ![start](img/start.webp)
 
@@ -46,7 +45,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
 	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 	| West 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
-	| Right Thumbstick | While using the right thumbstick to modulate any delay's feedback amount, pressing Start will place a hold on said feedback amount until the thumbstick is moved outside of its deadzone after either 16 bars have passed, or R3 (the right thumbstick button) is pressed. |
+	| Left Thumbstick  | While holding Start, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
 
 - With start and select pressed:
 
@@ -54,13 +53,13 @@ Start and Select are used for modifying the functions of the North, East, South,
 	|-----------|----------|
 	| North 	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
 	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
-	| South 	| |
+	| South 	| Nothing yet. |
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
 
 
 ## Shoulder Buttons
 
-While the tuba isn't playing, and the drum looper isn't looping, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
+While bumper drumming is enabled, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
 
 | Button 	| Samples  |
 |-----------|----------|
@@ -69,11 +68,15 @@ While the tuba isn't playing, and the drum looper isn't looping, pressing the sh
 | Right Trigger 	| Tom      |
 | Right Bumper 		| Kick     |
 
-While the tuba is playing, or the drum looper is looping, the shoulder buttons operate as follows:
+While bumper drumming is disabled (which happens automatically while the tuba is playing, or the drum looper is looping) the shoulder buttons operate as follows:
 
-The left trigger, and right bumper, are used to adjust the function of the thumbsticks.
+| Button 	| Samples  |
+|-----------|----------|
+| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also momentarily disables the lowpass filter modulation acceleration until the right thumbstick is within its deadzone. |
+| Left Bumper 		| Without the Left Trigger pressed: Momentarily enables the manual wah. <br> With the Left Trigger pressed: Sets subdivision to half note. |
+| Right Trigger 	| Nothing. |
+| Right Bumper 		| Momentarily disables the stutter for the drum looper and bassline looper. |
 
-Holding the right trigger lets an ADSR modulate the overdriven lowpass filter whenever the tuba articulates.
 
 ### D-pad
 
@@ -85,7 +88,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 	| d-pad	    | Function	  |
 	|-----------|-------------|
-	| left bumper| enable manual wah |
+	| left bumper| Momentarily enable manual wah |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -120,7 +123,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	> Up crossfades towards the overdriven modulated lowpass filter sound.
 
-	> Down crossfades towards detuned dry sound. 
+	> Down crossfades towards the detuned dry sound. 
 
 - LFO floor envelope sensitivity:
 
@@ -205,7 +208,7 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 	> Denied after the bassline looper *stops* looping, & the left thumbstick is within its deadzone.
 
-	> Momentarily disallowed while RB is held down.
+	> Momentarily disallowed while the right bumper is held down.
 
 - Bassline looper stutter autopan amount.
 
@@ -218,23 +221,13 @@ If the d-pad is pressed quickly, the delays will not pitch shift while the delay
 
 - Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. 
 	
-	1. Once to enable the transient helper. 
+	1. Once to enable the "transient helper", which increases the crossfade whenever the noisegate is gating.
 	
-	2. Twice to disable the transient helper. 
+	2. Twice to disable the "transient helper". 
 	
 	3. Thrice to disable the crossfade entirely. 
 
 - Push Start & L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor.
-
-
-### Magnitude
-
-- LPF resonance boost.
-
-
-!!! note
-
-	The magnitude is the distance of a thumbstick from its center.
 
 
 ## Right Thumbstick
