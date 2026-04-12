@@ -2,13 +2,13 @@
 
 1. Computer:
 
-	SousaFX's computer requirements are the same as [Max's system requirements](https://cycling74.com/downloads).
+	SousaFX works on both MacOS and Windows, with the same requirements as [Max's system requirements](https://cycling74.com/downloads).
 
 	It's also possible, with a steeper learning curve, to run SousaFX on a [Raspberry Pi 5 microcontroller](https://github.com/Sousastep/sousaFX-rpi-scripts).
 
 2. Audio interface:
 
-	Any USB interface with one mic input, and two (ideally stereo) outputs (one for the [FoH](https://www.sweetwater.com/insync/foh/) mix, and one for the monitor mix) will do.
+	Any USB interface with one mic input, and two stereo outputs (one for the main mix, and one for the monitor mix) will do.
 
 3. Headphones, in-ear monitors, or loudspeakers:
 	
