@@ -72,10 +72,10 @@ While bumper drumming is disabled (which happens automatically while the tuba is
 
 | Button 	| Samples  |
 |-----------|----------|
-| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also momentarily disables the lowpass filter modulation acceleration until the right thumbstick is within its deadzone. |
+| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also momentarily disables the lowpass filter modulation acceleration, and all stutter acceleration, until the right thumbstick is within its deadzone. |
 | Left Bumper 		| Without the Left Trigger pressed: Momentarily enables the manual wah. <br> With the Left Trigger pressed: Sets subdivision to half note. |
 | Right Trigger 	| Nothing. |
-| Right Bumper 		| Momentarily disables the stutter for the drum looper and bassline looper. |
+| Right Bumper 		| Momentarily disables the stutter for the drum looper and bassline looper. <br> Also momentarily disables all delay sends until the right thumbstick is within its deadzone. |
 
 
 ### D-pad

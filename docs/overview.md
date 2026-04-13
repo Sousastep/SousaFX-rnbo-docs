@@ -177,7 +177,7 @@ This LFO modulates the lowpass filter frequency to create the dubstep wobble sou
 
 The louder the tuba plays, the higher the LFO's ceiling and floor become.
 
-In addition, two [bindings](bindings.md#diagonal) adjust the ceiling and floor envelope sensitivities separately as well:
+In addition, two bindings adjust the ceiling and floor envelope sensitivities separately as well:
 
 - LFO floor envelope sensitivity
 
