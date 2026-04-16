@@ -19,7 +19,7 @@ Open license bpatcher using the super secret method, save to trigger savebang cl
 
 In the main patcher, edit and save `loadmess #.#.#`
 
-make one last commit for this version, with the rnbo~ obj loaded in SousaFX-rnbo.maxproj, not the external.
+make one last commit for this version, with the external loaded in SousaFX-rnbo.maxproj, not the rnbo~ obj.
 
 (click toggle next to the "external / rnbopat" switch.)
 
