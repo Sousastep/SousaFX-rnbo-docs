@@ -12,7 +12,7 @@ This page describes how the gamepad controls SousaFX. All of the parameters on t
 
 ## Start, Select, N E S W
 
-Start and Select are used for modifying the functions of the North, East, South, and West buttons, as well as modifying the functions of the thumbsticks.
+Start and Select are used for modifying the functions of the North, East, South, and West buttons, as well as modifying the functions of the thumbsticks, and the d-pad.
 
 - Without start or select pressed:
 
@@ -55,6 +55,12 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
 	| South 	| Nothing yet. |
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
+
+- With start and/or select pressed:
+
+	| Input     | Function |
+	|-----------|----------|
+	| D-pad     | Toggle 8th note auto-swing |
 
 
 ## Shoulder Buttons
