@@ -24,9 +24,9 @@ Next is the audio engine power button, along with the CPU meter. The audio engin
 
 ### Displays
 
-To the top left of the white box, is the game controller input display. The two percentages set the size of the respective thumbstick's [deadzone](https://minimuino.github.io/thumbstick-deadzones/).
+Near the top-left is the game controller input display. The two percentages set the size of the respective thumbstick's [deadzones](https://minimuino.github.io/thumbstick-deadzones/).
 
-To the right are the input volume meters. 
+To the right is the input volume meter. 
 
 Below are the status displays for the [tuba bassline looper, and drum looper](loopers.md). The number displays the loop length in bars.
 
@@ -37,15 +37,19 @@ Below are the status displays for the [tuba bassline looper, and drum looper](lo
 | green 	| playing 	|
 | orange 	| stopping 	|
 
-### Dials
+Below the looper status displays is the current preset number, the preset description, and the noise gate threshold.
+
+- Preset Number
+
+	These presets store all FX parameters. By default, preset #1 is tuned for a tuba with a mic positioned outside the rim of the bell, and preset #2 is tuned for a sousaphone with a mic positioned inside the rim of the bell. Presets #3 and above are blank. All presets are auto-saved when the preset number changes, and when SousaFX quits. SousaFX always loads preset #1 on launch.
+
+- Preset Description
+
+	This text box stores a short description of each preset.
 
 - Noise Gate Thresh
 
 	Sets the volume underneath which the tuba's input signal will be silent. The louder the environment is, the higher this will need to be.
-
-- Env Sens
-
-	Sets the main envelope sensitivity, which should generally be around 180%
 
 ### Layout
 
