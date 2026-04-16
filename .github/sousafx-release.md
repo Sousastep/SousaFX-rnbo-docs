@@ -73,6 +73,9 @@ add files from `/sousaFX-rnbo/` to `/sousaFX-v#.#.#/`:
 	/.docs/. ---> see OFFLINE in sousaFX-rnbo-docs below
 ```
 
+Open about_SousaFX.maxpat without the project AGAIN.
+Open license bpatcher using the super secret method, save to trigger savebang clears AGAIN (idk why but it is necessary now).
+
 zip, named `SousaFX-v#.#.#.zip`
 
 download zip to blank user profile on macbook to test (drag zip to `Network/macbook/testing’s Public Folder/Drop Box`)
