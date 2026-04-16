@@ -12,7 +12,7 @@ All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/rele
 
 	- Auto-release if delay goes silent.
 
-- Remove all main LPFs except Simper's. 
+- Add 8th note auto-swing.
 
 - To main LPF, Add resonance gain compensation, and add resonance limiter below 400 Hz.
 
@@ -35,6 +35,10 @@ All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/rele
 - Declick drum samples during fast retrigger.
 
 - Remove drum sample pitch shifting, and retrigger acceleration.
+
+- Remove all main LPFs except Simper's. 
+
+- Remove ADSR.
 
 
 ## 0.11.4
