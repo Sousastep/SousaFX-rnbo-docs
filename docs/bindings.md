@@ -22,6 +22,8 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| East 		  | Drum [looper](loopers.md) start / stop / clear. |
 	| South 	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
 	| West 		  | Bassline [looper](loopers.md) start / stop / clear. |
+	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+	| [Right Thumbstick Button](bindings.md/#r3-button) |		< See link	|
 
 ![select](img/select.webp)
 
@@ -46,6 +48,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 	| West 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 	| Left Thumbstick  | While holding Start, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
+	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
 
 - With start and select pressed:
 
@@ -53,7 +56,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	|-----------|----------|
 	| North 	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
 	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
-	| South 	| Nothing yet. |
+	| South 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
 
 - With start and/or select pressed:
@@ -114,9 +117,11 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	| down		| quarter quintuplet |
 	| left		| 8th quintuplet |
 
-If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+The delay's subdivision is half as fast as the main subdivision. While the tuba is playing, or any stutter is enabled, the d-pad will not modify the delay's subdivision.
 
 If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held briefly, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
+
+If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
 
 
 ## Left Thumbstick
