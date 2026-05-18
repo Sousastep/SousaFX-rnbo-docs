@@ -116,6 +116,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	| right 	| 16th triplet |
 	| down		| quarter quintuplet |
 	| left		| 8th quintuplet |
+	| up left   | dotted 16th |
 
 The delay's subdivision is half as fast as the main subdivision. While the tuba is playing, or any stutter is enabled, the d-pad will not modify the delay's subdivision.
 
