@@ -36,6 +36,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| South 	       | Toggle bumper drumming. |
 	| West 		       | Releases any holds on all delay feedback amounts. |
 	| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
+	| Left Thumbstick  | Toggles the Crossfade Binding between Magnitude and Vertical. Hold to set to Magnitude.
 
 ![start](img/start.webp)
 
@@ -81,10 +82,10 @@ While bumper drumming is disabled (which happens automatically while the tuba is
 
 | Button 	| Samples  |
 |-----------|----------|
-| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also disables the lowpass filter modulation acceleration, and all stutter acceleration, until the right thumbstick is within its deadzone. |
-| Left Bumper 		| Without the Left Trigger pressed: Momentarily enables the manual wah. <br> With the Left Trigger pressed: Sets subdivision to half note. |
+| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also enables the lowpass filter modulation acceleration, and disables all stutter acceleration, until the right thumbstick is within its deadzone. |
+| Left Bumper 		| Without the Left Trigger pressed: Disables the stutter for the drum looper and bassline looper, until either the left thumbstick is within its deadzone, or the Left Bumper is pressed again. Also disables the drum, bassline, and looper delay sends (but not the solo delay send) until the right thumbstick is within its deadzone. <br> With the Left Trigger pressed: Sets subdivision to half note. |
 | Right Trigger 	| Nothing. |
-| Right Bumper 		| Disables the stutter for the drum looper and bassline looper, until the left thumbstick is within its deadzone. <br> Also momentarily disables all delay sends until the right thumbstick is within its deadzone. |
+| Right Bumper 		| Momentarily enables the manual wah. |
 
 
 ### D-pad
@@ -118,11 +119,11 @@ The left trigger is used for changing the function of the d-pad and the left bum
 	| left		| 8th quintuplet |
 	| up left   | dotted 16th |
 
-The delay's subdivision is half as fast as the main subdivision. While the tuba is playing, or any stutter is enabled, the d-pad will not modify the delay's subdivision.
+If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
 
 If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held briefly, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
 
-If a subdivision is triggered twice in a row, then while the button is held down the second time, the stutters are reversed, and the wah shifts to the offbeat. 
+The delay's subdivision is half as fast as the main subdivision. While the tuba is playing, the d-pad will not modify the bassline delay's subdivision.
 
 
 ## Left Thumbstick
@@ -136,6 +137,8 @@ If a subdivision is triggered twice in a row, then while the button is held down
 	> Up crossfades towards the overdriven modulated lowpass filter sound.
 
 	> Down crossfades towards the detuned dry sound. 
+
+	Press L3 while holding Select to toggle this binding between Vertical and Magnitude.
 
 - LFO floor envelope sensitivity:
 
@@ -227,6 +230,17 @@ If a subdivision is triggered twice in a row, then while the button is held down
 	> Allowed while bassline looper enabled.
 
 
+### Magnitude
+
+- [Crossfade](overview.md#crossfade-env-sens) position. 
+
+	> The center crossfades towards the detuned dry sound. 
+
+	> The edge crossfades towards the overdriven modulated lowpass filter sound.
+
+	Press L3 while holding Select to toggle this binding between Vertical and Magnitude.
+
+
 ### L3 Button
 
 ![l3](img/L3.webp)
@@ -239,7 +253,9 @@ If a subdivision is triggered twice in a row, then while the button is held down
 	
 	3. Thrice to disable the crossfade entirely. 
 
-- Push Start & L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor.
+- Push L3 while holding Start to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor.
+
+- Push L3 while holding Select to toggle the Crossfade binding between Magnitude and Vertical.
 
 
 ## Right Thumbstick
