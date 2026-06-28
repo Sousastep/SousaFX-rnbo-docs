@@ -36,7 +36,7 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| South 	       | Toggle bumper drumming. |
 	| West 		       | Releases any holds on all delay feedback amounts. |
 	| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
-	| Left Thumbstick  | Toggles the Crossfade Binding between Magnitude and Vertical. Hold to set to Magnitude.
+	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
 
 ![start](img/start.webp)
 
@@ -82,8 +82,8 @@ While bumper drumming is disabled (which happens automatically while the tuba is
 
 | Button 	| Samples  |
 |-----------|----------|
-| Left Trigger 		| Changes the subivisions set by the d-pad and left bumper. <br> Also enables the lowpass filter modulation acceleration, and disables all stutter acceleration, until the right thumbstick is within its deadzone. |
-| Left Bumper 		| Without the Left Trigger pressed: Disables the stutter for the drum looper and bassline looper, until either the left thumbstick is within its deadzone, or the Left Bumper is pressed again. Also disables the drum, bassline, and looper delay sends (but not the solo delay send) until the right thumbstick is within its deadzone. <br> With the Left Trigger pressed: Sets subdivision to half note. |
+| Left Trigger 		| ● Changes the subivisions set by the d-pad and left bumper. <br> ● Enables the lowpass filter modulation acceleration, and disables all stutter acceleration, until the right thumbstick is within its deadzone. |
+| Left Bumper 		| Without the Left Trigger pressed: <br> ● Disables the stutter for the drum looper and bassline looper, until either the left thumbstick is within its deadzone, or the Left Bumper is pressed again.  <br> ● Disables all delay sends until the right thumbstick is within its deadzone. <br> ● Enables the solo stutter effect until the right thumbstick is within its deadzone. <br> <br> With the Left Trigger pressed: <br> ● Sets subdivision to half note. |
 | Right Trigger 	| Nothing. |
 | Right Bumper 		| Momentarily enables the manual wah. |
 
@@ -123,7 +123,9 @@ If a subdivision is triggered twice in a row, then while the button is held down
 
 If the d-pad is pressed quickly, the delays will not pitch shift while the delay time changes, but if the d-pad is held briefly, then released, the delays will pitch shift while the delay time changes. This shift takes longer to go upwards than downwards.
 
-The delay's subdivision is half as fast as the main subdivision. While the tuba is playing, the d-pad will not modify the bassline delay's subdivision.
+The delay's subdivisions are half as fast as the main subdivision.
+
+While the tuba is playing, the d-pad will not modify the bassline delay's subdivision.
 
 
 ## Left Thumbstick
@@ -146,7 +148,7 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 	> Down decreases the sensitivity.
 
-- Bassline looper filtersweep.
+- Bassline looper filtersweep:
 
 	> Up sweeps a highpass filter upwards.
 
@@ -163,6 +165,12 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 	> > Center for triangle.
 
 	> > Up to morph to square.
+
+- Solo Tremolo Autopan Depth:
+
+	> Allowed after the left bumper is pressed.
+
+	> Denied after the left bumper is released, & the right thumbstick is within its deadzone. 
 
 
 ### Up 
@@ -212,6 +220,14 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 	> Right decreases the sensitivity.
 
+- Solo Tremolo Duty Cycle 
+
+	This is the ratio of the time the square wave is active, to the total time of one complete cycle.
+
+	> Allowed after the left bumper is pressed.
+
+	> Denied after the left bumper is released, & the right thumbstick is within its deadzone. 
+
 
 ### Left
 
@@ -245,7 +261,7 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 ![l3](img/L3.webp)
 
-- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. 
+- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Hold for more than 600 ms, then release, to select the first option.
 	
 	1. Once to enable the "transient helper", which increases the crossfade whenever the noisegate is gating.
 	
@@ -253,9 +269,9 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 	
 	3. Thrice to disable the crossfade entirely. 
 
-- Push L3 while holding Start to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor.
+- While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.
 
-- Push L3 while holding Select to toggle the Crossfade binding between Magnitude and Vertical.
+- While holding Select, push L3 to toggle the Crossfade binding between "vertical" and "magnitude". Hold for more than 600 ms, then release, to set it to vertical.
 
 
 ## Right Thumbstick
@@ -279,6 +295,7 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 	> Allowed after the left trigger is *released*, & the right thumbstick is within its deadzone.
 
 	> Denied after the left trigger is *pressed*.
+
 
 ### Down
 
@@ -321,15 +338,22 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 	> > Right decreases the speed.
 
+- Solo Tremolo Depth:
+
+	> Allowed after the left bumper is pressed.
+
+	> Denied after the left bumper is released, & the right thumbstick is within its deadzone. 
+
+
 ### Left
 
 ![right left](img/Rleft.webp)
 
 - Main delay send & solo delay send:
 
-	> Denied after the right bumper is *pressed*.
+	> Denied after the left bumper is *pressed*.
 
-	> Allowed after the right bumper is *released*, & the right thumbstick is within its deadzone.
+	> Allowed after the left bumper is *released*, & the right thumbstick is within its deadzone.
 
 - Drum delay send, and bassline looper delay send:
 
@@ -337,7 +361,7 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 	> Disallowed after the tuba *starts* playing, & the right thumbstick is within its deadzone. 
 
-	> Also disallowed after the right bumper is *pressed*.
+	> Also disallowed after the left bumper is *pressed*.
 
 
 ### Right
@@ -352,11 +376,23 @@ The delay's subdivision is half as fast as the main subdivision. While the tuba 
 
 	> Denied after the tuba *starts* playing, & the right thumbstick is within its deadzone.
 
+
+### Vertical
+
+![right vertical](img/Rvert.webp)
+
+- Solo Tremolo Acceleration:
+
+	> Allowed after the left bumper is pressed.
+
+	> Denied after the left bumper is released, & the right thumbstick is within its deadzone. 
+
+
 ### R3 Button
 
 ![r3](img/R3.webp)
 
-Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO.
+Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO. Hold for more than 600 ms, then release, to select the first option.
 
 1. Once for the vertical axis to control the acceleration (up accelerates, down deccelerates).
 

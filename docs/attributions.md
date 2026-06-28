@@ -16,7 +16,7 @@ The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](
 
 `gp.filterdelaywrap` and `jb.autowah` use Alex M's [springto](https://discord.com/channels/289378508247924738/289378711533387777/1406779779449098341)
 
-The licence checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8)
+The license checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8)
 
 `av.clipper` by [Stevon_AV](https://www.youtube.com/watch?v=Hu2LaIqiyNE)
 
@@ -33,34 +33,12 @@ The input display uses pngs from [Kenney's Input Prompts](https://kenney.nl/asse
 
 [Ess Mattisson](https://fors.fm/) - [gen filters](https://github.com/ess-m/gen-filters)
 
-- fc.diode
-
-	```
-	Zero Delay Feedback filters
- 	using trapezoidal integrator by Vadim Zavalishin
- 	https://www.discodsp.net/VAFilterDesign_2.1.2.pdf
-	
- 	based on implementations by Will Pirkle and Steven Yi for Csound
- 	
- 	http://www.willpirkle.com/Downloads/AN-4VirtualAnalogFilters.2.0.pdf
- 	http://www.willpirkle.com/Downloads/AN-5Korg35_V3.pdf
- 	http://www.willpirkle.com/Downloads/AN-6DiodeLadderFilter.pdf
- 	http://www.willpirkle.com/Downloads/AN-7Korg35HPF_V2.pdf
- 	https://github.com/csound/csound/blob/master/Opcodes/wpfilters.c
- 	```
-
 - fc.svf-as.gendsp & fc.bell
 
 	```
 	SVF structure by Andrew Simper
  	https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
  	```
-
-- fc.k35lp.gendsp
-
-	```
-	Korg 35 lowpass
-	```
 
 [Rusty Allred](https://web.archive.org/web/20071003115434/http://www.planetanalog.com/article/printableArticle.jhtml?articleID=12802683), [Trond Lossius](https://github.com/jamoma/JamomaCore/blob/master/DSP/extensions/FilterLib/source/TTLowpassLinkwitzRiley4.cpp), [Timothy Place](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial), [J Curtis](https://cycling74.com/tutorials/crossover-filter-design-video-tutorial#reply-5e4377db8a6f416613deaf7c) -  4th-order Linkwitz Riley Crossover Filter
 
