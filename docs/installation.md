@@ -7,14 +7,22 @@
 		SousaFX remains fully functional after [Max’s 30-day trial ends](https://support.cycling74.com/hc/en-us/articles/360049995834-Max-8-Max-7-Authorization#link-2). Max authorization is not required.
 	<br>
 
-2. Click on "menubar > Max > Preferences..."
+2. Click on "menubar > File > Show Package Manager"
+
+	- In the package manager's search bar, search for FluidCorpusManipulation
+	- Click on "FluidCorpusManipulation by FluCoMa"
+	- Click "Install"
+
+	<br>
+
+3. Click on "menubar > Max > Preferences..."
 
 	![main](img/max_prefs.webp)
 
 	- Set the Audio Input Device and Output Device to the connected audio interface.
 	- Set the Sampling Rate to 48000.
 	- Set the two Vector Sizes to 256 or less. Lower vector sizes result in lower latency, but a higher possibility of CPU-overload-induced crackles in the audio.
-	- Overdrive and Scheduler in Audio Interrupt can be off.
+	- Overdrive should be On, and Scheduler in Audio Interrupt should be off.
 	- Click the "Audio I/O Mappings" button on the bottom left, to the left of the speaker button. These mapping will likely be correct by default.
 
 	![main](img/max_iomap.webp)
@@ -25,13 +33,13 @@
 
 	<br>
 
-3. Download SousaFX-v0.11.5.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.5/SousaFX-v0.11.5.zip) 
+4. Download SousaFX-v0.11.6.zip by clicking this link: [Download](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.6/SousaFX-v0.11.6.zip) 
 
-	- Unzip `SousaFX-v0.11.5.zip`, and move the `SousaFX-v0.11.5` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
+	- Unzip `SousaFX-v0.11.6.zip`, and move the `SousaFX-v0.11.6` folder into your `~/‍Documents/‍Max 9/‍Projects/` folder (create the Projects folder if it doesn't exist).
 
 	- If you have previously installed SousaFX, then replace the `data` folder in the current version of SousaFX with the `data` folder from the old version of SousaFX.
 
-	- Double-click `SousaFX-v0.11.5.maxproj` to launch the rig.
+	- Double-click `SousaFX-v0.11.6.maxproj` to launch the rig.
 
 	!!! note
 

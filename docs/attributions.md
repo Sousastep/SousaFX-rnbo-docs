@@ -20,6 +20,12 @@ The license checker uses Floating Point's [Gregorian-Julian date converter](http
 
 `av.clipper` by [Stevon_AV](https://www.youtube.com/watch?v=Hu2LaIqiyNE)
 
+
+## Externals
+
+`fluid.pitch~` by [FluCoMa](https://www.flucoma.org/)
+
+
 ## Media
 
 The drums are sampled from the infamous [BKE Beat Thang](https://youtu.be/4k04fq91Rns)

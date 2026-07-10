@@ -10,7 +10,7 @@ Closing this window quits SousaFX. All parameter changes are auto-saved when Sou
 
 ### Status Bar
 
-The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, Off, and Off, respectively.
+The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, On, and Off, respectively.
 
 The top "X" toggle rounds the tempo to an integer.
 
@@ -22,13 +22,17 @@ Next is the time signature numerator, which can be set by tapping [North](bindin
 
 Next is the audio engine power button, along with the CPU meter. The audio engine will auto-start when SousaFX is launched, and can be toggled off to mute SousaFX.
 
-### Displays
+### Input Display
 
 Near the top-left is the game controller input display. The two percentages set the size of the respective thumbstick's [deadzones](https://minimuino.github.io/thumbstick-deadzones/).
 
-To the right is the input volume meter. 
+### Phase Rotator
 
-Below are the status displays for the [tuba bassline looper, and drum looper](loopers.md). The number displays the loop length in bars.
+The yellow toggle to the right of the input display enables a phase rotator that evens out the tuba's asymmetrical waveform. The frequency and bandwidth of the phase rotator are set via the boxes to the right of the toggle. 
+
+### Looper Status
+
+Below the input display are the statuses of the [bassline looper, and the drum looper](loopers.md). The number displays the loop length in bars.
 
 | color     | status 	|
 |-----------|-----------|
@@ -37,7 +41,9 @@ Below are the status displays for the [tuba bassline looper, and drum looper](lo
 | green 	| playing 	|
 | orange 	| stopping 	|
 
-Below the looper status displays is the current preset number, the preset description, and the noise gate threshold.
+### Presets
+
+Below the looper statuses is the current preset number, the preset description, and the noise gate threshold.
 
 - Preset Number
 
@@ -55,11 +61,12 @@ Below the looper status displays is the current preset number, the preset descri
 
 On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
 
+
 ## Menubar
 
 ![menubar](img/menubar.webp)
 
-The following windows may be opened via the FX Parameters menu:
+FX Parameters:
 
 - [Active Bindings](overview.md#active-bindings)
 
@@ -70,6 +77,25 @@ The following windows may be opened via the FX Parameters menu:
 - [Delays](overview.md#delays)
 
 - [Mixbus](overview.md#mixbus)
+
+Settings:
+
+- [Audio Status...](https://docs.cycling74.com/userguide/preferences_and_settings/#audio)
+
+- [Audio IO Status...](overview.md#audio-io-status)
+
+- Background Color
+
+- Save Window Layout
+
+Support:
+
+- [Documentation](documentation.md)
+
+- [Report a bug](https://github.com/Sousastep/SousaFX-rnbo/issues)
+
+- [Join the Discord](https://discord.gg/JkSQzfZUdT)
+
 
 ## Active Bindings
 
@@ -87,7 +113,7 @@ This is the heart of SousaFX, and sets the tone of the bassline. We'll start wit
 
 This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dry detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
 
-The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick). The crosfade's behavior can be modified with the left thumbstick's [button](bindings.md#l3-button).
+The crossfade's range is actively adjusted via the "Crossfade Position" [binding](bindings.md#left-thumbstick). The crossfade's behavior can be modified with the left thumbstick's [button](bindings.md#l3-button).
 
 ### Overdrive
 
@@ -99,7 +125,7 @@ These parameters set the tone of the overdriven lowpass filtered sound on the qu
 
 - drive
 
-	overdrive amount
+	overdrive amount.
 
 - high boost
 
@@ -168,9 +194,16 @@ These parameters set the tone of the dryer detuned sound on the louder end of th
 
 ### Bassline EQs
 
-Low-mid frequencies tend to build up for various reasons. The "mid trim" can tame those frequencies.
+Low-mid frequencies tend to build up for various reasons. The "mid trim" can tame those frequencies. However, it's generally better to use the mid trim on the overdrive and detune FX instead, since they're pre-crossover, and won't trim sub-frequencies.
 
 The tuba's sub frequencies can drop precipitously below 60 Hz. The low boost can compensate for that to an extent.
+
+
+### Octaver
+
+This octaver tracks the tuba's pitch and plays a sine wave one octave below.
+
+While the tuba's soloing, it'll play a 12th above.
 
 
 ### LFO env sens
@@ -363,3 +396,8 @@ The drums, bassline, and solo are sent to this reverb.
 - minimum drum reverb volume
 
 	The minimum volume of the drum's reverb effect.
+
+
+## Audio IO Status
+
+![audio_io_status](img/audio_io_status.webp)

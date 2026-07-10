@@ -2,6 +2,23 @@
 
 All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/releases](https://github.com/Sousastep/SousaFX-rnbo/releases)
 
+## 0.11.6
+
+Add octaver.
+
+Add tremolo to solo FX.
+
+Add dotted 16th subdivision.
+
+Add phase rotator to correct tuba's asymmetric waveform.
+
+Modify binding logic to improve ergonomics.
+
+Modify parameter tapers to improve musicality.
+
+Add external FX IO for 7 stereo FX chains, with latency compensation.
+
+
 ## 0.11.5
 
 - Refine delay feedback mechanism for hold and release:
