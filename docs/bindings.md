@@ -261,7 +261,7 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 ![l3](img/L3.webp)
 
-- Push L3 once, twice, or thrice in succession to set the [crossfader's](overview.md#crossfade-env-sens) mode. Hold for more than 600 ms, then release, to select the first option.
+- Push L3 once, twice, or thrice in succession to set the [crossfade's](overview.md#crossfade-env-sens) mode. Hold for more than 600 ms, then release, to select the first option.
 	
 	1. Once to enable the "transient helper", which increases the crossfade whenever the noisegate is gating.
 	

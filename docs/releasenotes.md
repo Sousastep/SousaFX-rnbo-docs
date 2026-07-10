@@ -4,19 +4,19 @@ All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/rele
 
 ## 0.11.6
 
-Add octaver.
+- Add octaver.
 
-Add tremolo to solo FX.
+- Add tremolo to solo FX.
 
-Add dotted 16th subdivision.
+- Add dotted 16th subdivision.
 
-Add phase rotator to correct tuba's asymmetric waveform.
+- Add phase rotator to correct tuba's asymmetric waveform.
 
-Modify binding logic to improve ergonomics.
+- Modify binding logic to improve ergonomics.
 
-Modify parameter tapers to improve musicality.
+- Modify parameter tapers to improve musicality.
 
-Add external FX IO for 7 stereo FX chains, with latency compensation.
+- Add external FX IO for 7 stereo FX chains, with latency compensation.
 
 
 ## 0.11.5

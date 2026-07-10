@@ -4,7 +4,7 @@ Recommended Media
 Songs
 -----
 
-Learning the beats and basslines to these songs by ear is a good way to practice SousaFX.
+Learning these beats and basslines by ear is a good way to practice SousaFX.
 
 Hucci - [Leaf](https://www.youtube.com/watch?v=VMOWxO56GgI) <br>
 Hucci - [Clipse](https://www.youtube.com/watch?v=EXHvPWCJZ3Q) <br>
@@ -31,7 +31,7 @@ Pretty Lights - [In The Air Tonight](https://www.youtube.com/watch?v=SI2UztBXnfw
 Mixes
 -----
 
-Martha = [Ode to the Wobble](https://soundcloud.com/martharadio/wobble) <br>
+Martha - [Ode to the Wobble](https://soundcloud.com/martharadio/wobble) <br>
 Cluekid - [Cluekid - GetDarkerTV 018](https://soundcloud.com/getdarker/cluekid-getdarkertv-018) <br>
 Youngsta - [Dubstep Allstars Vol. 4](https://www.youtube.com/watch?v=rNYOL_NbSzE) <br>
 Plastician - [Dubstep Allstars Vol. 10](https://www.youtube.com/watch?v=ljCkAx7lsgg) <br>

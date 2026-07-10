@@ -10,11 +10,13 @@ Closing this window quits SousaFX. All parameter changes are auto-saved when Sou
 
 ### Status Bar
 
+![status_bar](img/status_bar.webp)
+
 The menus on the top left adjust the audio engine's settings, including the sample rate, signal vector size, I/O vector size, Overdrive, and Interrupt, which should be set to 48000, <= 128, <= 128, On, and Off, respectively.
 
-The top "X" toggle rounds the tempo to an integer.
+The top "X toggle" rounds the tempo to an integer.
 
-The bottom "X" toggle makes the white border flash in time with the metronome.
+The bottom "X toggle" makes the white border flash in time with the metronome.
 
 To the right of the toggles is the tempo in beats per minute, which can be set by tapping [North](bindings.md#start-select-n-e-s-w).
 
@@ -24,13 +26,19 @@ Next is the audio engine power button, along with the CPU meter. The audio engin
 
 ### Input Display
 
+![input_display](img/input_display.webp)
+
 Near the top-left is the game controller input display. The two percentages set the size of the respective thumbstick's [deadzones](https://minimuino.github.io/thumbstick-deadzones/).
 
 ### Phase Rotator
 
+![phase_rotator](img/phase_rotator.webp)
+
 The yellow toggle to the right of the input display enables a phase rotator that evens out the tuba's asymmetrical waveform. The frequency and bandwidth of the phase rotator are set via the boxes to the right of the toggle. 
 
 ### Looper Status
+
+![looper_status](img/looper_status.webp)
 
 Below the input display are the statuses of the [bassline looper, and the drum looper](loopers.md). The number displays the loop length in bars.
 
@@ -43,6 +51,8 @@ Below the input display are the statuses of the [bassline looper, and the drum l
 
 ### Presets
 
+![preset](img/preset.webp)
+
 Below the looper statuses is the current preset number, the preset description, and the noise gate threshold.
 
 - Preset Number
@@ -53,14 +63,19 @@ Below the looper statuses is the current preset number, the preset description, 
 
 	This text box stores a short description of each preset.
 
+### Noise Gate
+
+![noise_gate_thresh](img/noise_gate_thresh.webp)
+
 - Noise Gate Thresh
 
 	Sets the volume underneath which the tuba's input signal will be silent. The louder the environment is, the higher this will need to be.
 
 ### Layout
 
-On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
+![layout](img/layout.webp)
 
+On the bottom left is a way to save window layouts. Click the number box and press the up or down key to cycle through the window layout presets. Type a description in the textbox, and click "save layout" to save the current window layout with the description to the current preset number. Click "set initial" to set the current preset number as the initial preset to load on launch.
 
 ## Menubar
 
@@ -109,7 +124,9 @@ This window displays any FX parameters that are currently being adjusted by the 
 
 This is the heart of SousaFX, and sets the tone of the bassline. We'll start with the topmost dial:
 
-### crossfade env sens
+### Crossfade env sens
+
+![crossfade_env_sens](img/crossfade_env_sens.webp)
 
 This dial adjusts the envelope sensitivity for the crossfader, which crossfades between the overdriven modulated lowpass filter sound, and the dry detuned sound. When the tuba begins a phrase, the crossfade starts on the the dry sound, then quickly follows the envelope over to the filtered sound. The louder the tuba plays, the less filtered, and dryer, the sound can become.
 
@@ -117,7 +134,9 @@ The crossfade's range is actively adjusted via the "Crossfade Position" [binding
 
 ### Overdrive
 
-These parameters set the tone of the overdriven lowpass filtered sound on the quieter end of the crossfade. This signal is compressed by the pre-xfade-wet conpressor.
+![overdrive](img/overdrive.webp)
+
+These parameters set the tone of the overdriven lowpass filter. This signal is compressed by the "pre-xfade-wet" [compressor](overview.md#compressors-and-limiters).
 
 - mix
 
@@ -154,7 +173,9 @@ These parameters set the tone of the overdriven lowpass filtered sound on the qu
 
 ### Detune
 
-These parameters set the tone of the dryer detuned sound on the louder end of the crossfade. This signal is compressed by the pre-xfade-dry compressor.
+![detune](img/detune.webp)
+
+These parameters set the tone of the dryer, detuned sound. This signal is compressed by the "pre-xfade-dry" [compressor](overview.md#compressors-and-limiters).
 
 - mix
 
@@ -194,6 +215,8 @@ These parameters set the tone of the dryer detuned sound on the louder end of th
 
 ### Bassline EQs
 
+![bassline_eq](img/bassline_eq.webp)
+
 Low-mid frequencies tend to build up for various reasons. The "mid trim" can tame those frequencies. However, it's generally better to use the mid trim on the overdrive and detune FX instead, since they're pre-crossover, and won't trim sub-frequencies.
 
 The tuba's sub frequencies can drop precipitously below 60 Hz. The low boost can compensate for that to an extent.
@@ -201,12 +224,16 @@ The tuba's sub frequencies can drop precipitously below 60 Hz. The low boost can
 
 ### Octaver
 
+![octaver](img/octaver.webp)
+
 This octaver tracks the tuba's pitch and plays a sine wave one octave below.
 
 While the tuba's soloing, it'll play a 12th above.
 
 
 ### LFO env sens
+
+![lpf_freq](img/lpf_freq.webp)
 
 This dial adjusts the incoming envelope sensitivity for the LFO's ceiling and floor.
 
@@ -333,33 +360,14 @@ This window displays four delays for the bassline input, the bassline looper, th
 
 ### Reverb
 
-The drums, bassline, and solo are sent to this reverb.
+![reverb](img/reverb.webp)
 
-- mix
+This reverb (from the rnbo guitar pedals package) is based on Yafr: "Yet Another Free Reverb". Originally designed by Randy Jones, the Yafr algorithm was written "in the syle of David Griesinger" - a physicist who works in the field of sound and music, and is known for many reverberation algorithms behind famous reverb units. The drums, bassline, and solo are sent to this reverb. Keep the mix at 100%.
 
-	wet / dry mixer, keep at 100%.
-
-- size
-
-	The size of the room.
-
-- diff
-
-	The amount of diffusion.
-
-- damp
-
-	The amount of damping.
-
-- decay
-
-	The length of the decay.
-
-- Jitter
-
-	The amount of jitter.
 
 ### Monitors
+
+![monitors](img/monitors.webp)
 
 - Loop Alert
 
@@ -370,6 +378,8 @@ The drums, bassline, and solo are sent to this reverb.
 	Sets the volume of the metronome in the monitor output.
 
 ### Tuba Solo
+
+![tuba_solo](img/tuba_solo.webp)
 
 - dry vol
 
@@ -383,11 +393,17 @@ The drums, bassline, and solo are sent to this reverb.
 
 	The volume of the tuba solo's stutter effect.
 
+- tremolo boost
+
+	Boost the volume of the tuba solo's tremolo effect.
+
 - minimum solo reverb volume
 
 	The minimum volume of the tuba solo's reverb effect.
 
 ### Drums
+
+![drums](img/drums.webp)
 
 - Kick, Snare, Tom, Clap
 
@@ -400,4 +416,8 @@ The drums, bassline, and solo are sent to this reverb.
 
 ## Audio IO Status
 
+The Live Mic input, and the Main and Montitor outputs, are the only IO that you need to worry about. The rest can be Off, as they are just for [SousaPlayback-rnbo](https://github.com/Sousastep/SousaPlayback-rnbo), and the [Eventide H9000](https://github.com/Sousastep/H9K_to_OBS).
+
 ![audio_io_status](img/audio_io_status.webp)
+
+
