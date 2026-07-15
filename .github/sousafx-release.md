@@ -1,5 +1,7 @@
 # How To Release SousaFX
 
+Open maxproj. make sure zeroconf bpatchers aren't loaded. make sure main preset file only uses two slots.
+
 test `rnbo~` obj. once decently happy, cont.
 
 export to external
@@ -43,10 +45,15 @@ open project inspector
 - don't keep project folder organized
 - hide project window after opening
 
+or edit SousaFX-v0.11.6.maxproj directly:
+    "autoorganize": 0,
+    "hideprojectwindow": 1,
+
 remove files from `/sousaFX-v#.#.#/` if present:
 
 ```
 	/data/license.sousafx
+	/data/audio_io_status.json
 	/other/license.sousafx (remove folder too)
 	/externals/js.xmo
 	/code/interfacecolor.js
@@ -72,6 +79,7 @@ add files from `/sousaFX-rnbo/` to `/sousaFX-v#.#.#/`:
 		/externals/init/
 	/.docs/. ---> see OFFLINE in sousaFX-rnbo-docs below
 ```
+
 
 Open about_SousaFX.maxpat without the project AGAIN.
 Open license bpatcher using the super secret method, save to trigger savebang clears AGAIN (idk why but it is necessary now).
