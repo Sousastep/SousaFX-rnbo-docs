@@ -1,3 +1,8 @@
+---
+description: >-
+  Complete overview of SousaFX's interface and parameters: main window, bassline effects, compressors, limiters, delays, mixbus, reverb, monitors, and audio I/O status.
+---
+
 # Overview
 
 This overview describes all of the parameters that are adjustable via SousaFX's interface. Generally, these parameters handle the overall mix and tone, while the [gamepad](bindings.md) triggers and modulates the audio effects. 

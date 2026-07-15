@@ -1,3 +1,8 @@
+---
+description: >-
+  Access SousaFX documentation offline within the application via keyboard shortcuts or the FX Parameters menu.
+---
+
 # Documentation
 
 This documentation is available offline, within SousaFX.

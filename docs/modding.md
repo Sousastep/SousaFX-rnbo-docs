@@ -1,3 +1,8 @@
+---
+description: >-
+  Mod SousaFX by replacing drum samples, looper alerts, and metronome sounds. Access and edit the Max/RNBO patcher source code.
+---
+
 # Modding
 
 ## Samples

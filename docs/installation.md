@@ -1,3 +1,8 @@
+---
+description: >-
+  Step-by-step installation guide for SousaFX. Download Max 9, install required packages, configure audio settings, and launch the multi-effects rig.
+---
+
 # Installation
 
 1. [Download Max 9](https://cycling74.com/downloads) from Cycling ‘74 and launch it.

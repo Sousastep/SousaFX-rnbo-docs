@@ -1,3 +1,8 @@
+---
+description: >-
+  Hardware requirements and setup for SousaFX: computer, audio interface, microphone, in-ear monitors, and wireless game controller configuration for tuba and didgeridoo performance.
+---
+
 ## Requirements
 
 1. Computer:

@@ -1,3 +1,8 @@
+---
+description: >-
+  Complete gamepad binding reference for SousaFX. Thumbstick controls, button mappings, d-pad subdivisions, and shoulder button functions for dubstep effects performance.
+---
+
 <style>
 .md-typeset table thead {
     display: none;

@@ -1,3 +1,8 @@
+---
+description: >-
+  Attributions and credits for SousaFX: RNBO Guitar Pedals, FluCoMa, gen~ abstractions, filter designs, drum samples, and documentation tools.
+---
+
 # Attributions
 
 ## Patchers

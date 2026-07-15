@@ -1,3 +1,8 @@
+---
+description: >-
+  SousaFX release notes and changelog. Track new features, bug fixes, and improvements across all versions of the tuba dubstep multi-effects rig.
+---
+
 # Release Notes
 
 All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/releases](https://github.com/Sousastep/SousaFX-rnbo/releases)

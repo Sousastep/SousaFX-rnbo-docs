@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <!-- Twitter Card (Material for MkDocs auto-generates Open Graph tags) -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SousaFX",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": ["macOS", "Windows", "Linux"],
+    "description": "A multi-effects audio rig for tuba and didgeridoo players to perform dubstep and wobble-bass genres using a game controller.",
+    "url": "{{ config.site_url }}",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "225.00",
+        "priceCurrency": "USD",
+        "description": "Commercial license"
+      },
+      {
+        "@type": "Offer",
+        "price": "60.00",
+        "priceCurrency": "USD",
+        "description": "Discounted license for individuals, small businesses under $20k gross revenue, and educational/non-profit organizations"
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Sousastep"
+    }
+  }
+  </script>
+{% endblock %}

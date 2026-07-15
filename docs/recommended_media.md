@@ -1,3 +1,8 @@
+---
+description: >-
+  Recommended dubstep songs, mixes, and albums for learning and practicing with SousaFX. Includes ethnomusicology resources and electrobrass references.
+---
+
 Recommended Media
 =================
 

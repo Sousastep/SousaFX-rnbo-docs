@@ -1,3 +1,8 @@
+---
+description: >-
+  End User License Agreement for SousaFX. Covers license grants, purchase terms, restrictions, warranty disclaimers, and liability limitations.
+---
+
 # End User License Agreement For SousaFX
 
 !!! important

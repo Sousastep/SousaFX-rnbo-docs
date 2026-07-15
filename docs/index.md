@@ -1,3 +1,8 @@
+---
+description: >-
+  SousaFX is a multi-effects rig for tuba and didgeridoo players to perform dubstep and wobble-bass genres. Control auto-wah, filters, loopers, drum samples, delays, and stutters with a game controller.
+---
+
 # Introduction
 
 SousaFX is a multi-effects rig made using [Max/RNBO](https://cycling74.com/products/rnbo) with the goal of bringing [dubstep](recommended_media.md) (and other wobble-bass genres) into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:

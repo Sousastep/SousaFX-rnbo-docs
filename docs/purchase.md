@@ -1,3 +1,8 @@
+---
+description: >-
+  Purchase a SousaFX license. Commercial ($225) and discounted ($60) licenses available with a 30-day free trial. Supports continued development.
+---
+
 # Purchase
 
 SousaFX has a 30-day evaluation period, after which a closeable popup will appear when SousaFX is launched, directing you to purchase a license. Purchasing a SousaFX license supports further development and unlocks a [prestige system](prestige.md) that tracks how many hours you’ve used SousaFX for.

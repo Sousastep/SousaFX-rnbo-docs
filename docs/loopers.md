@@ -1,3 +1,8 @@
+---
+description: >-
+  Guide to SousaFX's bassline and drum loopers. Learn to record, play, stop, and clear loops using a game controller attached to your tuba or didgeridoo.
+---
+
 # Loopers
 
 While the looper is clear, [single tap](bindings.md/#start-select-n-e-s-w) to begin recording. The looper will auto-end recording after the set amount of bars has passed.
