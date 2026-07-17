@@ -34,6 +34,9 @@ theme:
   favicon: img/favicon.ico
 
 extra:
+  analytics:
+    provider: google
+    property: G-YMBTS82PVP
   version:
     provider: mike
   social:
