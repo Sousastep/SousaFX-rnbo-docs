@@ -41,7 +41,9 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| South 	       | Toggle bumper drumming. |
 	| West 		       | Releases any holds on all delay feedback amounts. |
 	| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
+	| Left Thumbstick  | While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
 	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+	| D-pad     | Press any direction to toggle 8th note auto-swing |
 
 ![start](img/start.webp)
 
@@ -53,8 +55,9 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
 	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 	| West 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
-	| Left Thumbstick  | While holding Start, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
 	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+	| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: increment interval <br> right: decrement interval <br> up: increment harmonic <br> down: decrement harmonic <br> The harmonics are disabled when decremented to the limit. |
+	| Left Bumper    | While held, auto-increments harmonics every subdivision. |
 
 - With start and select pressed:
 
@@ -64,12 +67,8 @@ Start and Select are used for modifying the functions of the North, East, South,
 	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
 	| South 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
 	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
-
-- With start and/or select pressed:
-
-	| Input     | Function |
-	|-----------|----------|
-	| D-pad     | Toggle 8th note auto-swing |
+	| D-pad          | On raspberry pi only: playback song # 0 - 7 |
+	| Left Bumper    | On raspberry pi only: stop playback         |
 
 
 ## Shoulder Buttons
