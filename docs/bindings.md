@@ -17,58 +17,61 @@ This page describes how the gamepad controls SousaFX. All of the parameters on t
 
 ## Start, Select, N E S W
 
-Start and Select are used for modifying the functions of the North, East, South, and West buttons, as well as modifying the functions of the thumbsticks, and the d-pad.
+Start and Select modify the functions of the North, East, South, and West buttons, as well as the functions of the thumbsticks, and the d-pad.
 
-- Without start or select pressed:
+### Without start or select pressed
 
-	| Input       | Function |
-	|-------------|----------|
-	| North 	  | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping.|
-	| East 		  | Drum [looper](loopers.md) start / stop / clear. |
-	| South 	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
-	| West 		  | Bassline [looper](loopers.md) start / stop / clear. |
-	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-	| [Right Thumbstick Button](bindings.md/#r3-button) |		< See link	|
+| Input       | Function |
+|-------------|----------|
+| ![north](img/north.webp)	  | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping.|
+| ![east](img/east.webp)		  | Drum [looper](loopers.md) start / stop / clear. |
+| ![south](img/south.webp)	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
+| ![west](img/west.webp)		  | Bassline [looper](loopers.md) start / stop / clear. |
+| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+| [Right Thumbstick Button](bindings.md/#r3-button) |		< See link	|
+
+### With select pressed
 
 ![select](img/select.webp)
 
-- With select pressed:
+| Input            | Function |
+|------------------|----------|
+| ![north](img/north.webp) 	       | Toggle metronome. |
+| ![east](img/east.webp) 		       | Randomize drum samples. |
+| ![south](img/south.webp) 	       | Toggle bumper drumming. |
+| ![west](img/west.webp) 		       | Releases any holds on all delay feedback amounts. |
+| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
+| Left Thumbstick  | While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
+| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+| D-pad     | Press any direction to toggle 8th note auto-swing |
 
-	| Input            | Function |
-	|------------------|----------|
-	| North 	       | Toggle metronome. |
-	| East 		       | Randomize drum samples. |
-	| South 	       | Toggle bumper drumming. |
-	| West 		       | Releases any holds on all delay feedback amounts. |
-	| Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
-	| Left Thumbstick  | While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
-	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-	| D-pad     | Press any direction to toggle 8th note auto-swing |
+### With start pressed
 
 ![start](img/start.webp)
 
-- With start pressed:
+| Input            | Function |
+|------------------|----------|
+| ![north](img/north.webp) 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
+| ![east](img/east.webp) 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
+| ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
+| ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
+| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
+| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: increment interval <br> right: decrement interval <br> up: increment harmonic <br> down: decrement harmonic <br> The harmonics are disabled when decremented to the limit. |
+| Left Bumper    | While held, auto-increments harmonics every subdivision. |
 
-	| Input            | Function |
-	|------------------|----------|
-	| North 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
-	| East 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
-	| South 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
-	| West 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
-	| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-	| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: increment interval <br> right: decrement interval <br> up: increment harmonic <br> down: decrement harmonic <br> The harmonics are disabled when decremented to the limit. |
-	| Left Bumper    | While held, auto-increments harmonics every subdivision. |
+### With start and select pressed
 
-- With start and select pressed:
+![startselect](img/startselect.webp)
 
-	| Input     | Function |
-	|-----------|----------|
-	| North 	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
-	| East 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
-	| South 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
-	| West 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
-	| D-pad          | On raspberry pi only: playback song # 0 - 7 |
-	| Left Bumper    | On raspberry pi only: stop playback         |
+| Input     | Function |
+|-----------|----------|
+| ![north](img/north.webp)  	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
+| ![east](img/east.webp) 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
+| ![south](img/south.webp) 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
+| ![west](img/west.webp) 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
+| D-pad          | On raspberry pi only: playback song # 0 - 7 |
+| Left Bumper    | On raspberry pi only: stop playback         |
+| Right Trigger  | Press three times to mute all audio inputs and outputs. Press once to unmute. |
 
 
 ## Shoulder Buttons
@@ -94,7 +97,7 @@ While bumper drumming is disabled (which happens automatically while the tuba is
 
 ### D-pad
 
-The left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters.
+Without Start or Select pressed, the left bumper, and the d-pad, are used for setting the subdivision of the auto-wah, delays, and stutters.
 
 The left trigger is used for changing the function of the d-pad and the left bumper.
 
@@ -273,9 +276,11 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 	
 	3. Thrice to disable the crossfade entirely. 
 
-- While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.
+![startselect](img/startselect.webp)
 
 - While holding Select, push L3 to toggle the Crossfade binding between "vertical" and "magnitude". Hold for more than 600 ms, then release, to set it to vertical.
+
+- While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.
 
 
 ## Right Thumbstick
