@@ -56,7 +56,7 @@ Start and Select modify the functions of the North, East, South, and West button
 | ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 | ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: increment interval <br> right: decrement interval <br> up: increment harmonic <br> down: decrement harmonic <br> The harmonics are disabled when decremented to the limit. |
+| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: 6 8 <br> right: 5 6 <br> up: 4 5 <br> down: off |
 
 ### With start and select pressed
 
