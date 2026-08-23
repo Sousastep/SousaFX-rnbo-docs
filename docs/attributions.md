@@ -7,11 +7,15 @@ description: >-
 
 ## Patchers
 
-The pitch shifter, overdrive, noise gates, plate reverbs, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor sidechain.
+Overdrive implementation by [quail](https://discord.com/channels/289378508247924738/289379241345155073/1533985256569307197) via [Andrew Simper](https://www.youtube.com/watch?v=eGcqomH6aAc)
 
-A handful of gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
+Halfband PPIIR oversampling by [jkccycling](https://discord.com/channels/289378508247924738/289379241345155073/1403535159596159069)
 
-The thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html)
+The pitch shifter, plate reverb, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor sidechain.
+
+Many gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
+
+Thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](https://cycling74.com/forums/scaled-radial-deadzone-for-gamepad-joystick#reply-68021c0c3bd53f00135efbe2), [Minimuino](https://github.com/Minimuino/thumbstick-deadzones), and [Josh Sutphin](https://joshsutphin.com/gamedev/doing-thumbstick-dead-zones-right.html)
 
 `jb.autowah` and `jb.kickduck` use Emmanuel Jourdan / Oren Shoham's [function emulator](https://cycling74.com/forums/math-behind-function-curve#reply-6006263e0da59906d7aff1c2) 
 
