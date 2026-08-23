@@ -68,9 +68,9 @@ Start and Select modify the functions of the North, East, South, and West button
 | ![east](img/east.webp) 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
 | ![south](img/south.webp) 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
 | ![west](img/west.webp) 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
+| Right Trigger  | Press three times in a row to mute all audio inputs and outputs. Press once to unmute. |
 | D-pad          | On raspberry pi only: playback song # 0 - 7 |
 | Left Bumper    | On raspberry pi only: stop playback         |
-| Right Trigger  | Press three times to mute all audio inputs and outputs. Press once to unmute. |
 
 
 ## Shoulder Buttons
