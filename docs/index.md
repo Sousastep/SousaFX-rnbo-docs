@@ -5,7 +5,7 @@ description: >-
 
 # Introduction
 
-SousaFX is a multi-effects rig made using [Max/RNBO](https://cycling74.com/products/rnbo) with the goal of bringing [dubstep](recommended_media.md) (and other wobble-bass genres) into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
+SousaFX is a multi-effects rig made with the goal of bringing dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
 
 - An auto-wah carefully tuned to be as musical as possible.
 - DJ-style lowpass / highpass filters.

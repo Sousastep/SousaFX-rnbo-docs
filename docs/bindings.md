@@ -56,7 +56,7 @@ Start and Select modify the functions of the North, East, South, and West button
 | ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 | ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad          | Set the two harmonics to boost in the distortion effect. <br> left: 6 8 <br> right: 5 6 <br> up: 4 5 <br> down: off |
+| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: simper <br> downleft: simper boost <br> left: phase distortion <br> upleft: harmonics 4 8 <br> up: harmonics 5 6 <br> upright: harmonics 3 7 <br> L2: ring mod |
 
 ### With start and select pressed
 
@@ -64,10 +64,10 @@ Start and Select modify the functions of the North, East, South, and West button
 
 | Input     | Function |
 |-----------|----------|
-| ![north](img/north.webp)  	| Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4. |
-| ![east](img/east.webp) 		| Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8. |
+| ![north](img/north.webp)  	| Set time signature numerator via number of clicks (3 - 7, click 1 starts on 3). <br> Hold to set to 4. |
+| ![east](img/east.webp) 		| Set drum looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 8. |
 | ![south](img/south.webp) 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
-| ![west](img/west.webp) 		| Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16. |
+| ![west](img/west.webp) 		| Set bassline looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 16. |
 | Right Trigger  | Press three times in a row to mute all audio inputs and outputs. Press once to unmute. |
 | D-pad          | On raspberry pi only: playback song # 0 - 7 |
 | Left Bumper    | On raspberry pi only: stop playback         |
