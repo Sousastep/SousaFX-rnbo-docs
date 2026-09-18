@@ -88,7 +88,7 @@ On the bottom left is a way to save window layouts. Click the number box and pre
 
 FX Parameters:
 
-- [Active Bindings](overview.md#active-bindings)
+<!-- [Active Bindings](overview.md#active-bindings) -->
 
 - [Bassline](overview.md#bassline)
 
@@ -117,11 +117,11 @@ Support:
 - [Join the Discord](https://discord.gg/JkSQzfZUdT)
 
 
-## Active Bindings
+<!-- ## Active Bindings
 
 ![bind](img/active_bindings.webp)
 
-This window displays any FX parameters that are currently being adjusted by the [gamepad](bindings.md). It is the only window that can be resized by dragging the border.
+This window displays any FX parameters that are currently being adjusted by the [gamepad](bindings.md). It is the only window that can be resized by dragging the border. -->
 
 ## Bassline
 

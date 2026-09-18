@@ -11,7 +11,7 @@ description: >-
 
 # Bindings
 
-This page describes how the gamepad controls SousaFX. All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, but they may not yet be shown in their respective FX parameters windows.
+This page describes how the gamepad controls SousaFX. Many controlled parameters are not yet displayed in the interface. <!-- All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, but they may not yet be shown in their respective FX parameters windows. -->
 
 ![gamepad](img/gamepad.webp)
 
@@ -43,7 +43,7 @@ Start and Select modify the functions of the North, East, South, and West button
 | Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
 | Left Thumbstick  | While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad     | Press any direction to toggle 8th note auto-swing |
+| D-pad     | Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper's stopping. |
 
 ### With start pressed
 
@@ -56,7 +56,7 @@ Start and Select modify the functions of the North, East, South, and West button
 | ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 | ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: simper <br> downleft: simper boost <br> left: phase distortion <br> upleft: harmonics 4 8 <br> up: harmonics 5 6 <br> upright: harmonics 3 7 <br> L2: ring mod |
+| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: simper <br> downleft: simper boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring mod |
 
 ### With start and select pressed
 
