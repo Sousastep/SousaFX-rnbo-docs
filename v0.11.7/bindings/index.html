@@ -764,14 +764,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../releasenotes/" class="md-nav__link">
+      <a href="../modding/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Release Notes
+    Modding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommended_media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
   
 
     
@@ -818,33 +845,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../modding/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modding
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../attributions/" class="md-nav__link">
         
   
@@ -872,14 +872,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../recommended_media/" class="md-nav__link">
+      <a href="../releasenotes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Recommended Media
+    Release Notes
   
 
     
@@ -1208,7 +1208,7 @@
 </style>
 
 <h1 id="bindings">Bindings</h1>
-<p>This page describes how the gamepad controls SousaFX. All of the parameters on this page can be viewed in the <a href="../overview/#active-bindings">Active Bindings</a> window, but they may not yet be shown in their respective FX parameters windows.</p>
+<p>This page describes how the gamepad controls SousaFX. Many controlled parameters are not yet displayed in the interface. <!-- All of the parameters on this page can be viewed in the <a href="overview.md#active-bindings">Active Bindings</a> window, but they may not yet be shown in their respective FX parameters windows. --></p>
 <p><img alt="gamepad" src="../img/gamepad.webp" /></p>
 <h2 id="start-select-n-e-s-w">Start, Select, N E S W</h2>
 <p>Start and Select modify the functions of the North, East, South, and West buttons, as well as the functions of the thumbsticks, and the d-pad.</p>
@@ -1287,7 +1287,7 @@
 </tr>
 <tr>
 <td>D-pad</td>
-<td>Press any direction to toggle 8th note auto-swing</td>
+<td>Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper's stopping.</td>
 </tr>
 </tbody>
 </table>
@@ -1322,8 +1322,8 @@
 <td>&lt; See link</td>
 </tr>
 <tr>
-<td>D-pad</td>
-<td>Set the two harmonics to boost in the distortion effect. <br> left: 6 8 <br> right: 5 6 <br> up: 4 5 <br> down: off</td>
+<td>D-pad &amp; L2</td>
+<td>Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: ms20 <br> downleft: ms20 boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring modulation</td>
 </tr>
 </tbody>
 </table>
@@ -1339,11 +1339,11 @@
 <tbody>
 <tr>
 <td><img alt="north" src="../img/north.webp" /></td>
-<td>Set time signature numerator via number of clicks (3 - 7). <br> Hold to set to 4.</td>
+<td>Set time signature numerator via number of clicks (3 - 7, click 1 starts on 3). <br> Hold to set to 4.</td>
 </tr>
 <tr>
 <td><img alt="east" src="../img/east.webp" /></td>
-<td>Set drum looper length in bars via number of clicks (4 - 16). <br> Hold to set to 8.</td>
+<td>Set drum looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 8.</td>
 </tr>
 <tr>
 <td><img alt="south" src="../img/south.webp" /></td>
@@ -1351,7 +1351,7 @@
 </tr>
 <tr>
 <td><img alt="west" src="../img/west.webp" /></td>
-<td>Set bassline looper length in bars via number of clicks (4 - 16). <br> Hold to set to 16.</td>
+<td>Set bassline looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 16.</td>
 </tr>
 <tr>
 <td>Right Trigger</td>
@@ -1414,7 +1414,7 @@
 </tr>
 <tr>
 <td>Right Trigger</td>
-<td>While holding Start and Select, press RT three times to mute all audio inputs and outputs. Press RT once to unmute.</td>
+<td>Momentarily enables transient-triggered ADSR.</td>
 </tr>
 <tr>
 <td>Right Bumper</td>

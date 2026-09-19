@@ -269,6 +269,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -285,6 +303,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -459,14 +507,41 @@
   
   
     <li class="md-nav__item">
-      <a href="releasenotes/" class="md-nav__link">
+      <a href="modding/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Release Notes
+    Modding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="recommended_media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
   
 
     
@@ -513,33 +588,6 @@
   
   
     <li class="md-nav__item">
-      <a href="modding/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modding
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="attributions/" class="md-nav__link">
         
   
@@ -567,14 +615,14 @@
   
   
     <li class="md-nav__item">
-      <a href="recommended_media/" class="md-nav__link">
+      <a href="releasenotes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Recommended Media
+    Release Notes
   
 
     
@@ -607,6 +655,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -622,31 +689,6 @@
 
 
 
-<h1 id="introduction">Introduction</h1>
-<p>SousaFX is a multi-effects rig made using <a href="https://cycling74.com/products/rnbo">Max/RNBO</a> with the goal of bringing <a href="recommended_media/">dubstep</a> (and other wobble-bass genres) into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:</p>
-<ul>
-<li>An auto-wah carefully tuned to be as musical as possible.</li>
-<li>DJ-style lowpass / highpass filters.</li>
-<li>Two one-button loopers, one for the bassline and one for the drums.</li>
-<li>64 drum samples, playable with the bumpers and triggers.</li>
-<li>Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.</li>
-<li>Reversible, scatterable stutters with acceleration via phase-locked loops.</li>
-</ul>
-<div class="grid cards">
-<ul>
-<li>
-<p><img alt="main" src="img/main_window.webp" /></p>
-</li>
-<li>
-<p><img alt="gamepad" src="img/tuba_gamepad.webp" /></p>
-</li>
-</ul>
-</div>
-<div class="grid cards">
-<ul>
-<li><img alt="sousa gamepad" src="img/sousa_gamepad.webp" /></li>
-</ul>
-</div>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -689,9 +731,25 @@
         }
     </style>
 </head>
-<body>
 
-<form method="post" action="https://sousastep.pikapod.net/subscription/form" class="listmonk-form">
+</html>
+
+<h1 id="introduction">Introduction</h1>
+<p>SousaFX is a multi-effects rig made with the goal of bringing dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:</p>
+<ul>
+<li>An auto-wah carefully tuned to be as musical as possible.</li>
+<li>DJ-style lowpass / highpass filters.</li>
+<li>Two one-button loopers, one for the bassline and one for the drums.</li>
+<li>64 drum samples, playable with the bumpers and triggers.</li>
+<li>Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.</li>
+<li>Reversible, scatterable stutters with acceleration via phase-locked loops.</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<p><a href="https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.7/SousaFX-v0.11.7.zip">Download SousaFX-v0.11.7.zip</a> (Requires <a href="https://cycling74.com/downloads">Max 9</a>).</p>
+<p>Get assistance via <a href="https://discord.gg/JkSQzfZUdT">Discord</a>.</p>
+<p>Stay informed via the mailing list:</p>
+<div class="grid cards">
+<form action="https://sousastep.pikapod.net/subscription/form" class="listmonk-form" method="post">
     <div>
         <input type="hidden" name="nonce" />
         <p><input type="email" name="email" required placeholder="E-mail" /></p>
@@ -701,11 +759,10 @@
             <label for="94875">Stay informed about new releases.</label>
         </p>
         <p><input type="submit" value="Subscribe" /></p>
-    </div>
-</form>
-
-</body>
-</html>
+    </form>
+</div>
+<p></form>
+</div></p>
 
 
 
