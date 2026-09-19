@@ -143,14 +143,6 @@ The crossfade's range is actively adjusted via the "Crossfade Position" [binding
 
 These parameters set the tone of the overdriven lowpass filter. This signal is compressed by the "pre-xfade-wet" [compressor](overview.md#compressors-and-limiters).
 
-- mix
-
-	wet / dry mixer, 100% is all wet signal
-
-- drive
-
-	overdrive amount.
-
 - high boost
 
 	Increase the volume of the high frequencies for a brighter sound. (pre-drive)

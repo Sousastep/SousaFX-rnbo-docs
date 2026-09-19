@@ -5,13 +5,19 @@ description: >-
 
 # Attributions
 
+## Made By
+
+[Sousastep](https://www.sousastep.quest/links/)
+
 ## Patchers
 
 Overdrive implementation by [quail](https://discord.com/channels/289378508247924738/289379241345155073/1533985256569307197) via [Andrew Simper](https://www.youtube.com/watch?v=eGcqomH6aAc)
 
+Phase Modulation ported from [Virtual Riot](https://youtu.be/dAXysNzeRd0?si=zrDxtCcrHkyr_haz&t=529)
+
 Halfband PPIIR oversampling by [jkccycling](https://discord.com/channels/289378508247924738/289379241345155073/1403535159596159069)
 
-The pitch shifter, plate reverb, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor sidechain.
+The pitch shifter, plate reverb, chorus, limiters, and compressors are from the [RNBO Guitar Pedals Package](https://cycling74.com/products/rnbo-guitar-pedals). [K-weighting](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-5-202311-I!!PDF-E.pdf) has been added to the compressor sidechain.
 
 Many gen abstractions are from [Graham Wakefield](https://github.com/grrrwaaa) & [Gregory Taylor](https://cycling74.com/articles/an-interview-with-gregory-taylor) - [Generating Sound and Organizing Time](https://cycling74.com/books/go)
 
@@ -28,6 +34,8 @@ Thumbstick deadzones in `deadzone scaled radial.maxpat` are thanks to [TFL](http
 The license checker uses Floating Point's [Gregorian-Julian date converter](https://cycling74.com/forums/what-do-you-do-when-number-is-too-big-to-process#reply-58ed208843f50b22d4bb16c8)
 
 `av.clipper` by [Stevon_AV](https://www.youtube.com/watch?v=Hu2LaIqiyNE)
+
+`smoothstep3` from [Ken Perlin](https://en.wikipedia.org/wiki/Smoothstep#Variations)
 
 
 ## Externals

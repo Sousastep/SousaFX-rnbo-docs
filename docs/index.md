@@ -3,31 +3,6 @@ description: >-
   SousaFX is a multi-effects rig for tuba and didgeridoo players to perform dubstep and wobble-bass genres. Control auto-wah, filters, loopers, drum samples, delays, and stutters with a game controller.
 ---
 
-# Introduction
-
-SousaFX is a multi-effects rig made with the goal of bringing dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
-
-- An auto-wah carefully tuned to be as musical as possible.
-- DJ-style lowpass / highpass filters.
-- Two one-button loopers, one for the bassline and one for the drums.
-- 64 drum samples, playable with the bumpers and triggers.
-- Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.
-- Reversible, scatterable stutters with acceleration via phase-locked loops.
-
-<div class="grid cards" markdown>
-
--   ![main](img/main_window.webp)
-
--   ![gamepad](img/tuba_gamepad.webp)
-
-</div>
-
-<div class="grid cards" markdown>
-
--   ![sousa gamepad](img/sousa_gamepad.webp)
-
-</div>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -70,8 +45,29 @@ SousaFX is a multi-effects rig made with the goal of bringing dubstep into the r
         }
     </style>
 </head>
-<body>
 
+</html>
+
+# Introduction
+
+SousaFX is a multi-effects rig made with the goal of bringing dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
+
+- An auto-wah carefully tuned to be as musical as possible.
+- DJ-style lowpass / highpass filters.
+- Two one-button loopers, one for the bassline and one for the drums.
+- 64 drum samples, playable with the bumpers and triggers.
+- Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.
+- Reversible, scatterable stutters with acceleration via phase-locked loops.
+
+## Quick Start
+
+[Download SousaFX-v0.11.7.zip](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.7/SousaFX-v0.11.7.zip) (Requires [Max 9](https://cycling74.com/downloads)).
+
+Get assistance via [Discord](https://discord.gg/JkSQzfZUdT).
+
+Stay informed via the mailing list:
+
+<div class="grid cards" markdown>
 <form method="post" action="https://sousastep.pikapod.net/subscription/form" class="listmonk-form">
     <div>
         <input type="hidden" name="nonce" />
@@ -84,6 +80,4 @@ SousaFX is a multi-effects rig made with the goal of bringing dubstep into the r
         <p><input type="submit" value="Subscribe" /></p>
     </div>
 </form>
-
-</body>
-</html>
+</div>

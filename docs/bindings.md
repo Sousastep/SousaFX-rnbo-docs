@@ -56,7 +56,7 @@ Start and Select modify the functions of the North, East, South, and West button
 | ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
 | ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: simper <br> downleft: simper boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring mod |
+| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: ms20 <br> downleft: ms20 boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring modulation |
 
 ### With start and select pressed
 

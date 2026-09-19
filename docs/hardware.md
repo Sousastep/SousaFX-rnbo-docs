@@ -52,3 +52,9 @@ description: >-
 			- Scroll up to your controller and select it
 			- Set “Use Profile” to the new profile
 			- Click “Done”
+
+<div class="grid cards" markdown>
+
+-   ![sousa gamepad](img/sousa_gamepad.webp)
+
+</div>

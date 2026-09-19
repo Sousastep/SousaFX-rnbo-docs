@@ -10,11 +10,11 @@ nav:
   - Overview: overview.md
   - Bindings: bindings.md
   - Loopers: loopers.md
-  - Release Notes: releasenotes.md
-  - Purchase: purchase.md
   - Modding: modding.md
+  - Media: recommended_media.md
+  - Purchase: purchase.md
   - Attributions: attributions.md
-  - Recommended Media: recommended_media.md
+  - Release Notes: releasenotes.md
 
 theme:
   name: material

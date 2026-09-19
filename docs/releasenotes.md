@@ -7,6 +7,25 @@ description: >-
 
 All releases are available here: [https://github.com/Sousastep/SousaFX-rnbo/releases](https://github.com/Sousastep/SousaFX-rnbo/releases)
 
+## 0.11.7
+
+- Add distortion effects: Phase distortion, oversampled ms20, oversampled atan, harmonic boost, angle modulation, ring modulation.
+
+- Add oversampling to modulated lowpass filters.
+
+- Modify binding logic to improve ergonomics.
+
+- Modify parameter tapers to improve musicality.
+
+- Add ADSR, bound to right trigger.
+
+- Lowpass kick samples.
+
+- Replace all easing with 3rd order smoothstep.
+
+- Remove "Active Bindings" window (accidentally).
+
+
 ## 0.11.6
 
 - Add octaver.
