@@ -58,6 +58,13 @@ SousaFX is a multi-effects rig made with the goal of bringing dubstep into the r
 - 64 drum samples, playable with the bumpers and triggers.
 - Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.
 - Reversible, scatterable stutters with acceleration via phase-locked loops.
+- 6 distortion effects:
+    - arc-tangent 
+    - ms-20
+    - harmonic boost
+    - pitch-tracking ring modulation
+    - adaptive phase distortion
+    - adaptive angle modulation
 
 ## Quick Start
 
