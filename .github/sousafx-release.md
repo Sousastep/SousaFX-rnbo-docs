@@ -15,12 +15,6 @@ export to external
 popup: Overwrite? 		OK
 ```
 
-Open about_SousaFX.maxpat without the project.
-
-Open license bpatcher using the super secret method, save to trigger savebang clears.
-
-In the main patcher, edit and save `loadmess #.#.#`
-
 make one last commit for this version, with the external loaded in SousaFX-rnbo.maxproj, not the rnbo~ obj.
 
 (click toggle next to the "external / rnbopat" switch.)
@@ -54,6 +48,7 @@ remove files from `/sousaFX-v#.#.#/` if present:
 ```
 	/data/license.sousafx
 	/data/audio_io_status.json
+	/data/sousafx-rnbo_updates.json
 	/other/license.sousafx (remove folder too)
 	/externals/js.xmo
 	/code/interfacecolor.js
@@ -80,9 +75,8 @@ add files from `/sousaFX-rnbo/` to `/sousaFX-v#.#.#/`:
 	/.docs/. ---> see OFFLINE in sousaFX-rnbo-docs below
 ```
 
-
-Open about_SousaFX.maxpat without the project AGAIN.
-Open license bpatcher using the super secret method, save to trigger savebang clears AGAIN (idk why but it is necessary now).
+Open about_SousaFX.maxpat without the project
+Open license bpatcher using the super secret method, save to trigger savebang clears.
 
 zip, named `SousaFX-v#.#.#.zip`
 
