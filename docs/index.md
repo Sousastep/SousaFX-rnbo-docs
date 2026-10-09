@@ -1,6 +1,7 @@
 ---
 description: >-
-  SousaFX is a multi-effects rig for tuba and didgeridoo players to perform dubstep and wobble-bass genres. Control auto-wah, filters, loopers, drum samples, delays, and stutters with a game controller.
+  SousaFX is a multi-effects rig made to bring dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba controls a number of audio effects, including:
+
 ---
 
 <html lang="en">
@@ -50,25 +51,24 @@ description: >-
 
 # Introduction
 
-SousaFX is a multi-effects rig made with the goal of bringing dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba is used to control a number of audio effects, including:
+SousaFX is a multi-effects rig made to bring dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba controls a number of audio effects, including:
 
-- An auto-wah carefully tuned to be as musical as possible.
+- Auto-wah with musical LFO shapes.
 - DJ-style lowpass / highpass filters.
 - Two one-button loopers, one for the bassline and one for the drums.
 - 64 drum samples, playable with the bumpers and triggers.
 - Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.
 - Reversible, scatterable stutters with acceleration via phase-locked loops.
-- 6 distortion effects:
+- 5 distortion effects:
     - arc-tangent 
     - ms-20
     - harmonic boost
-    - pitch-tracking ring modulation
-    - adaptive phase distortion
-    - adaptive angle modulation
+    - ring modulation
+    - phase distortion
 
 ## Quick Start
 
-[Download SousaFX-v0.11.7.zip](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.7/SousaFX-v0.11.7.zip) (Requires [Max 9](https://cycling74.com/downloads)).
+[Download SousaFX-v0.11.7.zip](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.7/SousaFX-v0.11.7.zip) (Requires [Max 9](https://cycling74.com/downloads) with the [FluCoMa](c74max://packagemanager/fluidcorpusmanipulation) package)
 
 Get assistance via [Discord](https://discord.gg/JkSQzfZUdT).
 

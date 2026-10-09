@@ -3,12 +3,6 @@ description: >-
   Complete gamepad binding reference for SousaFX. Thumbstick controls, button mappings, d-pad subdivisions, and shoulder button functions for dubstep effects performance.
 ---
 
-<style>
-.md-typeset table thead {
-    display: none;
-}
-</style>
-
 # Bindings
 
 This page describes how the gamepad controls SousaFX. All of the parameters on this page can be viewed in the [Active Bindings](overview.md#active-bindings) window, but they may not yet be shown in their respective FX parameters windows.
@@ -77,7 +71,7 @@ Start and Select modify the functions of the North, East, South, and West button
 
 While bumper drumming is enabled, pressing the shoulder buttons triggers drum samples, and holding the shoulder buttons retriggers drum samples at the rate set by the d-pad.
 
-| Button 	| Samples  |
+| Button 	| Sample  |
 |-----------|----------|
 | Left Trigger 		| Clap     |
 | Left Bumper 		| Snare    |
@@ -86,7 +80,7 @@ While bumper drumming is enabled, pressing the shoulder buttons triggers drum sa
 
 While bumper drumming is disabled (which happens automatically while the tuba is playing, or the drum looper is looping) the shoulder buttons operate as follows:
 
-| Button 	| Samples  |
+| Button 	| Function  |
 |-----------|----------|
 | Left Trigger 		| ● Changes the subivisions set by the d-pad and left bumper. <br> ● Enables the lowpass filter modulation acceleration, and disables all stutter acceleration, until the right thumbstick is within its deadzone. |
 | Left Bumper 		| Without the Left Trigger pressed: <br> ● Disables the stutter for the drum looper and bassline looper, until either the left thumbstick is within its deadzone, or the Left Bumper is pressed again.  <br> ● Disables all delay sends until the right thumbstick is within its deadzone. <br> ● Enables the solo stutter effect until the right thumbstick is within its deadzone. <br> <br> With the Left Trigger pressed: <br> ● Sets subdivision to half note. |
@@ -102,7 +96,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 - Without the left trigger pressed:
 
-	| d-pad	     | Function	   |
+	| D-pad	     | Function	   |
 	|------------|-------------|
 	| left bumper| See [above](bindings.md#shoulder-buttons). |
 	| d-pad up 	| quarter |
@@ -116,7 +110,7 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 - With the left trigger pressed:
 
-	| d-pad	    | Function	  |
+	| D-pad	    | Function	  |
 	|-----------|-------------|
 	| left bumper| half |
 	| d-pad up 	| quarter triplet |
@@ -414,19 +408,20 @@ Push R3 once, twice, or thrice in succession to switch the right thumbstick's bi
 
 The right thumbstick is also divided into 12 pie slices to fade-in certain effects for the bassline.
 
-The slices currently in use are as follows:
+The slices are as follows:
 
-| direction | Function          | FX Chain Position | affects solo |
-|-----------|-------------------|-------------------|--------------|
-| up     		| lfo shape tri/rising | LFO 						| no 					 |
-| up-right 	| reverb 							 | main send only | no 					 |
-| right-up 	| lfo shape tri/square | LFO 						| no 					 |
-| right 		| lfo shape tri/falling| LFO 						| no 					 |
-| right-down| phase distortion     | pre-LPF 				| no 					 |
-| down-right| harmonics A 				 | post-xfade 		| yes					 |
-| down 			| comb filter 				 | pre-LPF & dry  | yes					 |
-| down-left | harmonics B 				 | post-xfade 		| yes					 |
-| left-down | ring mod 						 | pre-LPF 				| no 					 |
-| left 			| unused 							 | 								| 						 |
+| Direction | Function          | FX Chain Position | Affects solo? |
+|-----------|-------------------|-------------------|---------------|
+| up-left 	| unused 							 | 								| 						  |
+| up     		| lfo shape tri/rising | LFO 						| no 					  |
+| up-right 	| reverb 							 | main send only | no 					  |
+| right-up 	| lfo shape tri/square | LFO 						| no 					  |
+| right 		| lfo shape tri/falling| LFO 						| no 					  |
+| right-down| phase distortion     | pre-LPF 				| no 					  |
+| down-right| harmonics A 				 | post-xfade 		| yes					  |
+| down 			| comb filter 				 | pre-LPF & dry  | yes					  |
+| down-left | harmonics B 				 | post-xfade 		| yes					  |
+| left-down | ring mod 						 | pre-LPF 				| no 					  |
+| left 			| unused 							 | 								| 						  |
 
 
