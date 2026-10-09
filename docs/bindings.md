@@ -22,7 +22,7 @@ Start and Select modify the functions of the North, East, South, and West button
 ### Without start or select pressed
 
 | Input       | Function |
-|-------------|----------|
+| ----------- | -------- |
 | ![north](img/north.webp)	  | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping.|
 | ![east](img/east.webp)		  | Drum [looper](loopers.md) start / stop / clear. |
 | ![south](img/south.webp)	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
@@ -102,9 +102,9 @@ The left trigger is used for changing the function of the d-pad and the left bum
 
 - Without the left trigger pressed:
 
-	| d-pad	    | Function	  |
-	|-----------|-------------|
-	| left bumper| Momentarily enable manual wah |
+	| d-pad	     | Function	   |
+	|------------|-------------|
+	| left bumper| See [above](bindings.md#shoulder-buttons). |
 	| d-pad up 	| quarter |
 	| up right	| dotted quarter |
 	| right 	| 8th triplet |
@@ -200,9 +200,9 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 - Drum filtersweep:
 
-	> Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone.
+	> Allowed after the tuba *stops* playing, & the left thumbstick is within its deadzone, & the manual-wah is disabled.
 
-	> Denied after the tuba *starts* playing, & the left thumbstick is within its deadzone.
+	> Denied EITHER after the tuba *starts* playing, & the left thumbstick is within its deadzone, OR when the manual-wah is enabled.
 
 	> > Left sweeps a highpass filter upwards. 
 
@@ -313,6 +313,8 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 - Bassline looper delay feedback amount.
 
+- Comb filter amount.
+
 
 ### Horizontal
 
@@ -400,7 +402,7 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 ![r3](img/R3.webp)
 
-Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO. Hold for more than 600 ms, then release, to select the first option.
+Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO. Hold for more than 600 ms, then release, to select the first option. These bindings are allowed once the left trigger is pressed, and disallowed once the left trigger is released and the right thumbstick is within its deadzone.
 
 1. Once for the vertical axis to control the acceleration (up accelerates, down deccelerates).
 
@@ -408,6 +410,23 @@ Push R3 once, twice, or thrice in succession to switch the right thumbstick's bi
 
 3. Thrice for the up axis to control the sync-free crossfade, the horizontal axis to control the free rate (left for faster, right for slower), and the down axis to control the swing amount.
 
+### 12ths
 
+The right thumbstick is also divided into 12 pie slices to fade-in certain effects for the bassline.
+
+The slices currently in use are as follows:
+
+| direction | Function          | FX Chain Position | affects solo |
+|-----------|-------------------|-------------------|--------------|
+| up     		| lfo shape tri/rising | LFO 						| no 					 |
+| up-right 	| reverb 							 | main send only | no 					 |
+| right-up 	| lfo shape tri/square | LFO 						| no 					 |
+| right 		| lfo shape tri/falling| LFO 						| no 					 |
+| right-down| phase distortion     | pre-LPF 				| no 					 |
+| down-right| harmonics A 				 | post-xfade 		| yes					 |
+| down 			| comb filter 				 | pre-LPF & dry  | yes					 |
+| down-left | harmonics B 				 | post-xfade 		| yes					 |
+| left-down | ring mod 						 | pre-LPF 				| no 					 |
+| left 			| unused 							 | 								| 						 |
 
 
