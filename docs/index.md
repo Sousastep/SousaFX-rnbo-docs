@@ -68,7 +68,7 @@ SousaFX is a multi-effects rig made to bring dubstep into the repertoire of genr
 
 ## Quick Start
 
-[Download SousaFX-v0.11.7.zip](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.7/SousaFX-v0.11.7.zip) (Requires [Max 9](https://cycling74.com/downloads) with the [FluCoMa](c74max://packagemanager/fluidcorpusmanipulation) package)
+[Download SousaFX-v0.11.8.zip](https://github.com/Sousastep/SousaFX-rnbo/releases/download/v0.11.8/SousaFX-v0.11.8.zip) (Requires [Max 9](https://cycling74.com/downloads) with the [FluCoMa](c74max://packagemanager/fluidcorpusmanipulation) package)
 
 Get assistance via [Discord](https://discord.gg/JkSQzfZUdT).
 
