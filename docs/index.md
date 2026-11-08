@@ -53,18 +53,12 @@ description: >-
 
 SousaFX is a multi-effects rig made to bring dubstep into the repertoire of genres that tuba players can perform. A game controller attached to the side of the tuba controls a number of audio effects, including:
 
-- Auto-wah with musical LFO shapes.
-- DJ-style lowpass / highpass filters.
 - Two one-button loopers, one for the bassline and one for the drums.
 - 64 drum samples, playable with the bumpers and triggers.
 - Dub delays with separate parameters for input volume, feedback amount, and highpass frequency.
 - Reversible, scatterable stutters with acceleration via phase-locked loops.
-- 5 distortion effects:
-    - arc-tangent 
-    - ms-20
-    - harmonic boost
-    - ring modulation
-    - phase distortion
+- DJ-style lowpass / highpass filters.
+- Many combinations of effects for basslines and solos.
 
 ## Quick Start
 
