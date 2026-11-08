@@ -41,3 +41,14 @@ OFFLINE=true mkdocs build --clean --site-dir /Users/jbaylies/Documents/Max\ 8/Pr
 ```
 for f in *.png; do cwebp "$f" -o "${f%.png}.webp"; done
 ```
+
+<a href="#house_with_garden-repositories">![rainbow](./media/rainbow.png)</a>
+
+# :house_with_garden: Repositories
+
+- [SousaFX-rnbo](https://github.com/Sousastep/SousaFX-rnbo): 				audio effects
+- [SousaFX-rnbo-docs](https://github.com/Sousastep/SousaFX-rnbo-docs): 		documentation
+- [sousaFX-rpi-scripts](https://github.com/Sousastep/sousaFX-rpi-scripts): 	raspberry pi scripts
+- [sousaVFX-teensy](https://github.com/Sousastep/sousaVFX-teensy): 			visual effects
+- [SousaPlayback-rnbo](https://github.com/Sousastep/SousaPlayback-rnbo): 	ableton project
+- [sousa_fx_generator](https://github.com/Sousastep/sousa_fx_generator): 	rnbo codebox~ generator
