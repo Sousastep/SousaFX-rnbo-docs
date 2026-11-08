@@ -15,14 +15,101 @@ Start and Select modify the functions of the North, East, South, and West button
 
 ### Without start or select pressed
 
+The N E S W buttons load presets for the bassline, and solo signal chains.
+
+Pressing two of the N E S W buttons at once changes the bank number. 
+N + E = 1, N + S = 2, N + W = 3, E + S = 4, E + W = 5, S + W = 6. 
+This gives a total of 24 presets, which are hardcoded from the following choices:
+
+1.  pre-xfade-wet synth
+        1. thru
+        2. sideband sub growl
+        3. virtual riot phase distortion
+        4. barberpole comb phaser
+        5. flanger through zero jet
+        6. quadrature chebyshev shaper
+        7. ssb space shift
+        8. reese liquid 5limit
+        9. vps liquid orbit
+2.  pre-xfade-dry dist
+        1. thru
+        2. simper overdrive
+        3. cab speaker excursion
+        4. transformer flux sat
+        5. triode bias shift
+        6. rat slew hardclip
+3. dist pass or thru synth
+        0. distortion fx and synth fx are parallel
+        1. synth fx is fed by distortion fx
+4.  solo mod
+        1. thru
+        2. minishift
+        3. bbd blep clock matrix
+        4. supersaw waveform animator
+        5. univibe optical throb
+        6. bbd compander juno
+5.  solo rev
+        1. thru
+        2. dattorro plate
+        3. spring dispersion
+        4. small room
+        5. velvet grain
+6.  main LPF
+        1. Simper SVF, Moog Q dip.
+        2. comb tanh scream
+        3. svf ladder
+        4. lp pole mixing ota
+        5. yoi cascade formants
+7.  LFO shape 
+        0. triangle
+        1. square
+8.  LFO shape
+        0. rising  ?
+        1. falling ?
+9.  crossfade binding mode:
+        0. vertical
+        1. magnitude
+10.  crossfade mode
+        0. transient helper enabled
+        1. transient helper disabled
+        2. crossfade disabled, xfade-wet only
+11.  LFO mode (right thumb up / down)
+        0. pll accel & deccel w/o swing
+        1. pll accel + swing
+        2. free lfo xfade & free lfo speed + swing
+12. env mod type
+        0. env mod enabled
+        1. env mod disabled; pitch tracking instead
+13. LFO main phase offset (-1, 0, 1)
+
+These presets have been hardcoded so far:
+
+- Bank 1
+	1. 1 2 1 2 1 1 0 0.5 0 0 0 0 0
+	2. 3 3 0 6 4 1 0 0.5 0 0 0 0 0
+	3. 5 5 1 3 3 1 0 0.5 0 0 0 0 0
+	4. 7 4 0 5 3 1 0 0.5 0 0 0 0 0
+
+- Bank 2
+	5. 1 2 1 2 1 2 0 0.5 0 0 0 0 0
+	6. 1 2 1 2 1 3 0 0.5 0 0 0 0 0
+	7. 1 2 1 2 1 4 0 0.5 0 0 0 0 0
+	8. 1 2 1 2 1 5 0 0.5 0 0 0 0 0
+
+<!--
 | Input       | Function |
 | ----------- | -------- |
-| ![north](img/north.webp)	  | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping.|
-| ![east](img/east.webp)		  | Drum [looper](loopers.md) start / stop / clear. |
-| ![south](img/south.webp)	  | Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
-| ![west](img/west.webp)		  | Bassline [looper](loopers.md) start / stop / clear. |
+| ![north](img/north.webp)	  |  |
+| ![east](img/east.webp)		  |  |
+| ![south](img/south.webp)	  |  |
+| ![west](img/west.webp)		  |  |
 | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
 | [Right Thumbstick Button](bindings.md/#r3-button) |		< See link	|
+
+Toggle metronome.
+Toggle bumper drumming. 
+Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.
+-->
 
 ### With select pressed
 
@@ -30,14 +117,14 @@ Start and Select modify the functions of the North, East, South, and West button
 
 | Input            | Function |
 |------------------|----------|
-| ![north](img/north.webp) 	       | Toggle metronome. |
-| ![east](img/east.webp) 		       | Randomize drum samples. |
-| ![south](img/south.webp) 	       | Toggle bumper drumming. |
-| ![west](img/west.webp) 		       | Releases any holds on all delay feedback amounts. |
+| ![north](img/north.webp) 	       | Tap tempo. Last tap sets beat 1. Tap once to set beat 1 without changing tempo. Metronome auto-mutes while tapping. |
+| ![east](img/east.webp) 		       | Drum [looper](loopers.md) start / stop / clear. |
+| ![south](img/south.webp) 	       | Releases any holds on all delay feedback amounts. |
+| ![west](img/west.webp) 		       | Bassline [looper](loopers.md) start / stop / clear. |
 | Right Thumbstick | While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount. |
-| Left Thumbstick  | While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square. |
-| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad     | Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper's stopping. |
+<!-- | Left Thumbstick  | |
+| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	| -->
+| D-pad     | Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper stops. |
 
 ### With start pressed
 
@@ -45,12 +132,11 @@ Start and Select modify the functions of the North, East, South, and West button
 
 | Input            | Function |
 |------------------|----------|
-| ![north](img/north.webp) 	       | Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.|
-| ![east](img/east.webp) 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East.|
-| ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South.|
-| ![west](img/west.webp) 		       | Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.|
-| [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	|
-| D-pad & L2       | Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: ms20 <br> downleft: ms20 boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring modulation |
+| ![north](img/north.webp) 	       | Randomize drum samples. |
+| ![east](img/east.webp) 		       | Momentarily enable kick-ducker. <br> To perma-enable: Release start before releasing East. |
+| ![south](img/south.webp) 	       | Momentarily enable scatter fx for bassline looper stutter. <br> To perma-enable: Release start before releasing South. |
+| ![west](img/west.webp) 		       | Unused |
+<!-- | [Left Thumbstick Button](bindings.md/#l3-button)  |		< See link	| -->
 
 ### With start and select pressed
 
@@ -60,7 +146,7 @@ Start and Select modify the functions of the North, East, South, and West button
 |-----------|----------|
 | ![north](img/north.webp)  	| Set time signature numerator via number of clicks (3 - 7, click 1 starts on 3). <br> Hold to set to 4. |
 | ![east](img/east.webp) 		| Set drum looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 8. |
-| ![south](img/south.webp) 	| Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.|
+| ![south](img/south.webp) 	| Unused. |
 | ![west](img/west.webp) 		| Set bassline looper length in bars via number of clicks (4 - 16, click 1 starts on 4). <br> Hold to set to 16. |
 | Right Trigger  | Press three times in a row to mute all audio inputs and outputs. Press once to unmute. |
 | D-pad          | On raspberry pi only: playback song # 0 - 7 |
@@ -84,7 +170,7 @@ While bumper drumming is disabled (which happens automatically while the tuba is
 |-----------|----------|
 | Left Trigger 		| ● Changes the subivisions set by the d-pad and left bumper. <br> ● Enables the lowpass filter modulation acceleration, and disables all stutter acceleration, until the right thumbstick is within its deadzone. |
 | Left Bumper 		| Without the Left Trigger pressed: <br> ● Disables the stutter for the drum looper and bassline looper, until either the left thumbstick is within its deadzone, or the Left Bumper is pressed again.  <br> ● Disables all delay sends until the right thumbstick is within its deadzone. <br> ● Enables the solo stutter effect until the right thumbstick is within its deadzone. <br> <br> With the Left Trigger pressed: <br> ● Sets subdivision to half note. |
-| Right Trigger 	| Momentarily enables transient-triggered ADSR. |
+| Right Trigger 	| Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South. |
 | Right Bumper 		| Momentarily enables the manual wah. |
 
 
@@ -256,7 +342,7 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 	Press L3 while holding Select to toggle this binding between Vertical and Magnitude.
 
-
+<!--
 ### L3 Button
 
 ![l3](img/L3.webp)
@@ -274,7 +360,7 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 - While holding Select, push L3 to toggle the Crossfade binding between "vertical" and "magnitude". Hold for more than 600 ms, then release, to set it to vertical.
 
 - While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.
-
+-->
 
 ## Right Thumbstick
 
@@ -308,6 +394,8 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 - Bassline looper delay feedback amount.
 
 - Comb filter amount.
+
+- Bassline Harmonic Boost (down-left for harmonic 1, down-right for harmonic 2)
 
 
 ### Horizontal
@@ -391,7 +479,7 @@ While the tuba is playing, the d-pad will not modify the bassline delay's subdiv
 
 	> Denied after the left bumper is released, & the right thumbstick is within its deadzone. 
 
-
+<!-- 
 ### R3 Button
 
 ![r3](img/R3.webp)
@@ -403,25 +491,5 @@ Push R3 once, twice, or thrice in succession to switch the right thumbstick's bi
 2. Twice for the up axis to control the acceleration, and the down axis to control the swing amount.
 
 3. Thrice for the up axis to control the sync-free crossfade, the horizontal axis to control the free rate (left for faster, right for slower), and the down axis to control the swing amount.
-
-### 12ths
-
-The right thumbstick is also divided into 12 pie slices to fade-in certain effects for the bassline.
-
-The slices are as follows:
-
-| Direction | Function          | FX Chain Position | Affects solo? |
-|-----------|-------------------|-------------------|---------------|
-| up-left 	| unused 							 | 								| 						  |
-| up     		| lfo shape tri/rising | LFO 						| no 					  |
-| up-right 	| reverb 							 | main send only | no 					  |
-| right-up 	| lfo shape tri/square | LFO 						| no 					  |
-| right 		| lfo shape tri/falling| LFO 						| no 					  |
-| right-down| phase distortion     | pre-LPF 				| no 					  |
-| down-right| harmonics A 				 | post-xfade 		| yes					  |
-| down 			| comb filter 				 | pre-LPF & dry  | yes					  |
-| down-left | harmonics B 				 | post-xfade 		| yes					  |
-| left-down | ring mod 						 | pre-LPF 				| no 					  |
-| left 			| unused 							 | 								| 						  |
-
+-->
 
