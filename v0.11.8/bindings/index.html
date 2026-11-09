@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -612,17 +612,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#l3-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        L3 Button
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -700,28 +689,6 @@
     <span class="md-ellipsis">
       
         Vertical
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#r3-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        R3 Button
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12ths" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12ths
       
     </span>
   </a>
@@ -1085,17 +1052,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#l3-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        L3 Button
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1179,28 +1135,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#r3-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        R3 Button
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12ths" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12ths
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1229,6 +1163,110 @@
 <h2 id="start-select-n-e-s-w">Start, Select, N E S W</h2>
 <p>Start and Select modify the functions of the North, East, South, and West buttons, as well as the functions of the thumbsticks, and the d-pad.</p>
 <h3 id="without-start-or-select-pressed">Without start or select pressed</h3>
+<p>The N E S W buttons load presets for the bassline, and solo signal chains.</p>
+<p>Pressing two of the N E S W buttons at once changes the bank number. 
+N + E = 1, N + S = 2, N + W = 3, E + S = 4, E + W = 5, S + W = 6. 
+This gives a total of 24 presets, which are hardcoded from the following choices:</p>
+<ol>
+<li>pre-xfade-wet synth
+        1. thru
+        2. sideband sub growl
+        3. virtual riot phase distortion
+        4. barberpole comb phaser
+        5. flanger through zero jet
+        6. quadrature chebyshev shaper
+        7. ssb space shift
+        8. reese liquid 5limit
+        9. vps liquid orbit</li>
+<li>pre-xfade-dry dist
+        1. thru
+        2. simper overdrive
+        3. cab speaker excursion
+        4. transformer flux sat
+        5. triode bias shift
+        6. rat slew hardclip</li>
+<li>dist pass or thru synth
+        0. distortion fx and synth fx are parallel
+        1. synth fx is fed by distortion fx</li>
+<li>solo mod
+        1. thru
+        2. minishift
+        3. bbd blep clock matrix
+        4. supersaw waveform animator
+        5. univibe optical throb
+        6. bbd compander juno</li>
+<li>solo rev
+        1. thru
+        2. dattorro plate
+        3. spring dispersion
+        4. small room
+        5. velvet grain</li>
+<li>main LPF
+        1. Simper SVF, Moog Q dip.
+        2. comb tanh scream
+        3. svf ladder
+        4. lp pole mixing ota
+        5. yoi cascade formants</li>
+<li>LFO shape 
+        0. triangle
+        1. square</li>
+<li>LFO shape
+        0. rising  ?
+        1. falling ?</li>
+<li>crossfade binding mode:
+        0. vertical
+        1. magnitude</li>
+<li>crossfade mode
+        0. transient helper enabled
+        1. transient helper disabled
+        2. crossfade disabled, xfade-wet only</li>
+<li>LFO mode (right thumb up / down)
+        0. pll accel &amp; deccel w/o swing
+        1. pll accel + swing
+        2. free lfo xfade &amp; free lfo speed + swing</li>
+<li>env mod type
+        0. env mod enabled
+        1. env mod disabled; pitch tracking instead</li>
+<li>LFO main phase offset (-1, 0, 1)</li>
+</ol>
+<p>These presets have been hardcoded so far:</p>
+<ul>
+<li>
+<p>Bank 1</p>
+<ol>
+<li>1 2 1 2 1 1 0 0.5 0 0 0 0 0</li>
+<li>3 3 0 6 4 1 0 0.5 0 0 0 0 0</li>
+<li>5 5 1 3 3 1 0 0.5 0 0 0 0 0</li>
+<li>7 4 0 5 3 1 0 0.5 0 0 0 0 0</li>
+</ol>
+</li>
+<li>
+<p>Bank 2</p>
+<ol>
+<li>1 2 1 2 1 2 0 0.5 0 0 0 0 0</li>
+<li>1 2 1 2 1 3 0 0.5 0 0 0 0 0</li>
+<li>1 2 1 2 1 4 0 0.5 0 0 0 0 0</li>
+<li>1 2 1 2 1 5 0 0.5 0 0 0 0 0</li>
+</ol>
+</li>
+</ul>
+<!--
+| Input       | Function |
+| ----------- | -------- |
+| ![north](img/north.webp)    |  |
+| ![east](img/east.webp)          |  |
+| ![south](img/south.webp)    |  |
+| ![west](img/west.webp)          |  |
+| [Left Thumbstick Button](bindings.md/#l3-button)  |       < See link  |
+| [Right Thumbstick Button](bindings.md/#r3-button) |       < See link  |
+
+Toggle metronome.
+Toggle bumper drumming. 
+Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.
+-->
+
+<h3 id="with-select-pressed">With select pressed</h3>
+<p><img alt="select" src="../img/select.webp" /></p>
 <table>
 <thead>
 <tr>
@@ -1247,66 +1285,21 @@
 </tr>
 <tr>
 <td><img alt="south" src="../img/south.webp" /></td>
-<td>Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South.</td>
+<td>Releases any holds on all delay feedback amounts.</td>
 </tr>
 <tr>
 <td><img alt="west" src="../img/west.webp" /></td>
 <td>Bassline <a href="../loopers/">looper</a> start / stop / clear.</td>
 </tr>
 <tr>
-<td><a href="./#l3-button">Left Thumbstick Button</a></td>
-<td>&lt; See link</td>
-</tr>
-<tr>
-<td><a href="./#r3-button">Right Thumbstick Button</a></td>
-<td>&lt; See link</td>
-</tr>
-</tbody>
-</table>
-<h3 id="with-select-pressed">With select pressed</h3>
-<p><img alt="select" src="../img/select.webp" /></p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="north" src="../img/north.webp" /></td>
-<td>Toggle metronome.</td>
-</tr>
-<tr>
-<td><img alt="east" src="../img/east.webp" /></td>
-<td>Randomize drum samples.</td>
-</tr>
-<tr>
-<td><img alt="south" src="../img/south.webp" /></td>
-<td>Toggle bumper drumming.</td>
-</tr>
-<tr>
-<td><img alt="west" src="../img/west.webp" /></td>
-<td>Releases any holds on all delay feedback amounts.</td>
-</tr>
-<tr>
 <td>Right Thumbstick</td>
 <td>While using the right thumbstick to modulate any delay feedback amount, pressing Select will place a hold on said feedback amount.</td>
 </tr>
-<tr>
-<td>Left Thumbstick</td>
-<td>While holding Select, the left thumbstick sets the lowpass filter modulation shape: The horizontal axis crossfades from falling saw, to triangle, to rising saw. The down axis squishes the triangle, and the up axis crossfades from triangle to square.</td>
-</tr>
-<tr>
-<td><a href="./#l3-button">Left Thumbstick Button</a></td>
-<td>&lt; See link</td>
-</tr>
-<tr>
-<td>D-pad</td>
-<td>Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper's stopping.</td>
-</tr>
 </tbody>
 </table>
+<!-- | Left Thumbstick  | |
+| [Left Thumbstick Button](bindings.md/#l3-button)  |       < See link  | -->
+<p>| D-pad     | Press any direction to toggle 8th note auto-swing. Auto-swing turns off when the bassline looper stops. |</p>
 <h3 id="with-start-pressed">With start pressed</h3>
 <p><img alt="start" src="../img/start.webp" /></p>
 <table>
@@ -1319,7 +1312,7 @@
 <tbody>
 <tr>
 <td><img alt="north" src="../img/north.webp" /></td>
-<td>Momentarily enable pitchshift power chord. <br> To perma-enable: Release start before releasing North.</td>
+<td>Randomize drum samples.</td>
 </tr>
 <tr>
 <td><img alt="east" src="../img/east.webp" /></td>
@@ -1331,18 +1324,12 @@
 </tr>
 <tr>
 <td><img alt="west" src="../img/west.webp" /></td>
-<td>Momentarily enable MIDI CC 50 via the MIDI port named "from Max 1", which is intended to be mapped to a talkback mic.</td>
-</tr>
-<tr>
-<td><a href="./#l3-button">Left Thumbstick Button</a></td>
-<td>&lt; See link</td>
-</tr>
-<tr>
-<td>D-pad &amp; L2</td>
-<td>Set the distortion effect. <br> right: atan <br> downright: atan boost <br> down: ms20 <br> downleft: ms20 boost <br> left: phase distortion <br> upleft: angle modulation <br> up: harmonics 5 6 <br> upright: harmonics 3 5 <br> L2: ring modulation</td>
+<td>Unused</td>
 </tr>
 </tbody>
 </table>
+<!-- | [Left Thumbstick Button](bindings.md/#l3-button)  |      < See link  | -->
+
 <h3 id="with-start-and-select-pressed">With start and select pressed</h3>
 <p><img alt="startselect" src="../img/startselect.webp" /></p>
 <table>
@@ -1363,7 +1350,7 @@
 </tr>
 <tr>
 <td><img alt="south" src="../img/south.webp" /></td>
-<td>Momentarily enable octaver. To perma-enable: Release start and/or select before releasing South.</td>
+<td>Unused.</td>
 </tr>
 <tr>
 <td><img alt="west" src="../img/west.webp" /></td>
@@ -1430,7 +1417,7 @@
 </tr>
 <tr>
 <td>Right Trigger</td>
-<td>Momentarily enables transient-triggered ADSR.</td>
+<td>Momentarily enable main stutter. <br> To perma-enable: Hold start or select before releasing South.</td>
 </tr>
 <tr>
 <td>Right Bumper</td>
@@ -1667,33 +1654,26 @@
 <p>Press L3 while holding Select to toggle this binding between Vertical and Magnitude.</p>
 </li>
 </ul>
-<h3 id="l3-button">L3 Button</h3>
-<p><img alt="l3" src="../img/L3.webp" /></p>
-<ul>
-<li>
-<p>Push L3 once, twice, or thrice in succession to set the <a href="../overview/#crossfade-env-sens">crossfade's</a> mode. Hold for more than 600 ms, then release, to select the first option.</p>
-<ol>
-<li>
-<p>Once to enable the "transient helper", which increases the crossfade whenever the noisegate is gating.</p>
-</li>
-<li>
-<p>Twice to disable the "transient helper". </p>
-</li>
-<li>
-<p>Thrice to disable the crossfade entirely. </p>
-</li>
-</ol>
-</li>
-</ul>
-<p><img alt="startselect" src="../img/startselect.webp" /></p>
-<ul>
-<li>
-<p>While holding Select, push L3 to toggle the Crossfade binding between "vertical" and "magnitude". Hold for more than 600 ms, then release, to set it to vertical.</p>
-</li>
-<li>
-<p>While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.</p>
-</li>
-</ul>
+<!--
+### L3 Button
+
+![l3](img/L3.webp)
+
+- Push L3 once, twice, or thrice in succession to set the [crossfade's](overview.md#crossfade-env-sens) mode. Hold for more than 600 ms, then release, to select the first option.
+
+    1. Once to enable the "transient helper", which increases the crossfade whenever the noisegate is gating.
+
+    2. Twice to disable the "transient helper". 
+
+    3. Thrice to disable the crossfade entirely. 
+
+![startselect](img/startselect.webp)
+
+- While holding Select, push L3 to toggle the Crossfade binding between "vertical" and "magnitude". Hold for more than 600 ms, then release, to set it to vertical.
+
+- While holding Start, push L3 to toggle weither the tuba's loudness modulates the LPF LFO's ceiling and floor. Hold for more than 600 ms, then release, to enable modulation.
+-->
+
 <h2 id="right-thumbstick">Right Thumbstick</h2>
 <h3 id="up_1">Up</h3>
 <p><img alt="right up" src="../img/Rup.webp" /></p>
@@ -1730,6 +1710,9 @@
 </li>
 <li>
 <p>Comb filter amount.</p>
+</li>
+<li>
+<p>Bassline Harmonic Boost (down-left for harmonic 1, down-right for harmonic 2)</p>
 </li>
 </ul>
 <h3 id="horizontal_1">Horizontal</h3>
@@ -1817,101 +1800,19 @@
 </blockquote>
 </li>
 </ul>
-<h3 id="r3-button">R3 Button</h3>
-<p><img alt="r3" src="../img/R3.webp" /></p>
-<p>Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO. Hold for more than 600 ms, then release, to select the first option. These bindings are allowed once the left trigger is pressed, and disallowed once the left trigger is released and the right thumbstick is within its deadzone.</p>
-<ol>
-<li>
-<p>Once for the vertical axis to control the acceleration (up accelerates, down deccelerates).</p>
-</li>
-<li>
-<p>Twice for the up axis to control the acceleration, and the down axis to control the swing amount.</p>
-</li>
-<li>
-<p>Thrice for the up axis to control the sync-free crossfade, the horizontal axis to control the free rate (left for faster, right for slower), and the down axis to control the swing amount.</p>
-</li>
-</ol>
-<h3 id="12ths">12ths</h3>
-<p>The right thumbstick is also divided into 12 pie slices to fade-in certain effects for the bassline.</p>
-<p>The slices are as follows:</p>
-<table>
-<thead>
-<tr>
-<th>Direction</th>
-<th>Function</th>
-<th>FX Chain Position</th>
-<th>Affects solo?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>up-left</td>
-<td>unused</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>up</td>
-<td>lfo shape tri/rising</td>
-<td>LFO</td>
-<td>no</td>
-</tr>
-<tr>
-<td>up-right</td>
-<td>reverb</td>
-<td>main send only</td>
-<td>no</td>
-</tr>
-<tr>
-<td>right-up</td>
-<td>lfo shape tri/square</td>
-<td>LFO</td>
-<td>no</td>
-</tr>
-<tr>
-<td>right</td>
-<td>lfo shape tri/falling</td>
-<td>LFO</td>
-<td>no</td>
-</tr>
-<tr>
-<td>right-down</td>
-<td>phase distortion</td>
-<td>pre-LPF</td>
-<td>no</td>
-</tr>
-<tr>
-<td>down-right</td>
-<td>harmonics A</td>
-<td>post-xfade</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>down</td>
-<td>comb filter</td>
-<td>pre-LPF &amp; dry</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>down-left</td>
-<td>harmonics B</td>
-<td>post-xfade</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>left-down</td>
-<td>ring mod</td>
-<td>pre-LPF</td>
-<td>no</td>
-</tr>
-<tr>
-<td>left</td>
-<td>unused</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<!-- 
+### R3 Button
+
+![r3](img/R3.webp)
+
+Push R3 once, twice, or thrice in succession to switch the right thumbstick's bindings for the lowpass filter's LFO. Hold for more than 600 ms, then release, to select the first option. These bindings are allowed once the left trigger is pressed, and disallowed once the left trigger is released and the right thumbstick is within its deadzone.
+
+1. Once for the vertical axis to control the acceleration (up accelerates, down deccelerates).
+
+2. Twice for the up axis to control the acceleration, and the down axis to control the swing amount.
+
+3. Thrice for the up axis to control the sync-free crossfade, the horizontal axis to control the free rate (left for faster, right for slower), and the down axis to control the swing amount.
+-->
 
 
 
@@ -2044,10 +1945,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../js/open_in_new_tab.js"></script>
       
