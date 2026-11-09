@@ -15,7 +15,13 @@ To access the internals (on mac):
 
 Clone this repository: [https://github.com/Sousastep/SousaFX-rnbo](https://github.com/Sousastep/SousaFX-rnbo) (or click the green "Code" button, then click "Download ZIP")
 
+And this repository: [https://github.com/Sousastep/sousa_fx_generator](https://github.com/Sousastep/sousa_fx_generator)
+
+run `/sousa_fx_generator/tools/generate_maxpats.py` and `generate_v8uis.py`
+
 Open `SousaFX-rnbo.maxproj`
+
+Add `sousa_fx_generator` to `SousaFX-rnbo.maxproj`'s Project File Paths.
 
 Disable the custom menubar with `option m`, or `menubar > File > Max Menus`
 
